@@ -93,6 +93,24 @@ module.exports = {
       chunks: ['page']
     }),
 
+    // Articles page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/pageArticles.html',
+      filename: './pages/pageArticles.html',
+      chunks: ['page']
+    }),
+
+    // Tests page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/pages/pageTests.html',
+      filename: './pages/pageTests.html',
+      chunks: ['page']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

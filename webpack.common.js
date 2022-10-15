@@ -88,8 +88,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
+      template: './src/cards.html',
+      filename: './cards.html',
       chunks: ['page']
     }),
 
@@ -97,17 +97,35 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/pageArticles.html',
-      filename: './pages/pageArticles.html',
+      template: './src/articles.html',
+      filename: './articles.html',
       chunks: ['page']
     }),
 
-    // Tests page
+    // Quizes page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/pages/pageTests.html',
-      filename: './pages/pageTests.html',
+      template: './src/quizes.html',
+      filename: './quizes.html',
+      chunks: ['page']
+    }),
+
+    // fireEscape quiz page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/quizes/fireEscape.html',
+      filename: './quizes/fireEscape.html',
+      chunks: ['page']
+    }),
+
+    // fire article page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/fire.html',
+      filename: './articles/fire.html',
       chunks: ['page']
     }),
 

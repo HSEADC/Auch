@@ -1,8 +1,0 @@
-@import 'stylesheets/reset.scss';
-@import 'stylesheets/vars.scss';
-@import 'stylesheets/fonts.scss';
-@import 'stylesheets/basics.scss';
-@import 'stylesheets/cards.scss';
-@import 'stylesheets/articles.scss';
-@import 'stylesheets/quizes.scss';
-/* нужно ли дописать здесь просто эту строчку и создать quizes.scss или создать отдельный файл quizes.css и там сделать аналогично этому? */

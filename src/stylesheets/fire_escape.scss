@@ -1,0 +1,150 @@
+body.fire_escape {
+  background-color: #f7f2ec;
+  overflow-x: hidden;
+}
+
+body.fire_escape section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+body.fire_escape p {
+  font-family: 'InterRegular';
+  font-size: 1.88vw;
+  line-height: 146%;
+  font-weight: 400;
+}
+
+body.fire_escape h1 {
+  font-family: 'InterMedium';
+  font-size: 2.8vw; /* 36 */
+  line-height: 146%;
+  font-weight: 500;
+  color: black;
+}
+
+body.fire_escape h2 {
+  font-family: 'InterMedium';
+  font-size: 1.7vw; /* 22 */
+  line-height: 146%;
+  font-weight: 500;
+  color: black;
+  position: relative;
+}
+
+.nav_bar {
+  background-color: #ff7961;
+  height: 8vh !important;
+  display: inline-block;
+}
+
+.nav_bar div {
+  display: inline-block;
+}
+
+.nav_menu {
+  padding: 0;
+  margin-top: 1.1vh;
+  margin-left: 3.9vw;
+  position: relative;
+}
+
+.nav_menu div {
+  display: inline-block;
+}
+
+.page_link {
+  display: inline-block;
+  padding: 1.4vh 1.2vw 1.4vh 1.2vw;
+  opacity: 0.6;
+}
+
+.active {
+  opacity: 1;
+  border-bottom: 2px solid;
+  border-color: #f7f2ec;
+}
+
+body.fire_escape .nav_bar .nav_menu p {
+  font-family: 'InterSemiBold';
+  font-size: 1.1vw; /* 14px --> 18px */
+  font-weight: 600;
+}
+
+body.fire_escape .search_bar p {
+  font-size: 1.1vw;
+  font-family: 'InterRegular';
+  font-weight: 400;
+  color: black;
+  opacity: 0.5;
+  margin-top: 0.6vh;
+  margin-left: 1.1vw;
+}
+
+.logo_div {
+  display: inline-block;
+  position: absolute;
+  margin-top: 1.7vh;
+  margin-left: 17.9vw;
+}
+
+.logo {
+  width: 3.5vw;
+}
+
+.search_bar {
+  display: inline-block;
+  width: 19.3vw;
+  height: 4.1vh;
+  background-color: #f7f2ec;
+  border-radius: 60px;
+  position: absolute;
+  margin-top: 1.8vh;
+  right: 0;
+  margin-right: 3.9vw;
+}
+
+body.fire_escape .content {
+  padding: 8.2vh 22.7vw 0 22.7vw;
+}
+
+body.fire_escape .content div {
+  width: 18.8vw;
+  margin-top: 1.25vh;
+  position: relative;
+}
+
+.quiz_tags {
+  width: 18.8vw;
+  position: relative;
+}
+
+body.fire_escape .content .quiz_descriptor {
+  position: relative;
+  color: black;
+  font-size: 1.4vw;
+  margin-top: 5.6vh;
+  width: 54.7vw;
+}
+
+.quiz_illustration {
+  position: relative;
+  width: 54.7vw;
+  margin-top: 1.1vh;
+}
+
+body.fire_escape .content .quiz_text {
+  position: relative;
+  color: black;
+  font-size: 1.4vw;
+  margin-top: 2.5vh;
+  width: 54.7vw;
+}
+
+.quiz_answer {
+  position: relative;
+  width: 54.7vw;
+  margin-top: 3.6vh;
+  margin-bottom: 5vh;
+}

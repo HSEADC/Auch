@@ -8,8 +8,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    page: './src/page.jsx'
+    index: './src/index.js'
   },
   output: {
     filename: '[name].js',
@@ -80,8 +79,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/index.html',
-      filename: './index.html',
-      chunks: ['index']
+      filename: './index.html'
+      // chunks: ['index']
     }),
 
     // Internal pages
@@ -89,8 +88,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards.html',
-      filename: './cards.html',
-      chunks: ['page']
+      filename: './cards.html'
+      // chunks: ['page']
     }),
 
     // Articles page
@@ -98,8 +97,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles.html',
-      filename: './articles.html',
-      chunks: ['page']
+      filename: './articles.html'
+      // chunks: ['page']
     }),
 
     // Quizes page
@@ -107,17 +106,17 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/quizes.html',
-      filename: './quizes.html',
-      chunks: ['page']
+      filename: './quizes.html'
+      // chunks: ['page']
     }),
 
     // fireEscape quiz page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/quizes/fireEscape.html',
-      filename: './quizes/fireEscape.html',
-      chunks: ['page']
+      template: './src/quizes/fire_escape.html',
+      filename: './quizes/fire_escape.html'
+      // chunks: ['page']
     }),
 
     // fire article page
@@ -125,8 +124,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/fire.html',
-      filename: './articles/fire.html',
-      chunks: ['page']
+      filename: './articles/fire.html'
+      // chunks: ['page']
     }),
 
     // Partials

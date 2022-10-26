@@ -1,5 +1,5 @@
 body.main_page {
-  background-color: #f7f2ec;
+  background-color: var(--softpillowbeige);
   overflow-x: hidden;
 }
 
@@ -14,7 +14,7 @@ body.main_page p {
   font-size: 1.88vw;
   line-height: 146%;
   font-weight: 400;
-  color: #f7f2ec;
+  color: var(--softpillowbeige);
 }
 
 body.main_page h1 {
@@ -35,7 +35,7 @@ body.main_page h2 {
 }
 
 body.main_page .nav_bar {
-  background-color: #ff7961;
+  background-color: var(--orangelight);
   height: 8vh !important;
   display: inline-block;
 }
@@ -64,7 +64,7 @@ body.main_page .nav_bar .nav_menu .page_link {
 body.main_page .nav_bar .nav_menu .active {
   opacity: 1;
   border-bottom: 2px solid;
-  border-color: #f7f2ec;
+  border-color: var(--softpillowbeige);
 }
 
 body.main_page .nav_bar .nav_menu p {
@@ -95,7 +95,7 @@ body.main_page .search_bar {
   display: inline-block;
   width: 19.3vw;
   height: 4.1vh;
-  background-color: #f7f2ec;
+  background-color: var(--softpillowbeige);
   border-radius: 60px;
   position: absolute;
   right: 0;

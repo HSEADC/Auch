@@ -128,6 +128,24 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    // temporary burn card page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/extras/burn.html',
+      filename: './extras/burn.html'
+      // chunks: ['page']
+    }),
+
+    // temporary landing page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/extras/main.html',
+      filename: './extras/main.html'
+      // chunks: ['page']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

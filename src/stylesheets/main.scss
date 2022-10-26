@@ -1,22 +1,23 @@
-body.fire_escape {
+body.main_page {
   background-color: #f7f2ec;
   overflow-x: hidden;
 }
 
-body.fire_escape section {
+body.main_page section {
   width: 100vw;
   height: 100vh;
   position: relative;
 }
 
-body.fire_escape p {
+body.main_page p {
   font-family: 'InterRegular';
   font-size: 1.88vw;
   line-height: 146%;
   font-weight: 400;
+  color: #f7f2ec;
 }
 
-body.fire_escape h1 {
+body.main_page h1 {
   font-family: 'InterMedium';
   font-size: 2.8vw; /* 36 */
   line-height: 146%;
@@ -24,7 +25,7 @@ body.fire_escape h1 {
   color: black;
 }
 
-body.fire_escape h2 {
+body.main_page h2 {
   font-family: 'InterMedium';
   font-size: 1.7vw; /* 22 */
   line-height: 146%;
@@ -33,45 +34,45 @@ body.fire_escape h2 {
   position: relative;
 }
 
-body.fire_escape .nav_bar {
+body.main_page .nav_bar {
   background-color: #ff7961;
   height: 8vh !important;
   display: inline-block;
 }
 
-body.fire_escape .nav_bar div {
+body.main_page .nav_bar div {
   display: inline-block;
 }
 
-body.fire_escape .nav_bar .nav_menu {
+body.main_page .nav_bar .nav_menu {
   padding: 0;
   margin-top: 1.1vh;
   margin-left: 3.9vw;
   position: relative;
 }
 
-body.fire_escape .nav_bar .nav_menu div {
+body.main_page .nav_bar .nav_menu div {
   display: inline-block;
 }
 
-body.fire_escape .nav_bar .nav_menu .page_link {
+body.main_page .nav_bar .nav_menu .page_link {
   display: inline-block;
   padding: 1.4vh 1.2vw 1.4vh 1.2vw;
   opacity: 0.6;
 }
 
-body.fire_escape .nav_bar .nav_menu .active {
+body.main_page .nav_bar .nav_menu .active {
   opacity: 1;
   border-bottom: 2px solid;
   border-color: #f7f2ec;
 }
 
-body.fire_escape .nav_bar .nav_menu p {
+body.main_page .nav_bar .nav_menu p {
   font-size: 1.1vw; /* 14px --> 18px */
   font-weight: 600;
 }
 
-body.fire_escape .search_bar p {
+body.main_page .search_bar p {
   font-size: 1.1vw;
   font-family: 'InterRegular';
   font-weight: 400;
@@ -80,17 +81,17 @@ body.fire_escape .search_bar p {
   margin: 0.6vh 0 0 1.1vw;
 }
 
-body.fire_escape .logo_div {
+body.main_page .logo_div {
   display: inline-block;
   position: absolute;
   margin: 1.7vh 0 0 16.1vw;
 }
 
-body.fire_escape .logo {
+body.main_page .logo {
   width: 3.5vw;
 }
 
-body.fire_escape .search_bar {
+body.main_page .search_bar {
   display: inline-block;
   width: 19.3vw;
   height: 4.1vh;
@@ -101,46 +102,29 @@ body.fire_escape .search_bar {
   margin: 1.8vh 3.9vw 0 0;
 }
 
-body.fire_escape .content {
-  padding: 8.2vh 22.7vw 0 22.7vw;
+body.main_page .hot_top_illustration {
+  position: relative;
+  width: 73.4vw;
+  margin-top: 0.86vh;
 }
 
-body.fire_escape .content div {
-  width: 18.8vw;
-  margin-top: 1.25vh;
+body.main_page .content_links {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 73.4vw;
+  margin: 0.86vh 0 5vh 0;
 }
 
-.quiz_tags {
-  width: 18.8vw;
-  position: relative;
+body.main_page .blank_one {
+  margin-right: 1.6vw;
+  width: 26.6vw;
+  display: inline-block;
+  vertical-align: top;
 }
 
-body.fire_escape .content .quiz_descriptor {
-  position: relative;
-  color: black;
-  font-size: 1.4vw;
-  margin-top: 5.6vh;
-  width: 54.7vw;
-}
-
-.quiz_illustration {
-  position: relative;
-  width: 54.7vw;
-  margin-top: 1.1vh;
-}
-
-body.fire_escape .content .quiz_text {
-  position: relative;
-  color: black;
-  font-size: 1.4vw;
-  margin-top: 2.5vh;
-  width: 54.7vw;
-}
-
-.quiz_answer {
-  position: relative;
-  width: 54.7vw;
-  margin-top: 3.6vh;
-  margin-bottom: 5vh;
+body.main_page .card_blank {
+  width: 16.3vw;
+  display: inline-block;
+  vertical-align: top;
 }

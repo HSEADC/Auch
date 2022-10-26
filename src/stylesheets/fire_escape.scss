@@ -1,5 +1,5 @@
 body.fire_escape {
-  background-color: #f7f2ec;
+  background-color: var(--softpillowbeige);
   overflow-x: hidden;
 }
 
@@ -34,7 +34,7 @@ body.fire_escape h2 {
 }
 
 body.fire_escape .nav_bar {
-  background-color: #ff7961;
+  background-color: var(--orangelight);
   height: 8vh !important;
   display: inline-block;
 }
@@ -63,7 +63,7 @@ body.fire_escape .nav_bar .nav_menu .page_link {
 body.fire_escape .nav_bar .nav_menu .active {
   opacity: 1;
   border-bottom: 2px solid;
-  border-color: #f7f2ec;
+  border-color: var(--softpillowbeige);
 }
 
 body.fire_escape .nav_bar .nav_menu p {
@@ -94,7 +94,7 @@ body.fire_escape .search_bar {
   display: inline-block;
   width: 19.3vw;
   height: 4.1vh;
-  background-color: #f7f2ec;
+  background-color: var(--softpillowbeige);
   border-radius: 60px;
   position: absolute;
   right: 0;

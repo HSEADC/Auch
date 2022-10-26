@@ -1,5 +1,5 @@
 body.index {
-  background-color: #f7f2ec;
+  background-color: var(--softpillowbeige);
   overflow-x: hidden;
 }
 a {
@@ -20,7 +20,7 @@ section {
   position: absolute;
   width: 100%;
   text-align: center;
-  color: #f7f2ec;
+  color: var(--softpillowbeige);
 }
 h1 {
   font-family: 'InterSemiBold';
@@ -45,7 +45,7 @@ p {
   font-family: 'InterRegular';
   font-size: 1.88vw;
   line-height: 140%;
-  color: #f7f2ec;
+  color: var(--softpillowbeige);
 }
 .menuleft {
   display: flex;
@@ -65,15 +65,15 @@ p {
   color: var(--lifevestorange);
 }
 .about {
-  color: #f96247;
+  color: var(--lifevestorange);
   width: 14vw;
 }
 .vk {
-  color: #231f1c;
+  color: black;
   padding-right: 15%;
 }
 .tg {
-  color: #231f1c;
+  color: black;
 }
 .firstfigure {
   position: absolute;
@@ -83,10 +83,10 @@ p {
   width: 100vw;
 }
 .firsttext {
-  color: #231f1c;
+  color: black;
 }
 .redtext {
-  color: #f96247;
+  color: var(--lifevestorange);
 }
 .abouttext {
   padding-top: 15%;
@@ -121,7 +121,7 @@ p {
     '.   three .   ';
 }
 .textread1 {
-  color: #f7f2ec;
+  color: var(--softpillowbeige);
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -132,7 +132,7 @@ p {
   margin-top: 2%;
 }
 .textread2 {
-  color: #f7f2ec;
+  color: var(--softpillowbeige);
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -140,7 +140,7 @@ p {
   grid-area: two;
 }
 .textread3 {
-  color: #f7f2ec;
+  color: var(--softpillowbeige);
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -157,7 +157,7 @@ p {
   position: relative;
   margin-top: -26%;
   margin-left: 0%;
-  color: #f7f2ec;
+  color: var(--softpillowbeige);
   z-index: 1;
 }
 .alarmsmall {
@@ -185,10 +185,10 @@ p {
   right: 3%;
   top: 80%;
   text-align: right;
-  color: #f96247;
+  color: var(--lifevestorange);
 }
 #email {
-  color: #f96247;
+  color: var(--lifevestorange);
   padding: 5px 25px;
   margin-top: 4%;
   width: 26vw;
@@ -196,13 +196,13 @@ p {
   font-size: 1.25vw;
   border: none;
   border-radius: 66px;
-  background-color: #f7f2ec;
+  background-color: var(--softpillowbeige);
   cursor: pointer;
   text-decoration: none;
 }
 #emailb {
   margin-left: -9%;
-  color: #f96247;
+  color: var(--lifevestorange);
   font-size: 1.25vw;
   border: none;
   background: transparent;

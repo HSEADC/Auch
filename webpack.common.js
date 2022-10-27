@@ -146,6 +146,16 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    // temporary about page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/about.html',
+      filename: './about.html'
+      // chunks: ['page']
+    }),
+
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

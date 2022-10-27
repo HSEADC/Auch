@@ -22,6 +22,11 @@ body.index .firstname {
   text-align: center;
   color: var(--softpillowbeige);
 }
+
+body.index .firstname h2 {
+  margin-top: 2vh;
+}
+
 body.index h1 {
   font-family: 'InterSemiBold';
   font-size: 10vw;

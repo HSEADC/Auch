@@ -1,8 +1,8 @@
 body.about {
-  background-color: #F7F2EC;
+  background-color: var(--softpillowbeige);
   overflow-x: hidden;
 }
-body.about section{
+body.about section {
   height: 100vh;
   width: 100%;
 }
@@ -11,10 +11,15 @@ body.about .firstname {
   position: absolute;
   width: 100%;
   text-align: center;
-  color: #F96247;
+  color: var(--lifevestorange);
 }
-body.about h1{
-  font-family: "InterSemiBold";
+
+body.about .firstname h2 {
+  margin-top: 2vh;
+}
+
+body.about h1 {
+  font-family: 'InterSemiBold';
   font-size: 10vw;
 }
 body.about .menuleft {
@@ -30,24 +35,24 @@ body.about .menuright {
   position: absolute;
 }
 body.about h2 {
-  font-family: "InterSemiBold";
+  font-family: 'InterSemiBold';
   font-size: 1.88vw;
   line-height: 121%;
 }
-body.about .promo{
- padding-right: 20%;
- color: #231F1C;
+body.about .promo {
+  padding-right: 20%;
+  color: black;
 }
-body.about .about{
-  color: #F96247;
+body.about .about {
+  color: var(--lifevestorange);
   width: 14vw;
 }
-body.about .vk{
- color: #231F1C;
- padding-right: 15%;
+body.about .vk {
+  color: black;
+  padding-right: 15%;
 }
-body.about .tg{
- color: #231F1C;
+body.about .tg {
+  color: black;
 }
 body.about a {
   color: black;
@@ -61,7 +66,7 @@ body.about a:hover {
   left: 20%;
   top: 16%;
 }
-.shapem1{
+.shapem1 {
   width: 19vw;
 }
 .figure2 {
@@ -69,7 +74,7 @@ body.about a:hover {
   left: 4%;
   top: 48%;
 }
-.shapem2{
+.shapem2 {
   width: 19vw;
 }
 .figure3 {
@@ -77,7 +82,7 @@ body.about a:hover {
   left: 58%;
   top: 18%;
 }
-.shapem3{
+.shapem3 {
   width: 25vw;
 }
 .figure4 {
@@ -85,7 +90,7 @@ body.about a:hover {
   left: 40%;
   top: 72%;
 }
-.shapem4{
+.shapem4 {
   width: 12vw;
 }
 .figure5 {
@@ -93,32 +98,32 @@ body.about a:hover {
   left: 75%;
   top: 60%;
 }
-.shapem5{
+.shapem5 {
   width: 16vw;
 }
-body.about p{
-  font-family: "InterRegular";
+body.about p {
+  font-family: 'InterRegular';
   font-size: 1.88vw;
   line-height: 140%;
-  color: #F7F2EC;
+  color: var(--softpillowbeige);
 }
-.tp21{
+body.about .btp21 .tp21 {
   position: absolute;
-  font-family: "InterMedium";
+  font-family: 'InterMedium';
   top: 15%;
   left: 5%;
 }
-.tp22{
+body.about .btp22 .tp22 {
   position: absolute;
-  font-family: "InterMedium";
+  font-family: 'InterMedium';
   top: 8%;
   left: 5%;
 }
-.tp23{
+body.about .btp23 .tp23 {
   position: absolute;
-  font-family: "InterMedium";
+  font-family: 'InterMedium';
   top: 18%;
-  left: 6%;
+  left: 5%;
 }
 .btp21 {
   position: absolute;
@@ -126,7 +131,7 @@ body.about p{
   top: 111%;
   z-index: -3;
 }
-.backtext1{
+.backtext1 {
   width: 54.69vw;
 }
 .btp22 {
@@ -135,10 +140,10 @@ body.about p{
   top: 122%;
   z-index: -2;
 }
-.backtext2{
+.backtext2 {
   width: 46.88vw;
 }
-.shape44{
+.shape44 {
   top: 37%;
   left: 58%;
   position: absolute;
@@ -150,77 +155,77 @@ body.about p{
   top: 146%;
   z-index: -1;
 }
-.backtext3{
+.backtext3 {
   width: 46.88vw;
 }
-.pillsd{
+.pillsd {
   margin-top: -28%;
   margin-left: 2%;
 }
-.pills{
+.pills {
   width: 44%;
   position: relative;
   margin-left: 0%;
   margin-bottom: 0%;
 }
-.tim {
+body.about .btp23 .tim {
   position: relative;
-  font-family: "InterMedium";
-  font-size: 2.50vw;
-  color: #F96247;
+  font-family: 'InterMedium';
+  font-size: 2.5vw;
+  color: var(--lifevestorange);
   transform: rotate(22.84deg);
   margin-top: 0%;
   margin-left: 0%;
 }
-.inna {
+body.about .btp23 .inna {
   position: relative;
-  font-family: "InterMedium";
-  font-size: 2.50vw;
-  color: #F96247;
+  font-family: 'InterMedium';
+  font-size: 2.5vw;
+  color: var(--lifevestorange);
   margin-top: 1%;
   margin-left: 19%;
   transform: rotate(42.4deg);
 }
-.danil {
+body.about .btp23 .danil {
   position: relative;
-  font-family: "InterMedium";
-  font-size: 2.50vw;
-  color: #F96247;
+  font-family: 'InterMedium';
+  font-size: 2.5vw;
+  color: var(--lifevestorange);
   margin-top: -45%;
   margin-left: 14%;
   transform: rotate(-6.35deg);
 }
-.backp3{
-  background-color: #F96247;
+.backp3 {
+  background-color: var(--lifevestorange);
   text-align: center;
   overflow: hidden;
 }
-.cards{
-margin-top: 6%;
-width: 80vw;
+.cards {
+  margin-top: 6%;
+  width: 80vw;
 }
 body.about h3 {
-  font-family: "InterSemiBold";
+  font-family: 'InterSemiBold';
   font-size: 5vw;
   line-height: 95%;
 }
-.soshead{
-  color: #F7F2EC;
+.soshead {
+  color: var(--softpillowbeige);
   margin-top: 5%;
 }
-.sosdescript{
-  color: #F7F2EC;
+.sosdescript {
+  color: var(--softpillowbeige);
   line-height: 121%;
   margin-top: 1%;
 }
-.p4text{
+.p4text {
   position: relative;
   margin-top: 10%;
   margin-left: 6%;
-  color: #231F1C;
+  color: black;
 }
-.whodescript{
-  color: #231F1C;
+body.about .p4text p {
+  color: black;
   margin-top: 2%;
 }
 .p4blocks {
@@ -229,58 +234,59 @@ body.about h3 {
   display: flex;
   justify-content: space-around;
 }
-.p4block1{
+.p4block1 {
   margin-left: 2%;
 }
-.p4text1{
+body.about .p4blocks .p4text1 {
   margin-top: 3%;
-  margin-left: 5%;
+  margin-left: 7.5%;
 }
-.backp4{
+.backp4 {
   width: 46vw;
 }
-.travelers {
-  font-family: "InterMedium";
+body.about .p4blocks .travelers {
+  font-family: 'InterMedium';
   font-size: 2.81vw;
   margin-top: -52%;
-  margin-left: 5%;
+  margin-left: 7.5%;
 }
-.cardhole{
+.cardhole {
   position: absolute;
   top: 399%;
   left: 53%;
 }
-.p5text{
+.p5text {
   text-align: center;
   position: relative;
-  color: #F96247;
+  color: var(--lifevestorange);
   padding-top: 9%;
 }
-.readydescript {
-  color: #F96247;
+body.about .sectfoot .readydescript {
+  color: var(--lifevestorange);
   margin-top: 1%;
 }
-body.about .allfoot{
-  margin-top: 9%;
-  position: relative;
+body.about .allfoot {
+  bottom: 0;
+  position: absolute;
   width: 100%;
 }
-.footer{
+.footer {
   width: 100%;
 }
-.footersh{
+.footersh {
   position: absolute;
   width: 3%;
   top: 75%;
   left: 3%;
 }
-body.about .footername{
+body.about .footername {
   position: absolute;
   right: 3%;
   top: 80%;
   text-align: right;
-  color: #F7F2EC;
+  color: var(--softpillowbeige);
 }
-.sectfoot{
+.sectfoot {
   overflow: hidden;
+  position: relative;
 }

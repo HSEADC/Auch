@@ -98,13 +98,20 @@ body.index .redtext {
 body.index .abouttext {
   padding-top: 15%;
   margin-left: 4%;
+  width: 45vw;
   /* width: 555px; */
+}
+.firstfigure1 {
+  display: none;
 }
 .firstimg {
   width: 100%;
   text-align: right;
   margin-top: -30%;
   position: absolute;
+}
+.firstimg1 {
+  display: none;
 }
 .img1 {
   width: 50%;
@@ -114,6 +121,15 @@ body.index .abouttext {
 }
 .secondfigureimg {
   width: 100vw;
+}
+.circle {
+  display: none;
+}
+.rectangle {
+  display: none;
+}
+.triangle {
+  display: none;
 }
 .texttriple {
   margin-top: -50%;
@@ -159,6 +175,9 @@ body.index .abouttext {
   padding-top: 8%;
   text-align: center;
 }
+.tabletrect {
+  display: none;
+}
 .alarmtext {
   text-align: center;
   position: relative;
@@ -169,6 +188,8 @@ body.index .abouttext {
 }
 .alarmsmall {
   margin-top: 2%;
+  width: 40vw;
+  margin-left: 31%;
 }
 .thirdfigureimg {
   width: 74vw;

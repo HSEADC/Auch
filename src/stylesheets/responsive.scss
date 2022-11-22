@@ -1,0 +1,95 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body.index .firstfigure {
+    display: none;
+  }
+  .firstfigure1 {
+    display: block;
+    position: absolute;
+    top: 19%;
+  }
+  .firstfigureimg1 {
+    width: 100vw;
+  }
+  body.index .firstname {
+    top: 44%;
+  }
+  .firstimg {
+    display: none;
+  }
+  .firstimg1 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 13%;
+    position: absolute;
+  }
+  .img11 {
+    width: 90%;
+  }
+  body.index .abouttext {
+    padding-top: 18%;
+    margin-left: 22%;
+    width: 49vw;
+    /* width: 555px; */
+  }
+  .secondfigure {
+    display: none;
+  }
+  .section3 {
+    background: var(--lifevestorange);
+  }
+  .circle {
+    margin-bottom: 10%;
+    display: block;
+    text-align: right;
+  }
+  .circlearticles {
+    width: 55vw;
+  }
+  .rectangle {
+    margin-top: -26%;
+    display: block;
+  }
+  .rectanglecards {
+    width: 73vw;
+  }
+  .triangle {
+    text-align: right;
+    margin-top: -45%;
+    display: block;
+  }
+  .triangletests {
+    width: 65vw;
+  }
+  body.index .allfoot {
+    bottom: -297%;
+  }
+  .thirdfigure {
+    margin-top: 0%;
+  }
+  .thirdfigureimg {
+    display: none;
+  }
+  .tabletrect {
+    width: 69vw;
+    display: flex;
+    margin-left: 16%;
+    padding-top: 27%;
+  }
+  .alarmsmall {
+    margin-top: 2%;
+    width: 30vw;
+    margin-left: 35%;
+  }
+  .alarmhead {
+    width: 49vw;
+    margin-left: 26%;
+  }
+  .alarmtext {
+    margin-top: -44%;
+  }
+  #email {
+    height: 3vh;
+    margin-top: 9%;
+  }
+}

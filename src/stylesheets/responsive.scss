@@ -1,95 +1,304 @@
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  body.index .firstfigure {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+body.index {
+  h1{
+  font-size: 2.34vw;
+  }
+  p{
+  font-size: 2.34vw;
+  }
+  span {
+    font-size: 2.50vw;
+    -webkit-text-stroke:0.15vw var(--sickyellow);
+  }
+  .mainlogo{
+    width: 71.29vw;
+  }
+  .ouch{
+    margin-top: 34%;
+  }
+  .arrow{
+    margin-left: 24%;
+  }
+  .arrowimg{
     display: none;
   }
-  .firstfigure1 {
+  .arrowimgtab{
     display: block;
-    position: absolute;
-    top: 19%;
+    width: 9.08vw;
   }
-  .firstfigureimg1 {
-    width: 100vw;
+  .firsttext{
+    padding-top: 4%;
+    margin-left: 4%;
+    width: 43vw;
   }
-  body.index .firstname {
-    top: 44%;
-  }
-  .firstimg {
+  .textstack{
     display: none;
   }
-  .firstimg1 {
-    text-align: center;
-    display: block;
-    width: 100%;
-    margin-top: 13%;
-    position: absolute;
+  .textstacktab{
+    display: flex;
+    width: 95.5vw;
   }
-  .img11 {
-    width: 90%;
+  .textimg{
+    margin-top: 19%;
   }
-  body.index .abouttext {
-    padding-top: 18%;
-    margin-left: 22%;
-    width: 49vw;
-    /* width: 555px; */
+  .back{
+    padding-top: 10%;
   }
-  .secondfigure {
+  .backrect{
     display: none;
   }
-  .section3 {
-    background: var(--lifevestorange);
+  .backrecttab{
+  display: block;
+  width: 83.01vw;
   }
-  .circle {
-    margin-bottom: 10%;
-    display: block;
-    text-align: right;
+  .cardsb{
+    margin-top: -100%;
+   }
+  .cards{
+    width: 59.86vw;
   }
-  .circlearticles {
-    width: 55vw;
+  .secondtextb{
+    margin-top: 10%;
   }
-  .rectangle {
-    margin-top: -26%;
-    display: block;
-  }
-  .rectanglecards {
-    width: 73vw;
-  }
-  .triangle {
-    text-align: right;
-    margin-top: -45%;
-    display: block;
-  }
-  .triangletests {
+  .secondtext{
     width: 65vw;
   }
-  body.index .allfoot {
-    bottom: -297%;
+  .cib{
+    margin-left: 14%;
+    margin-top: -1%;
   }
-  .thirdfigure {
-    margin-top: 0%;
+  .cardillust{
+    width: 20vw;
   }
-  .thirdfigureimg {
+  .chib{
+    margin-left: 66%;
+    margin-top: -55%;
+  }
+  .checkillust{
+    width: 20vw;
+  }
+  .lasthead{
+    padding-top: 61%;
+  }
+  .lastheadimg{
     display: none;
   }
-  .tabletrect {
-    width: 69vw;
-    display: flex;
-    margin-left: 16%;
-    padding-top: 27%;
+  .lastheadimgtab{
+    display: block;
+    width: 59.57vw;
   }
-  .alarmsmall {
-    margin-top: 2%;
-    width: 30vw;
-    margin-left: 35%;
+  .lastdecript{
+    width: 41vw;
   }
-  .alarmhead {
-    width: 49vw;
-    margin-left: 26%;
-  }
-  .alarmtext {
-    margin-top: -44%;
+  .emaild{
+    width: 100vw;
+    text-align: center;
   }
   #email {
-    height: 3vh;
-    margin-top: 9%;
+    font-family: 'Diagramatika';
+    color: var(--sickyellow);
+    padding: 5px 25px;
+    margin-top: 4%;
+    width: 33.01vw;
+    height: 3.73vh;
+    font-size: 1.56vw;
+    border: none;
+    border-radius: 66px;
+    background-color: var(--blueishblue);
+    cursor: pointer;
+    text-decoration: none;
   }
+  #emailb {
+    font-family: 'Diagramatika';
+    margin-left: -10%;
+    color: var(--sickyellow);
+    font-size: 1.56vw;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .clock{
+    margin-top: 4%;
+    margin-left: 4%;
+  }
+  .clockillust{
+    width: 50vw;
+  }
+  .letter{
+    margin-top: -110%;
+    margin-left: 4%;
+  }
+  .letterillust{
+    width: 37vw;
+  }
+  .boy{
+    margin-top: -18%;
+    margin-left: 53%;
+  }
+  .boyillust{
+    width: 49vw;
+  }
+  .draw{
+    margin-top: -4%;
+    margin-left: 53%;
+  }
+  .drawillust{
+    width: 28vw;
+  }
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+body.index {
+  h1{
+  font-size: 4.35vw;
+  }
+  p{
+  font-size: 4.35vw;
+;
+  }
+  span {
+    font-size: 5.56vw;
+    -webkit-text-stroke:0.15vw var(--sickyellow);
+  }
+  .underimg1, .underimg2, .underimg3{
+    width: 21.74vw;
+  }
+  .mainlogo{
+    width: 87.92vw;
+  }
+  .ouch{
+    margin-top: 34%;
+  }
+  .arrow{
+    margin-top:-4%;
+    margin-left: 10%;
+  }
+  .arrowimg{
+    display: none;
+  }
+  .arrowimgmob{
+    display: block;
+    width: 9.90vw;
+  }
+  .firsttext{
+    padding-top: 7%;
+    margin-left: 8%;
+    width: 80vw;
+  }
+  .textstack{
+    display: none;
+  }
+  .textstackmob{
+    display: flex;
+    width: 98vw;
+  }
+  .textimg{
+    margin-top: 19%;
+  }
+  .back{
+    padding-top: 19%;
+  }
+  .backrect{
+    display: none;
+  }
+  .backrectmob{
+  display: block;
+  width: 100vw;
+  }
+  .cardsb{
+    margin-top: -167%;
+   }
+  .cards{
+    width: 71vw;
+  }
+  .secondtextb{
+    margin-top: 19%;
+  }
+  .secondtext{
+    width: 65vw;
+  }
+  .cib{
+    margin-left: 16%;
+    margin-top: -1%;
+  }
+  .cardillust{
+    width: 30vw;
+  }
+  .chib{
+    margin-left: 57%;
+    margin-top: -108%;
+  }
+  .checkillust{
+    width: 30vw;
+  }
+  .lasthead{
+    padding-top: 72%;
+  }
+  .lastheadimg{
+    display: none;
+  }
+  .lastheadimgmob{
+    display: block;
+    width: 87.68vw;
+  }
+  .lastdecript{
+    width: 75vw;
+  }
+  .emaild{
+    width: 100vw;
+    text-align: center;
+  }
+  #email {
+    font-family: 'Diagramatika';
+    color: var(--sickyellow);
+    padding: 5px 25px;
+    margin-top: 9%;
+    width: 70vw;
+    height: 6vh;
+    font-size: 3.86vw;
+    border: none;
+    border-radius: 66px;
+    background-color: var(--blueishblue);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #emailb {
+    font-family: 'Diagramatika';
+    margin-left: -24%;
+    color: var(--sickyellow);
+    font-size: 3.86vw;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .clock{
+    margin-top: 3%;
+    margin-left: -1%;
+  }
+  .clockillust{
+    width: 59vw;
+  }
+  .letter{
+    margin-top: -163%;
+    margin-left: -3%;
+  }
+  .letterillust{
+    width: 46vw;
+  }
+  .boy{
+    margin-top: -18%;
+    margin-left: 41%;
+  }
+  .boyillust{
+    width: 64vw;
+  }
+  .draw{
+    margin-top: 19%;
+    margin-left: 65%;
+  }
+  .drawillust{
+    width: 35vw;
+  }
+}
 }

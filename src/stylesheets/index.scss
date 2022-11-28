@@ -1,222 +1,184 @@
 body.index {
-  background-color: var(--softpillowbeige);
+  body{
+  background-color: var(--palegrey);
   overflow-x: hidden;
 }
-body.index a {
-  color: black;
-  text-decoration: none; /* no underline */
-}
-
-body.index a:hover {
-  color: var(--lifevestorange);
-}
-
-body.index section {
+section {
   height: 100vh;
   margin: 0;
 }
-body.index .firstname {
-  top: 40%;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: var(--softpillowbeige);
+h1{
+font-family: 'Diagramatika';
+font-size: 1.88vw;
+font-weight: normal;
+color: var(--blueishblue);
 }
-
-body.index .firstname h2 {
-  margin-top: 2vh;
+p{
+font-family: 'Diagramatika';
+font-size: 1.88vw;
+font-weight: normal;
+line-height: 121%;
 }
-
-body.index h1 {
-  font-family: 'InterSemiBold';
-  font-size: 10vw;
+span {
+  font-family: '21Cent-Italic';
+  font-size: 2.50vw;
+  font-weight: normal;
+  color: var(--sickyellow);
+  -webkit-text-stroke:0.15vw var(--sickyellow);
 }
-body.index h2 {
-  font-family: 'InterSemiBold';
-  font-size: 1.88vw;
-  line-height: 121%;
-}
-body.index h3 {
-  font-family: 'InterSemiBold';
-  font-size: 5vw;
-  line-height: 95%;
-}
-body.index h4 {
-  font-family: 'InterSemiBold';
-  font-size: 3.76vw;
-  line-height: 121%;
-}
-body.index p {
-  font-family: 'InterRegular';
-  font-size: 1.88vw;
-  line-height: 140%;
-  color: var(--softpillowbeige);
-}
-// the beginning of the navbar
-body.index .menuleft {
+.navigation {
+  width: 91vw;
   display: flex;
   left: 4%;
-  top: 4%;
-  position: absolute;
-}
-body.index .menuright {
-  display: flex;
-  right: 6%;
-  top: 4%;
-  position: absolute;
-}
-
-body.index .promo {
-  padding-right: 20%;
-  color: var(--lifevestorange);
-}
-body.index .about {
-  color: var(--lifevestorange);
-  width: 14vw;
-}
-body.index .vk {
-  color: black;
-  padding-right: 15%;
-}
-body.index .tg {
-  color: black;
-}
-// the end of the navbar
-body.index .firstfigure {
-  position: absolute;
-  top: 15%;
-}
-body.index .firstfigureimg {
-  width: 100vw;
-}
-body.index .firsttext {
-  color: black;
-}
-body.index .redtext {
-  color: var(--lifevestorange);
-}
-body.index .abouttext {
-  padding-top: 15%;
-  margin-left: 4%;
-  width: 45vw;
-  /* width: 555px; */
-}
-.firstfigure1 {
-  display: none;
-}
-.firstimg {
-  width: 100%;
-  text-align: right;
-  margin-top: -30%;
-  position: absolute;
-}
-.firstimg1 {
-  display: none;
-}
-.img1 {
-  width: 50%;
-}
-.secondfigure {
-  margin-top: -10%;
-}
-.secondfigureimg {
-  width: 100vw;
-}
-.circle {
-  display: none;
-}
-.rectangle {
-  display: none;
-}
-.triangle {
-  display: none;
-}
-.texttriple {
-  margin-top: -50%;
-  width: 100vw;
-  display: grid;
-  /* gap: 10%; */
-  grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 90% 90% 90%;
-  grid-template-areas:
-    '.   one .   '
-    '.   two .   '
-    '.   three .   ';
-}
-.textread1 {
-  color: var(--softpillowbeige);
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 42vw;
-  grid-area: one;
-}
-.circtext {
-  margin-top: 2%;
-}
-.textread2 {
-  color: var(--softpillowbeige);
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 44vw;
-  grid-area: two;
-}
-.textread3 {
-  color: var(--softpillowbeige);
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 49.5vw;
-  grid-area: three;
-}
-.thirdfigure {
-  margin-top: 20%;
-  padding-top: 8%;
-  text-align: center;
-}
-.tabletrect {
-  display: none;
-}
-.alarmtext {
-  text-align: center;
+  top: 6%;
   position: relative;
-  margin-top: -26%;
-  margin-left: 0%;
-  color: var(--softpillowbeige);
-  z-index: 1;
+  justify-content: space-between;
 }
-.alarmsmall {
+.underimg1, .underimg2, .underimg3{
+  width: 10vw;
+}
+.underimg2, .underimg3{
+  opacity: 0;
+}
+.promob{
+  text-align: center;
+}
+.aboutb{
+  text-align: center;
+}
+.contactsb{
+  text-align: center;
+}
+.ouch{
+  margin-top: 0%;
+  text-align: center;
+  width: 100vw;
+}
+.mainlogo{
+  width: 64vw;
+}
+.descript{
   margin-top: 2%;
-  width: 40vw;
-  margin-left: 31%;
+  text-align: center;
 }
-.thirdfigureimg {
-  width: 74vw;
+.arrow{
+  margin-left: 27%;
+  margin-top: -2%;
 }
-body.index .allfoot {
-  /* margin-top: 11%; */
-  bottom: -311%;
-  position: absolute;
-  width: 100%;
-  height: 10vh;
+.arrowimg{
+  display: block;
+  width: 9vw;
 }
-
-.forthfigureimg {
-  position: absolute;
-  width: 3%;
-  top: 75%;
-  left: 3%;
+.arrowimgtab{
+  display: none
 }
-body.index .footername {
-  position: absolute;
-  right: 3%;
-  top: 80%;
-  text-align: right;
-  color: var(--lifevestorange);
+.arrowimgmob{
+  display: none
+}
+.firsttext{
+  color: var(--blueishblue);
+  padding-top: 4%;
+  margin-left: 4%;
+  width: 34vw;
+}
+.textstack{
+  display: block;
+  width: 94vw;
+}
+.textstacktab{
+  display: none;
+}
+.textstackmob{
+  display: none;
+}
+.textimg{
+  display: flex;
+  justify-content: space-around;
+  margin-top: -21%;
+}
+.back{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10%;
+  width: 100vw;
+  text-align: center;
+}
+.backrect{
+  width: 97vw;
+}
+.backrecttab{
+display: none;
+}
+.backrectmob{
+display: none;
+}
+.cardsb{
+  margin-top: -59%;
+  width: 100vw;
+  text-align: center;
+}
+.cards{
+  width: 44vw;
+}
+.secondtextb{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+.secondtext{
+  color: var(--palegrey);
+  /* padding-top: 0%;
+  margin-left: 24%; */
+  width: 52vw;
+}
+.cib{
+  margin-left: 4%;
+  margin-top: -16%;
+}
+.cardillust{
+  width: 22vw;
+}
+.chib{
+  margin-left: 71%;
+  margin-top: -39%;
+}
+.checkillust{
+  width: 22vw;
+}
+.lasthead{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 23%;
+  width: 100vw;
+  text-align: center;
+}
+.lastheadimg{
+  display: block;
+  width: 47.66vw;
+}
+.lastheadimgtab{
+  display: none;
+}
+.lastheadimgmob{
+  display: none;
+}
+.lastdescriptb{
+  margin-top: 0%;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.lastdecript{
+  width: 33vw;
+}
+.emaild{
+  width: 100vw;
+  text-align: center;
 }
 #email {
-  color: var(--lifevestorange);
+  font-family: 'Diagramatika';
+  color: var(--sickyellow);
   padding: 5px 25px;
   margin-top: 4%;
   width: 26vw;
@@ -224,15 +186,53 @@ body.index .footername {
   font-size: 1.25vw;
   border: none;
   border-radius: 66px;
-  background-color: var(--softpillowbeige);
+  background-color: var(--blueishblue);
   cursor: pointer;
   text-decoration: none;
 }
 #emailb {
+  font-family: 'Diagramatika';
   margin-left: -9%;
-  color: var(--lifevestorange);
+  color: var(--sickyellow);
   font-size: 1.25vw;
   border: none;
   background: transparent;
   cursor: pointer;
+}
+.clock{
+  position: relative;
+  z-index: -1;
+  margin-top: -19%;
+  margin-left: -3%;
+}
+.clockillust{
+  width: 37vw;
+}
+.letter{
+  position: relative;
+  z-index: -1;
+  margin-top: -54%;
+  margin-left: 21%;
+}
+.letterillust{
+  width: 29vw;
+}
+.boy{
+  position: relative;
+  z-index: -1;
+  margin-top: -24%;
+  margin-left: 56%;
+}
+.boyillust{
+  width: 45vw;
+}
+.draw{
+  position: relative;
+  z-index: -1;
+  margin-top: -8%;
+  margin-left: 54%;
+}
+.drawillust{
+  width: 23vw;
+}
 }

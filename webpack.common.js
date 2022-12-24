@@ -160,6 +160,15 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    // A page for an article "Как собраться в пустыню"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/desert.html',
+      filename: './articles/desert.html'
+      // chunks: ['page']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

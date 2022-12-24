@@ -1,0 +1,242 @@
+body.desert {
+  background: var(--palegrey);
+  overflow-x: hidden;
+  section {
+    margin: 0;
+  }
+  h1 {
+    font-family: 'InterSemiBold';
+    font-size: 1.09vw;
+    font-weight: normal;
+  }
+  h2 {
+    font-family: 'InterMedium';
+    font-size: 2.81vw;
+    font-weight: normal;
+  }
+  h3 {
+    font-family: 'InterMedium';
+    font-size: 1.72vw;
+    font-weight: normal;
+  }
+  h4 {
+    font-family: 'InterLight';
+    font-size: 0.94vw;
+    font-weight: normal;
+    color: var(--blueishblue);
+  }
+  h5 {
+    font-family: 'InterItalic';
+    font-size: 1.09vw;
+    font-weight: normal;
+    color: var(--blueishblue);
+    line-height: 146%;
+  }
+  h6 {
+    font-family: 'InterRegular';
+    font-size: 1.88vw;
+    font-weight: normal;
+    color: var(--blueishblue);
+    line-height: 146%;
+  }
+  p {
+    font-family: 'InterRegular';
+    font-size: 1.41vw;
+    font-weight: normal;
+    line-height: 146%;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  hr {
+    border: 1px solid var(--blueishblue);
+  }
+  .navback {
+    height: 8vh;
+    width: 100vw;
+    background-color: var(--black);
+  }
+  .navigation {
+    margin-top: -5vh;
+    margin-left: 4%;
+    width: 26.41vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .testsd {
+    opacity: 60%;
+    color: white;
+    text-align: center;
+  }
+  .maind {
+    opacity: 60%;
+    color: white;
+    text-align: center;
+  }
+  .articlesd {
+    color: white;
+    text-align: center;
+  }
+  .cardsd {
+    opacity: 60%;
+    color: white;
+    text-align: center;
+  }
+  .line {
+    margin-top: 18%;
+    background-color: white;
+    width: 5.44vw;
+    height: 0.3vh;
+  }
+  .mainline {
+    display: none;
+  }
+  .cardsline {
+    display: none;
+  }
+  .testsline {
+    display: none;
+  }
+  .logodiv {
+    margin-top: -7vh;
+    margin-left: -150%;
+  }
+  .logo {
+    width: 4.84vw;
+  }
+  #search {
+    font-family: 'InterLight';
+    padding: 5px 25px;
+    width: 19.3vw;
+    height: 4vh;
+    font-size: 1.09vw;
+    border: none;
+    border-radius: 66px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .magnifier {
+    display: none;
+  }
+  .searchdiv {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: -5.7vh;
+  }
+  .menuflex {
+    width: 96vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .artheaderflex {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .artheader {
+    width: 54.69vw;
+  }
+  .underheadflex {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .underhead {
+    width: 54.69vw;
+  }
+  .tag {
+    margin-left: 2%;
+    display: inline-block;
+    border-radius: 44px;
+    border: 1px solid var(--blueishblue);
+  }
+  .tagtext {
+    padding: 4px 11px 4px 11px;
+  }
+  .tagflex {
+    margin-top: 1.5%;
+    display: flex;
+    margin-left: -2%;
+  }
+  .socialflex {
+    margin-top: -3%;
+    margin-left: 86%;
+    width: 7.66vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .vk {
+    width: 1.56vw;
+  }
+  .ok {
+    width: 1.56vw;
+  }
+  .pinterest {
+    width: 1.56vw;
+  }
+  .tg {
+    width: 1.56vw;
+  }
+  .artpicflex {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .artpic {
+    overflow: hidden;
+    width: 54.69vw;
+    border-radius: 8px;
+    background-color: white;
+  }
+  .goat {
+    width: 56vw;
+    margin-top: -1%;
+  }
+  .pictextflex {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3%;
+  }
+  .pictext {
+    width: 47.81vw;
+  }
+  .maintextflex {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 18%;
+  }
+  .maintext {
+    width: 54.69vw;
+  }
+  .text {
+    margin-top: 1%;
+  }
+  .textheader {
+    margin-top: 3%;
+  }
+  .text {
+    margin-top: 3%;
+  }
+  .adding {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quote1 {
+    margin-top: 0%;
+    width: 10.7vw;
+  }
+  .addtext {
+    margin-top: 3%;
+    text-align: center;
+    width: 31.09vw;
+  }
+  .quote2 {
+    transform: rotate(-180deg);
+    margin-top: 0%;
+    width: 10.7vw;
+  }
+}

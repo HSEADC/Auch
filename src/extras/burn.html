@@ -6,58 +6,101 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <title>Тест</title>
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{ссылка}" />
+    <meta property="og:title" content="название" />
+    <meta property="og:description" content="текст" />
+    <meta property="og:image" content="{картинка}" />
+    <title>Ожог</title>
   </head>
   <body class="burn">
-    <!-- This page is created for presentative purposes only. In upcoming
-    modules all cards will be kept on src/cards.html as elements, not
-    separate html pages. -->
-    <section class="nav_bar">
-      <div class="nav_menu">
-        <div class="page_link"><p class="nav_text">Главная</p></div>
-        <div class="page_link"><p class="nav_text">Статьи</p></div>
-        <div class="page_link"><p class="nav_text">Тесты</p></div>
-        <div class="page_link active"><p class="nav_text">Карточки</p></div>
+    <section>
+      <div class="topblock">
+        <div class="navback">
+          <!-- <img class="back" src="./../images/navback.svg" alt="" /> -->
+        </div>
+        <div class="menuflex">
+          <div class="navigation">
+            <div class="maind">
+              <h1 class="main">
+                <a target="”_blank”" href="">Главная</a>
+              </h1>
+              <div class="line mainline"></div>
+            </div>
+            <div class="articlesd">
+              <h1 class="articles">
+                <a target="”_blank”" href="">Статьи</a>
+              </h1>
+              <div class="line articlesline"></div>
+            </div>
+            <div class="testsd">
+              <h1 class="tests">
+                <a target="”_blank”" href="">Тесты</a>
+              </h1>
+              <div class="line testsline"></div>
+            </div>
+            <div class="cardsd">
+              <h1 class="cards">
+                <a target="”_blank”" href="">Карточки</a>
+              </h1>
+              <div class="line cardsline"></div>
+            </div>
+          </div>
+          <div class="logodiv">
+            <img class="logo" src="../images/logo.svg" alt="" />
+          </div>
+          <div class="searchdiv">
+            <input
+              id="search"
+              type="search"
+              name="search"
+              placeholder="Я ищу..."
+            />
+            <img class="magnifier" src="../images/magnifier.svg" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="logo_div">
-        <img class="logo" src="../images/logolike.svg" alt="" />
+      <div class="cardsdiv">
+        <img class="cardsback" src="../images/cardsback.png" alt="" />
+        <img class="cardsbackmob" src="../images/cardsbackmob.png" alt="" />
       </div>
-      <div class="search_bar"><p class="search_text">Я ищу...</p></div>
+      <div class="cardbasic">
+        <div class="crossdiv">
+          <img class="cross" src="../images/cross.svg" alt="" />
+        </div>
+        <div class="cardflex">
+          <div class="card">
+            <h2 class="cardheader">Ожог</h2>
+            <hr />
+            <h3 class="textheader">Обычный</h3>
+            <div class="textflex">
+              <ol class="text">
+                <li>
+                  1. Охладить место ожога холодной водой, не&nbsp;использовать
+                  лёд.
+                </li>
+                <li>
+                  2. Снять украшения, не&nbsp;повреждая кожу. Если они прилипли,
+                  не&nbsp;трогать.
+                </li>
+                <li>3. Сохранять целостность пузырей.</li>
+                <li>4. Наложить защитную повязку из&nbsp;чистой ткани.</li>
+                <li>5. Защитить пострадавшего от&nbsp;ветра или дождя.</li>
+              </ol>
+            </div>
+            <h3 class="textheader">Серьезный</h3>
+            <div class="textflex">
+              <ol class="text">
+                <li>1. Вызвать скорую.</li>
+                <li>2. После охлаждения наложить влажную повязку.</li>
+              </ol>
+            </div>
+            <h4 class="library">
+              <a target="”_blank”" href="">в библиотеку карточек</a>
+            </h4>
+          </div>
+        </div>
+      </div>
     </section>
-    <section
-      class="content blurred"
-      style="padding: 8.2vh 13.3vw 0 13.3vw; filter: blur(0.5rem);"
-    >
-      <h1>Горячий топик</h1>
-      <a href="../articles/fire.html"
-        ><img src="../images/hot_top.svg" class="hot_top_illustration" alt=""
-      /></a>
-      <h1 style="margin-top: 6.25vh;">Панорама</h1>
-      <div class="content_links">
-        <a href="../articles/fire.html"
-          ><img src="../images/article_blank.svg" class="blank_one" alt=""
-        /></a>
-        <a href="../quizes/fire_escape.html"
-          ><img src="../images/test_blank.svg" class="blank_one" alt=""
-        /></a>
-        <img src="../images/card_blank.svg" class="card_blank" alt="" />
-      </div>
-    </section>
-    <div class="card">
-      <h1>Ожог</h1>
-      <h2>Обычный</h2>
-      <p>
-        1. Охладить место ожога холодной водой, не использовать лёд.<br /><br />2.
-        Снять украшения, не повреждая кожу. Если они прилипли, не трогать.<br /><br />3.
-        Сохранять целостность пузырей.<br /><br />4. Наложить защитную повязку
-        из чистой ткани<br /><br />5. Защитить пострадавшего от ветра или дождя
-      </p>
-      <h2>Серьезный</h2>
-      <p>
-        1. Вызвать скорую.<br /><br />
-        2. После охлаждения наложить влажную повязку.
-      </p>
-      <a href="main.html">В библиотеку карточек</a>
-    </div>
   </body>
 </html>

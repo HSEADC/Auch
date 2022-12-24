@@ -1,174 +1,176 @@
 body.burn {
-  background-color: var(--softpillowbeige);
-  overflow-x: hidden;
-}
-
-body.burn section {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-body.burn p {
-  font-family: 'InterRegular';
-  font-size: 1.88vw;
-  line-height: 146%;
-  font-weight: 400;
-  color: var(--softpillowbeige);
-}
-
-body.burn h1 {
-  font-family: 'InterMedium';
-  font-size: 2.8vw; /* 36 */
-  line-height: 146%;
-  font-weight: 500;
-  color: black;
-}
-
-body.burn h2 {
-  font-family: 'InterMedium';
-  font-size: 1.7vw; /* 22 */
-  line-height: 146%;
-  font-weight: 500;
-  color: black;
-  position: relative;
-}
-
-body.burn .nav_bar {
-  background-color: var(--orangelight);
-  height: 8vh !important;
-  display: inline-block;
-}
-
-body.burn .nav_bar div {
-  display: inline-block;
-}
-
-body.burn .nav_bar .nav_menu {
-  padding: 0;
-  margin-top: 1.1vh;
-  margin-left: 3.9vw;
-  position: relative;
-}
-
-body.burn .nav_bar .nav_menu div {
-  display: inline-block;
-}
-
-body.burn .nav_bar .nav_menu .page_link {
-  display: inline-block;
-  padding: 1.4vh 1.2vw 1.4vh 1.2vw;
-  opacity: 0.6;
-}
-
-body.burn .nav_bar .nav_menu .active {
-  opacity: 1;
-  border-bottom: 2px solid;
-  border-color: var(--softpillowbeige);
-}
-
-body.burn .nav_bar .nav_menu p {
-  font-size: 1.1vw; /* 14px --> 18px */
-  font-weight: 600;
-}
-
-body.burn .search_bar p {
-  font-size: 1.1vw;
-  font-family: 'InterRegular';
-  font-weight: 400;
-  color: black;
-  opacity: 0.5;
-  margin: 0.6vh 0 0 1.1vw;
-}
-
-body.burn .logo_div {
-  display: inline-block;
-  position: absolute;
-  margin: 1.7vh 0 0 16.1vw;
-}
-
-body.burn .logo {
-  width: 3.5vw;
-}
-
-body.burn .search_bar {
-  display: inline-block;
-  width: 19.3vw;
-  height: 4.1vh;
-  background-color: var(--softpillowbeige);
-  border-radius: 60px;
-  position: absolute;
-  right: 0;
-  margin: 1.8vh 3.9vw 0 0;
-}
-
-body.burn .hot_top_illustration {
-  position: relative;
-  width: 73.4vw;
-  margin-top: 0.86vh;
-}
-
-body.burn .content_links {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 73.4vw;
-  margin: 0.86vh 0 5vh 0;
-}
-
-body.burn .blank_one {
-  margin-right: 1.6vw;
-  width: 26.6vw;
-  display: inline-block;
-  vertical-align: top;
-}
-
-body.burn .card_blank {
-  width: 16.3vw;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.card {
-  position: absolute;
-  overflow-y: scroll;
-  width: 27.8vw;
-  height: 76.4vh;
-  background-color: var(--softpillowbeige);
-  z-index: 10;
-  border: 0.3vh solid;
-  border-color: #ff7961;
-  margin-top: -95vh;
-  margin-left: 36.1vw;
-  border-radius: 1.25vw;
-}
-
-.card h1 {
-  width: 27.9vw;
-  margin-top: 2.8vh;
-  text-align: center;
-}
-
-.card h2 {
-  width: 27.9vw;
-  margin-top: 3.9vh;
-  text-align: center;
-}
-
-body.burn .card p {
-  width: 24.5vw;
-  margin-top: 1.95vh;
-  margin-left: 1.75vw;
-  color: black;
-  font-size: 1.4vw;
-  margin-bottom: 3vh;
-}
-
-.card a {
-  font-family: 'InterRegular';
-  color: #ff7961;
-  font-size: 0.9375vw;
-  margin-top: 3.9vh;
-  margin-left: 8.25vw;
-  padding-bottom: 3vh;
+  body {
+    background-color: var(--blueishblue);
+    overflow-x: hidden;
+  }
+  section {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  h1 {
+    font-family: 'InterSemiBold';
+    font-size: 1.09vw;
+    font-weight: normal;
+  }
+  h2 {
+    font-family: 'InterMedium';
+    font-size: 2.5vw;
+    font-weight: normal;
+  }
+  h3 {
+    font-family: 'InterMedium';
+    font-size: 1.72vw;
+    font-weight: normal;
+  }
+  h4 {
+    font-family: 'InterLight';
+    font-size: 0.94vw;
+    font-weight: normal;
+    color: #3c65f7;
+  }
+  ol {
+    font-family: 'InterRegular';
+    font-size: 1.41vw;
+    font-weight: normal;
+    line-height: 146%;
+  }
+  h1 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a {
+    color: inherit;
+  }
+  hr {
+    border: 1px solid var(--blueishblue);
+  }
+  .navback {
+    height: 8vh;
+    width: 100vw;
+    background-color: var(--dirtyblack);
+  }
+  .navigation {
+    margin-top: -5vh;
+    margin-left: 4%;
+    width: 26.41vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .testsd {
+    opacity: 60%;
+    color: white;
+    text-align: center;
+  }
+  .maind {
+    opacity: 60%;
+    color: white;
+    text-align: center;
+  }
+  .articlesd {
+    opacity: 60%;
+    color: white;
+    text-align: center;
+  }
+  .cardsd {
+    color: white;
+    text-align: center;
+  }
+  .line {
+    margin-top: 18%;
+    background-color: white;
+    width: 5.44vw;
+    height: 0.3vh;
+  }
+  .mainline {
+    display: none;
+  }
+  .articlesline {
+    display: none;
+  }
+  .testsline {
+    display: none;
+  }
+  .logodiv {
+    margin-top: -7vh;
+    text-align: center;
+  }
+  .logo {
+    width: 4.84vw;
+  }
+  #search {
+    font-family: 'InterLight';
+    padding: 5px 25px;
+    width: 19.3vw;
+    height: 4vh;
+    font-size: 1.09vw;
+    border: none;
+    border-radius: 66px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .magnifier {
+    display: none;
+  }
+  .searchdiv {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: -5.7vh;
+  }
+  .menuflex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cardsdiv {
+    margin-top: 1%;
+  }
+  .cardsback {
+    width: 100vw;
+  }
+  .cardsbackmob {
+    display: none;
+  }
+  .card {
+    top: 16%;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border-radius: 13px;
+    width: 55.16vw;
+    /* height: 10vh; */
+    border: 2px solid #3c65f7;
+  }
+  .cardflex {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cardheader {
+    margin-top: 3%;
+    padding-bottom: 2%;
+  }
+  .textheader {
+    margin-top: 3%;
+  }
+  .textflex {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .text {
+    text-align: left;
+    width: 35.31vw;
+  }
+  .library {
+    margin-top: 3%;
+    padding-bottom: 3%;
+  }
+  .cross {
+    cursor: pointer;
+    width: 2.03vw;
+  }
+  .crossdiv {
+    position: absolute;
+    top: 16%;
+    left: 79%;
+  }
 }

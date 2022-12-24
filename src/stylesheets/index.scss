@@ -1,6 +1,6 @@
 body.index {
   body {
-    background-color: var(--palegrey);
+    background-color: #efefef;
     overflow-x: hidden;
   }
   section {
@@ -11,7 +11,7 @@ body.index {
     font-family: 'Diagramatika';
     font-size: 1.88vw;
     font-weight: normal;
-    color: var(--blueishblue);
+    color: #3860ec;
   }
   p {
     font-family: 'Diagramatika';
@@ -23,8 +23,15 @@ body.index {
     font-family: '21Cent-Italic';
     font-size: 2.5vw;
     font-weight: normal;
-    color: var(--sickyellow);
-    -webkit-text-stroke: 0.15vw var(--sickyellow);
+    color: #fdff8b;
+    -webkit-text-stroke: 0.08vw #fdff8b;
+  }
+  h2 {
+    font-family: '21Cent-Italic';
+    font-size: 5vw;
+    font-weight: normal;
+    color: #fdff8b;
+    -webkit-text-stroke: 0.31vw #3860ec;
   }
   .navigation {
     width: 91vw;
@@ -53,16 +60,15 @@ body.index {
     text-align: center;
   }
   .ouch {
-    margin-top: 0%;
+    margin-top: 7%;
     text-align: center;
     width: 100vw;
   }
   .mainlogo {
-    width: 64vw;
-    margin-left: 13vw;
+    width: 47vw;
   }
   .descript {
-    margin-top: 2%;
+    margin-top: -5%;
     text-align: center;
   }
   .arrow {
@@ -80,7 +86,7 @@ body.index {
     display: none;
   }
   .firsttext {
-    color: var(--blueishblue);
+    color: #3860ec;
     padding-top: 4%;
     margin-left: 4%;
     width: 34vw;
@@ -117,12 +123,12 @@ body.index {
     display: none;
   }
   .cardsb {
-    margin-top: -59%;
+    margin-top: -53%;
     width: 100vw;
     text-align: center;
   }
   .cards {
-    width: 44vw;
+    width: 51vw;
   }
   .secondtextb {
     width: 100vw;
@@ -130,24 +136,24 @@ body.index {
     justify-content: space-around;
   }
   .secondtext {
-    color: var(--palegrey);
+    color: #efefef;
     /* padding-top: 0%;
-  margin-left: 24%; */
-    width: 52vw;
+    margin-left: 24%; */
+    width: 54vw;
   }
   .cib {
-    margin-left: 4%;
-    margin-top: -16%;
+    margin-left: 9%;
+    margin-top: -11%;
   }
   .cardillust {
-    width: 22vw;
+    width: 11vw;
   }
   .chib {
-    margin-left: 71%;
-    margin-top: -39%;
+    margin-left: 75%;
+    margin-top: -30%;
   }
   .checkillust {
-    width: 22vw;
+    width: 16vw;
   }
   .lasthead {
     display: flex;
@@ -182,7 +188,7 @@ body.index {
   }
   #email {
     font-family: 'Diagramatika';
-    color: var(--sickyellow);
+    color: #fdff8b;
     padding: 5px 25px;
     margin-top: 4%;
     width: 26vw;
@@ -190,14 +196,14 @@ body.index {
     font-size: 1.25vw;
     border: none;
     border-radius: 66px;
-    background-color: var(--blueishblue);
+    background-color: #3860ec;
     cursor: pointer;
     text-decoration: none;
   }
   #emailb {
     font-family: 'Diagramatika';
     margin-left: -9%;
-    color: var(--sickyellow);
+    color: #fdff8b;
     font-size: 1.25vw;
     border: none;
     background: transparent;
@@ -206,37 +212,37 @@ body.index {
   .clock {
     position: relative;
     z-index: -1;
-    margin-top: -19%;
-    margin-left: -3%;
+    margin-top: -8%;
+    margin-left: 5%;
   }
   .clockillust {
-    width: 37vw;
+    width: 25vw;
   }
   .letter {
     position: relative;
     z-index: -1;
     margin-top: -54%;
-    margin-left: 21%;
+    margin-left: 26%;
   }
   .letterillust {
-    width: 29vw;
+    width: 20vw;
   }
   .boy {
     position: relative;
     z-index: -1;
-    margin-top: -24%;
-    margin-left: 56%;
+    margin-top: -17%;
+    margin-left: 61%;
   }
   .boyillust {
-    width: 45vw;
+    width: 34vw;
   }
   .draw {
     position: relative;
     z-index: -1;
-    margin-top: -8%;
-    margin-left: 54%;
+    margin-top: -1%;
+    margin-left: 55%;
   }
   .drawillust {
-    width: 23vw;
+    width: 18vw;
   }
 }

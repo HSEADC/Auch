@@ -19,12 +19,9 @@
       content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!"
     />
     <meta property="og:image" content="https://auch.adc.ac/share/ogImage.png" />
-
-    <title>Промо</title>
-
-    <analytics></analytics>
+    <title>АУЧ! – проводник в безопасную жизнь</title>
+    <!-- файлы со стилями -->
   </head>
-
   <body class="index">
     <section>
       <div class="navigation">
@@ -32,35 +29,29 @@
           <h1 class="promo">Промо</h1>
           <img class="underimg1" src="images/nooo.png" alt="" />
         </div>
-
         <div class="aboutb">
           <h1 class="about">О проекте</h1>
           <img class="underimg2" src="images/nooo.png" alt="" />
         </div>
-
         <div class="contactsb">
           <h1 class="contacts">Контакты</h1>
           <img class="underimg3" src="images/nooo.png" alt="" />
         </div>
       </div>
-
       <div class="ouch">
         <div class="logo">
-          <img class="mainlogo" src="images/mainLogo.svg" alt="" />
+          <img class="mainlogo" src="images/mainLogo2.svg" alt="" />
         </div>
       </div>
-
       <div class="descript">
         <h1 class="description">Инфосистема о безопасном<br />образе жизни</h1>
       </div>
-
       <div class="arrow">
         <img class="arrowimg" src="images/arrow.svg" alt="" />
         <img class="arrowimgtab" src="images/arrowtab.svg" alt="" />
         <img class="arrowimgmob" src="images/arrowmob.svg" alt="" />
       </div>
     </section>
-
     <section>
       <p class="firsttext">
         АУЧ! &mdash;&nbsp;большое количество информации, которая сделает вашу
@@ -71,74 +62,63 @@
         и&nbsp;делать&nbsp;то, что&nbspтак&nbsp;давно манит и&nbsp;пугает
         одновременно.
       </p>
-
       <div class="textimg">
         <img class="textstack" src="images/textStack.png" alt="" />
         <img class="textstacktab" src="images/textStacktab.png" alt="" />
         <img class="textstackmob" src="images/textStackmob.png" alt="" />
       </div>
     </section>
-
     <section>
       <div class="back">
         <img class="backrect" src="images/backrect.svg" alt="" />
         <img class="backrecttab" src="images/backrecttab.svg" alt="" />
         <img class="backrectmob" src="images/backrectmob.svg" alt="" />
       </div>
-
       <div class="cardsb">
         <img class="cards" src="images/cards1.png" alt="" />
       </div>
-
       <div class="secondtextb">
         <p class="secondtext">
-          АУЧ! располагает всеми необходимыми формата для обучения.
-          Вы&nbsp;можете читать привычные
-          <span>СТАТЬИ</span>
-          на&nbsp;актуальные темы, проходить
-          <span>ТЕСТЫ</span>
-          по&nbsp;пройденным материалам или&nbsp;использовать
-          <span>КАРТОЧКИ</span>
-          для решения быстрых вопросов на&nbsp;месте.
+          АУЧ! располагает всеми необходимыми форматами для обучения.
+          Вы&nbsp;можете читать привычные статьи на&nbsp;актуальные темы,
+          проходить тесты по&nbsp;пройденным материалам или&nbsp;использовать
+          карточки для решения быстрых вопросов на&nbsp;месте.
         </p>
       </div>
-
       <div class="cib">
         <img class="cardillust" src="images/cardillust.svg" alt="" />
       </div>
-
       <div class="chib">
         <img class="checkillust" src="images/checkillust.svg" alt="" />
       </div>
     </section>
-
     <section>
       <div class="lasthead">
-        <img class="lastheadimg" src="images/lasthead.png" alt="" />
-        <img class="lastheadimgtab" src="images/lastheadtab.png" alt="" />
-        <img class="lastheadimgmob" src="images/lastheadmob.png" alt="" />
+        <img class="lastheadimg" src="images/lasthead2.png" alt="" />
+        <img class="lastheadimgtab" src="images/lasthead2.png" alt="" />
+        <img class="lastheadimgmob" src="images/lasthead2.png" alt="" />
       </div>
-
       <div class="lastdescriptb">
         <h1 class="lastdecript">
           Подпишись на&nbsp;рассылку и&nbsp;стань одним из&nbsp;первых
           пользователей
         </h1>
       </div>
-
       <div class="emaild">
-        <form action="https://formspree.io/f/mwkzqbej" method="POST">
+        <form
+          id="my-form"
+          action="https://formspree.io/f/mwkzqbej"
+          method="POST"
+        >
           <input
             id="email"
             type="email"
             name="email"
             placeholder="Ваш E-mail"
           />
-
           <button id="emailb" name="button" type="submit">Отправить</button>
         </form>
       </div>
-
       <div class="clock">
         <img class="clockillust" src="images/clockillust.svg" alt="" />
       </div>
@@ -152,5 +132,42 @@
         <img class="drawillust" src="images/drawillust.svg" alt="" />
       </div>
     </section>
+    <script>
+      var form = document.getElementById('my-form')
+
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
+          }
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'Thanks for your submission!'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Oops! There was a problem submitting your form'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Oops! There was a problem submitting your form'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
   </body>
 </html>

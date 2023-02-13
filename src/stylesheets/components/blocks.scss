@@ -1,0 +1,272 @@
+.O_NavigationBar {
+  width: 100vw;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+
+  .M_NavigationLinks {
+    display: flex;
+    position: relative;
+    margin-right: 221px;
+    align-items: center;
+
+    .A_SectionButton {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      padding: 10px 15px;
+      opacity: 0.6;
+
+
+      &.Active {
+        opacity: 1;
+        border-bottom: solid;
+        border-width: 2px;
+        border-color: var(--palegrey);
+      }
+
+      p {
+        font-family: 'InterSemiBold';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 146%;
+        color: var(--palegrey);
+      }
+    }
+  }
+
+  .Q_Logo {
+    width: 62px;
+    margin-right: 312px;
+  }
+
+  .A_SearchBar {
+    width: 247px;
+    height: 30px;
+    border-radius: 40px;
+    cursor: text;
+    font-family: 'InterLight';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 115%;
+    padding-left: 14px;
+  }
+}
+
+.M_HeadlineBlock {
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  border-radius: 8px;
+  filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
+
+  .HeadPicture {
+    width: 700px;
+    height: 200px;
+    background-color: var(--sickyellow);
+  }
+
+  .EliteText {
+    display: flex;
+    background-color: white;
+    width: 700px;
+    justify-content: center;
+
+    p {
+      font-family: 'InterItalic';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 146%;
+      width: 612px;
+      margin: 20px 0px 20px 0px;
+      color: var(--blueishblue);
+    }
+  }
+}
+
+.O_QuizBlock {
+  position: relative;
+  margin-top: 40px;
+  padding: 40px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
+
+  p {
+    font-family: 'InterMedium';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 119%;
+    color: var(--black);
+    width: 570px;
+  }
+
+  h1 {
+    font-family: 'InterMedium';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 123%;
+    color: var(--black);
+    margin-bottom: 8px;
+    width: 570px;
+    margin-top: 8px;
+  }
+
+  .answerOptions {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .answerOption {
+    width: 570px;
+    border: 2px solid var(--blueishblue);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &.Picked {
+      border: 4px solid var(--blueishblue);
+    }
+
+    p {
+      width: 401px;
+      margin: 20px 0px 20px 40px;
+    }
+
+    .imgOption {
+      width: 433px;
+      height: 223px;
+      margin: 8px 0px 8px 8px;
+    }
+
+    .ifCorrect {
+      height: 46px;
+      margin-left: 50px;
+    }
+  }
+}
+
+.O_Footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  width: 100vw;
+  height: 175px;
+  margin-top: 140px;
+  bottom: 0;
+
+  .M_MailCollectionBlock {
+    position: relative;
+    margin-right: 124px;
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+
+    h2 {
+      font-family: 'InterRegular';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 146%;
+      color: var(--palegrey);
+    }
+
+    p {
+      font-family: 'InterLight';
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 115%;
+      width: 242px;
+      color: var(--palegrey);
+    }
+
+    .A_MailInput {
+      width: 220px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      opacity: 0.6;
+
+      .mailInput {
+
+        font-family: 'InterLight';
+        padding: 10px 0px 6px 5px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 115%;
+        background-color: var(--black);
+        border: none;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: var(--palegrey);
+      }
+
+    }
+  }
+
+  .M_FooterLinks {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+    margin-right: 266px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        font-family: 'InterRegular';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 146%;
+        margin: 4.5px 0px 4.5px 0px;
+        color: var(--palegrey);
+      }
+    }
+  }
+  .privacyMark {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    opacity: 0.5;
+    margin-top: 38px;
+
+    img {
+      width: 46px;
+    }
+
+    p {
+      font-family: 'InterLight';
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 115%;
+      width: 242px;
+      color: var(--palegrey);
+    }
+  }
+
+
+}

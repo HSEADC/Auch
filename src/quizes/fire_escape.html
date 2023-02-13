@@ -9,40 +9,101 @@
     <title>Тест</title>
   </head>
   <body class="fire_escape">
-    <section class="nav_bar">
-      <div class="nav_menu">
-        <div class="page_link"><p>Главная</p></div>
-        <div class="page_link"><p>Статьи</p></div>
-        <div class="page_link active"><p>Тесты</p></div>
-        <div class="page_link"><p>Карточки</p></div>
+    <div class="O_NavigationBar">
+      <div class="M_NavigationLinks">
+        <div class="A_SectionButton"><p>Главная</p></div>
+        <div class="A_SectionButton"><p>Статьи</p></div>
+        <div class="A_SectionButton"><p>Тесты</p></div>
+        <div class="A_SectionButton Active"><p>Карточки</p></div>
       </div>
-      <div class="logo_div">
-        <img class="logo" src="../images/logolike.svg" alt="" />
+      <img src="../images/logoNav.svg" class="Q_Logo">
+      <input class="A_SearchBar" type="search" name="search" placeholder="Я ищу...">
+    </div>
+    <section>
+      <div class="content">
+        <p class="heading">Курил. Уснул. Пожар. Что дальше?</p>
+        <div class="M_ContentMetaData">
+          <p>01.01.2023 14.30</p>
+          <div class="Content">
+            <div class="Tags">
+              <div class="A_DescriptionTag"><p>В путешествии</p></div>
+              <div class="A_DescriptionTag"><p>Мастноу</p></div>
+            </div>
+            <div class="Socials">
+              <img class="SocialIcon" src="../images/tumblrIcon.svg">
+              <img class="SocialIcon" src="../images/okIcon.svg">
+              <img class="SocialIcon" src="../images/pinterestIcon.svg">
+              <img class="SocialIcon" src="../images/vkIcon.svg">
+            </div>
+          </div>
+        </div>
+        <div class="M_HeadlineBlock">
+          <img src="../images/distinguisher.png" alt="Это огнетушитель" class="HeadPicture">
+          <div class="EliteText">
+            <p>Мы симулировали для вас ситуацию возгорания в жилом помещении.<br>
+              Узнайте, знаете, ли вы как действовать в такой ситуации.</p>
+          </div>
+        </div>
+        <div class="O_QuizBlock">
+          <p>1<span style="color: var(--blueishblue)">/</span>2</p>
+          <h1>Формулировка вопроса</h1>
+          <div class="answerOptions">
+            <div class="answerOption">
+              <p>Котики любят котичься и пусичься</p>
+            </div>
+            <div class="answerOption Picked">
+              <p>Ответик</p>
+              <img src="../images/quizRedCross.svg" alt="Wrong" class="ifCorrect">
+            </div>
+            <div class="answerOption">
+              <p>Ответик</p>
+            </div>
+            <div class="answerOption">
+              <p>Ответик</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="search_bar"><p>Я ищу...</p></div>
     </section>
-    <section class="content">
-      <h1>Курил. Уснул. Пожар. Что дальше?</h1>
-      <div>
-        <img src="../images/quiz_tags.svg" class="quiz_tags" alt="" />
+    <div class="O_Footer">
+      <div class="M_MailCollectionBlock">
+        <h2>На связи</h2>
+        <p>Оставьте ваш e-mail, будьте в курсе последних трендов безопасности</p>
+        <div class="A_MailInput">
+          <form
+                  id="my-form"
+                  action="https://formspree.io/f/mwkzqbej"
+                  method="POST"
+          >
+            <input
+                    class="mailInput"
+                    type="email"
+                    name="email"
+                    placeholder="Ваш e-mail"
+            />
+            <!--          <button id="emailb" name="button" type="submit">Отправить</button>-->
+          </form>
+        </div>
+
       </div>
-      <p class="quiz_descriptor">
-        Мы симулировали для вас ситуацию возгорания в жилом помещении. Узнайте,
-        знаете, ли вы как действовать в такой ситуации.
-      </p>
-      <img
-        src="../images/quiz_illustration.png"
-        class="quiz_illustration"
-        alt=""
-      />
-      <h2 style="margin-top: 8.6vh;">
-        Вопрос 1/5
-      </h2>
-      <p class="quiz_text">
-        Вы просыпаетесь в комнате полной дыма и языков пламени. <br />
-        Каковы будутваши следующие действия?
-      </p>
-      <img src="../images/quiz_answer.svg" class="quiz_answer" alt="" />
-    </section>
+      <div class="M_FooterLinks">
+        <div>
+          <p>tg↗</p>
+          <p>vk↗</p>
+          <p>e-mail↗</p>
+        </div>
+        <div>
+          <p>about↗</p>
+          <p>portfolio↗</p>
+        </div>
+      </div>
+      <div class="privacyMark">
+        <img src="../images/logoNav.svg" alt="All rights reserved.">
+        <p>«АУЧ!» 2023.<br>
+          Все права защищены.</p>
+      </div>
+
+    </div>
+
   </body>
 </html>

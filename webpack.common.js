@@ -137,8 +137,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/extras/burn.html',
-      filename: './extras/burn.html'
+      template: './src/cards/burn.html',
+      filename: './cards/burn.html'
       // chunks: ['page']
     }),
 

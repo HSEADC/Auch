@@ -1,0 +1,107 @@
+.A_SectionButton {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 10px 15px;
+  opacity: 0.6;
+
+
+  &.Active {
+    opacity: 1;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: var(--palegrey);
+  }
+
+  p {
+    font-family: 'InterSemiBold';
+    font-size: 14px;
+    line-height: 146%;
+    color: var(--palegrey);
+  }
+}
+
+.A_SearchBar {
+  width: 247px;
+  height: 30px;
+  border-radius: 40px;
+  cursor: text;
+  font-family: 'InterLight';
+  font-size: 12px;
+  line-height: 115%;
+  padding-left: 14px;
+}
+
+.A_MailInput {
+  width: 220px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  opacity: 0.6;
+
+  .mailInput {
+
+    font-family: 'InterLight';
+    padding: 10px 0px 6px 5px;
+    font-size: 12px;
+    line-height: 115%;
+    background-color: var(--black);
+    border: none;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: var(--palegrey);
+  }
+
+}
+
+//this file contain SCSS to all Buttons and Links in the design system
+
+.A_DescriptionTag {
+  display: inline-block;
+  //flex-direction: row;
+  //align-items: center;
+  padding: 4px 14px;
+  //gap: 10px;
+  //position: relative;
+  //width: 71px;
+  height: 22px;
+  border: 0.75px solid var(--blueishblue);
+  border-radius: 44px;
+  cursor: pointer;
+
+  p {
+    font-family: 'InterLight';
+    font-size: 12px;
+    line-height: 115%;
+    color: var(--blueishblue);
+  }
+
+  &:hover {
+    background-color: var(--blueishblue);
+
+    p {
+      color: var(--white);
+    }
+  }
+
+  &.Active {
+    background-color: var(--blueishblue);
+
+    p {
+      color: var(--palegrey);
+    }
+  }
+}
+
+.A_LinkToCardsSection {
+  position: relative;
+  font-family: 'InterLight';
+  font-size: 12px;
+  line-height: 115%;
+  color: var(--blueishblue);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 30px;
+  text-align: center;
+}

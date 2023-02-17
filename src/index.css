@@ -13,7 +13,7 @@
 @import 'stylesheets/about.scss';
 @import 'stylesheets/desert.scss';
 @import 'stylesheets/responsive.scss';
-@import 'stylesheets/components/buttons.scss';
-@import 'stylesheets/components/details.scss';
-@import 'stylesheets/components/cards.scss';
-@import 'stylesheets/components/blocks.scss';
+@import 'stylesheets/components/atoms.scss';
+@import 'stylesheets/components/molecules.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/organisms.scss';

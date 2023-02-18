@@ -2,24 +2,3 @@ body.fire_escape {
   background-color: var(--palegrey);
   overflow-x: hidden;
 }
-
-body.fire_escape section {
-  width: 100vw;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-body.fire_escape .content {
-  width: 700px;
-  margin-top:60px;
-
-  .heading {
-    font-family: 'InterMedium';
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 123%;
-    color: var(--black);
-    margin-bottom: 8px;
-  }
-}

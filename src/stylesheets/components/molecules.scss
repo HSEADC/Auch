@@ -17,27 +17,6 @@
   border-radius: 8px;
   filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
 
-  .HeadPicture {
-    width: 700px;
-    height: 200px;
-    background-color: var(--sickyellow);
-  }
-
-  .EliteText {
-    display: flex;
-    background-color: white;
-    width: 700px;
-    justify-content: center;
-
-    p {
-      font-family: 'InterItalic';
-      font-size: 14px;
-      line-height: 146%;
-      width: 612px;
-      margin: 20px 0px 20px 0px;
-      color: var(--blueishblue);
-    }
-  }
 }
 
 .M_MailCollectionBlock {
@@ -83,48 +62,16 @@
   padding: 0px;
   gap: 7px;
 
-  p {
-    font-family: 'InterLight';
-    font-size: 12px;
-    line-height: 115%;
-    color: var(--blueishblue);
-  }
+}
 
-  .Content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 364px;
-    width: 700px;
-    height: 22px;
-  }
-
-  .Tags {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    width: 238px;
-    height: 22px;
-  }
-
-  .Socials {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 6px;
-    width: 98px;
-    height: 20px;
-
-    .SocialIcon {
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-    }
-  }
+.M_InteractiveLine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 364px;
+  width: 700px;
+  height: 22px;
 }
 
 .M_CardContent {
@@ -155,4 +102,12 @@
     width: 242px;
     color: var(--palegrey);
   }
+}
+
+.M_AnswerList {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }

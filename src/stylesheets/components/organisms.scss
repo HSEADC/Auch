@@ -87,27 +87,6 @@
   margin-top: 140px;
   bottom: 0;
 
-  .privacyMark {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    opacity: 0.5;
-    margin-top: 38px;
-
-    img {
-      width: 46px;
-    }
-
-    p {
-      font-family: 'InterLight';
-      font-size: 12px;
-      line-height: 115%;
-      width: 242px;
-      color: var(--palegrey);
-    }
-  }
 }
 
 .O_Card {
@@ -120,41 +99,5 @@
   justify-content: center;
   border-radius: 8px;
   filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
-
-  .HeadPicture {
-    width: 700px;
-    height: 200px;
-  }
-
-  .cardContent {
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    background-color: white;
-    padding: 40px 0px 40px 0px;
-
-    .cardTextBlock {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      width: 452px;
-
-      h2 {
-        font-family: 'InterMedium';
-        font-size: 22px;
-        line-height: 119%;
-        color: var(--blueishblue);
-        width: 100%;
-        text-align: center;
-      }
-
-    }
-
-
-
-  }
 
 }

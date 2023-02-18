@@ -49,21 +49,6 @@
   align-items: flex-start;
   gap: 3px;
 
-  h2 {
-    font-family: 'InterRegular';
-    font-size: 18px;
-    line-height: 146%;
-    color: var(--palegrey);
-  }
-
-  p {
-    font-family: 'InterLight';
-    font-size: 12px;
-    line-height: 115%;
-    width: 242px;
-    color: var(--palegrey);
-  }
-
 }
 
 .M_FooterLinks {
@@ -140,8 +125,34 @@
       cursor: pointer;
     }
   }
+}
+
+.M_CardContent {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: white;
+  padding: 40px 0px 40px 0px;
+
+}
+
+.M_RightsReservedBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  opacity: 0.5;
+  margin-top: 38px;
 
 
-
-
+  p {
+    font-family: 'InterLight';
+    font-size: 12px;
+    line-height: 115%;
+    width: 242px;
+    color: var(--palegrey);
+  }
 }

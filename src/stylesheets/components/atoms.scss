@@ -105,3 +105,45 @@
   margin-top: 30px;
   text-align: center;
 }
+
+.A_CardHead {
+  width: 700px;
+  height: 200px;
+}
+
+.A_CardText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 452px;
+
+  h2 {
+    font-family: 'InterMedium';
+    font-size: 22px;
+    line-height: 119%;
+    color: var(--blueishblue);
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+.A_SeeYa {
+  font-family: 'InterRegular';
+  font-size: 18px;
+  line-height: 146%;
+  color: var(--palegrey);
+}
+
+.A_LeaveMailCall {
+  font-family: 'InterLight';
+  font-size: 12px;
+  line-height: 115%;
+  width: 242px;
+  color: var(--palegrey);
+}
+
+.A_Logo {
+  width: 46px;
+}

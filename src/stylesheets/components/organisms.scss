@@ -1,0 +1,103 @@
+.O_NavigationBar {
+  width: 100vw;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+
+}
+
+.O_QuizBlock {
+  position: relative;
+  margin-top: 40px;
+  padding: 40px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
+
+  p {
+    font-family: 'InterMedium';
+    font-size: 22px;
+    line-height: 119%;
+    color: var(--black);
+    width: 570px;
+  }
+
+  h1 {
+    font-family: 'InterMedium';
+    font-size: 36px;
+    line-height: 123%;
+    color: var(--black);
+    margin-bottom: 8px;
+    width: 570px;
+    margin-top: 8px;
+  }
+
+  .answerOptions {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .answerOption {
+    width: 570px;
+    border: 2px solid var(--blueishblue);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &.Picked {
+      border: 4px solid var(--blueishblue);
+    }
+
+    p {
+      width: 401px;
+      margin: 20px 0px 20px 40px;
+    }
+
+    .imgOption {
+      width: 433px;
+      height: 223px;
+      margin: 8px 0px 8px 8px;
+    }
+
+    .ifCorrect {
+      height: 46px;
+      margin-left: 50px;
+    }
+  }
+}
+
+.O_Footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  width: 100vw;
+  height: 175px;
+  margin-top: 140px;
+  bottom: 0;
+
+}
+
+.O_Card {
+  width: 700px;
+  margin-top:60px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
+
+}

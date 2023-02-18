@@ -55,7 +55,15 @@
 
 }
 
-//this file contain SCSS to all Buttons and Links in the design system
+.A_TagsList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 238px;
+  height: 22px;
+}
 
 .A_DescriptionTag {
   display: inline-block;
@@ -91,6 +99,52 @@
     p {
       color: var(--palegrey);
     }
+  }
+}
+
+.A_SocialsList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  width: 98px;
+  height: 20px;
+
+}
+
+.A_Socials {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.A_TimeData {
+  font-family: 'InterLight';
+  font-size: 12px;
+  line-height: 115%;
+  color: var(--blueishblue);
+}
+
+.A_QuizHead {
+  width: 700px;
+  height: 200px;
+  background-color: var(--sickyellow);
+}
+
+.A_QuizHeadText {
+  display: flex;
+  background-color: white;
+  width: 700px;
+  justify-content: center;
+
+  p {
+    font-family: 'InterItalic';
+    font-size: 14px;
+    line-height: 146%;
+    width: 612px;
+    margin: 20px 0px 20px 0px;
+    color: var(--blueishblue);
   }
 }
 
@@ -146,4 +200,60 @@
 
 .A_Logo {
   width: 46px;
+}
+
+.A_QuizHeading {
+  font-family: 'InterMedium';
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 123%;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.A_AnswerOption {
+  width: 570px;
+  border: 2px solid var(--blueishblue);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  &.Picked {
+    border: 4px solid var(--blueishblue);
+  }
+
+  p {
+    width: 401px;
+    margin: 20px 0px 20px 40px;
+  }
+
+  .imgOption {
+    width: 433px;
+    height: 223px;
+    margin: 8px 0px 8px 8px;
+  }
+
+  .ifCorrect {
+    height: 46px;
+    margin-left: 50px;
+  }
+}
+
+.A_AnswerNumber {
+  font-family: 'InterMedium';
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--black);
+  width: 570px;
+}
+
+.A_AnswerHeading {
+  font-family: 'InterMedium';
+  font-size: 36px;
+  line-height: 123%;
+  color: var(--black);
+  margin-bottom: 8px;
+  width: 570px;
+  margin-top: 8px;
 }

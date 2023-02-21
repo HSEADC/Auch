@@ -1,19 +1,19 @@
 .M_NavigationLinks {
-  display: flex;
   position: relative;
-  margin-right: 221px;
+  display: flex;
   align-items: center;
+  margin-right: 221px;
 
 }
 
 .M_HeadlineBlock {
-  margin-top: 40px;
-  overflow: hidden;
   position: relative;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   width: 700px;
+  margin-top: 40px;
   border-radius: 8px;
   filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
 
@@ -21,11 +21,11 @@
 
 .M_MailCollectionBlock {
   position: relative;
-  margin-right: 124px;
-  width: 242px;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
+  width: 242px;
+  margin-right: 124px;
   gap: 3px;
 
 }
@@ -33,32 +33,24 @@
 .M_FooterLinks {
   position: relative;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  gap: 48px;
+  flex-direction: row;
   margin-right: 266px;
+  gap: 48px;
 
-  div {
+  .W_LinksColoumn {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-
-    p {
-      font-family: 'InterRegular';
-      font-size: 18px;
-      line-height: 146%;
-      margin: 4.5px 0px 4.5px 0px;
-      color: var(--palegrey);
-    }
+    flex-direction: column;
   }
 }
 
 .M_ContentMetaData {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   width: 700px;
   height: 43px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 0px;
   gap: 7px;
 
@@ -66,48 +58,49 @@
 
 .M_InteractiveLine {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 364px;
+  flex-direction: row;
   width: 700px;
   height: 22px;
+  padding: 0px;
+  gap: 364px;
 }
 
 .M_CardContent {
-  width: 700px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  width: 700px;
+  padding: 40px 0px 40px 0px;
   gap: 40px;
   background-color: white;
-  padding: 40px 0px 40px 0px;
+
+  .W_CardText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 452px;
+    gap: 15px;
+
+  }
 
 }
 
 .M_RightsReservedBlock {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 6px;
+  flex-direction: column;
   opacity: 0.5;
   margin-top: 38px;
+  gap: 6px;
 
-
-  p {
-    font-family: 'InterLight';
-    font-size: 12px;
-    line-height: 115%;
-    width: 242px;
-    color: var(--palegrey);
-  }
 }
 
 .M_AnswerList {
-  margin-top: 35px;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
+  margin-top: 35px;
   gap: 20px;
 }

@@ -1,23 +1,23 @@
 .O_NavigationBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--black);
 
 }
 
 .O_QuizBlock {
   position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
   margin-top: 40px;
   padding: 40px 0 40px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
   border-radius: 8px;
-  overflow: hidden;
+  background-color: white;
   filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
 
 }
@@ -25,24 +25,24 @@
 .O_Footer {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: var(--black);
+  justify-content: center;
   width: 100vw;
   height: 175px;
   margin-top: 140px;
   bottom: 0;
+  background-color: var(--black);
 
 }
 
 .O_Card {
-  width: 700px;
-  margin-top:60px;
-  overflow: hidden;
   position: relative;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
+  width: 700px;
+  margin-top:60px;
   border-radius: 8px;
   filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
 

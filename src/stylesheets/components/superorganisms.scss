@@ -7,6 +7,11 @@
   width: 100vw;
 }
 
+.S_CardBody {
+  background-color: var(--palegrey);
+  overflow-x: hidden;
+}
+
 .S_QuizSection {
   position: relative;
   display: flex;
@@ -20,3 +25,28 @@
   width: 700px;
   margin-top:60px;
 }
+
+.S_QuizBody {
+  background-color: var(--palegrey);
+  overflow-x: hidden;
+}
+
+.S_ArticleSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.S_ArticleContent {
+  width: 700px;
+  margin-top:60px;
+}
+
+.S_ArticleBody {
+  background-color: var(--palegrey);
+  overflow-x: hidden;
+}
+

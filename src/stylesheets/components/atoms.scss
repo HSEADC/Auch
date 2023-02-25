@@ -263,16 +263,17 @@
 }
 
 .A_QuoteText {
+  position: relative;
   width: 398px;
   font-family: 'InterMedium';
   font-size: 22px;
   line-height: 119%;
-  color: var(--blueishblue);
   text-align: center;
-  position: relative;
+  color: var(--blueishblue);
+
 }
 
 .A_QuoteMark {
-  width: 137px;
   position: relative;
+  width: 137px;
 }

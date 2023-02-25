@@ -107,16 +107,16 @@
 
 .M_ArticleTextSection {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
   gap: 15px;
 }
 
 .M_ArticleQuote {
-  width: 700px;
+  position: relative;
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  position: relative;
+  width: 700px;
 }

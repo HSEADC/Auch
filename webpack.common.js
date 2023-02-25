@@ -151,6 +151,14 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/extras/test.html',
+      filename: './extras/test.html'
+      // chunks: ['page']
+    }),
+
     // A page for an article "Как собраться в пустыню"
     new HtmlWebpackPlugin({
       hash: true,

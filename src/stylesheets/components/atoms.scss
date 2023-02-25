@@ -9,7 +9,6 @@
   line-height: 146%;
   color: var(--palegrey);
 
-
   &.Active {
     opacity: 1;
     border-bottom: solid;
@@ -48,7 +47,6 @@
     line-height: 115%;
     background-color: var(--black);
   }
-
 }
 
 .A_TagsList {
@@ -91,6 +89,20 @@
       color: var(--palegrey);
     }
   }
+  &.InactiveYellow {
+    border-color: var(--sickyellow);
+
+    p {
+      color: var(--sickyellow);
+    }
+  }
+  &.InactiveWhite {
+    border-color: var(--white);
+
+    p {
+      color: var(--white);
+    }
+  }
 }
 
 .A_SocialsList {
@@ -101,7 +113,6 @@
   height: 20px;
   padding: 0px;
   gap: 6px;
-
 }
 
 .A_Socials {
@@ -270,10 +281,124 @@
   line-height: 119%;
   text-align: center;
   color: var(--blueishblue);
-
 }
 
 .A_QuoteMark {
   position: relative;
   width: 137px;
+}
+
+.A_ArticleCardHeading {
+  position: relative;
+  width: 271px;
+  margin-top: 22px;
+  margin-left: 22px;
+  font-family: 'InterMedium';
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--black);
+  cursor: pointer;
+
+  &.White {
+    color: var(--white);
+  }
+}
+
+.A_ArticleCardHeadingShort {
+  position: relative;
+  width: 173px;
+  margin-top: 22px;
+  margin-left: 22px;
+  font-family: 'InterMedium';
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--black);
+  cursor: pointer;
+
+  &.White {
+    color: var(--white);
+  }
+}
+
+.A_SosCardPreviewHeading {
+  position: relative;
+  width: 176px;
+  margin-top: 6px;
+  margin-left: 22px;
+  font-family: 'InterMedium';
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.A_SosCardPreviewDescription {
+  position: relative;
+  width: 176px;
+  margin-left: 22px;
+  font-family: 'InterRegular';
+  font-size: 18px;
+  line-height: 146%;
+  color: var(--black);
+}
+
+.A_SosCardImage {
+  position: relative;
+  width: 220px;
+  height: 160px;
+
+  border-radius: 8px 8px 0px 0px;
+  cursor: pointer;
+}
+.A_HeadlinerHeading {
+  position: relative;
+  width: 522px;
+  margin-top: 30px;
+  font-family: 'InterMedium';
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--white);
+}
+
+.A_HeadlinerDesctiption {
+  position: relative;
+  width: 522px;
+  font-family: 'InterLight';
+  font-size: 14px;
+  line-height: 146%;
+  color: var(--white);
+}
+.A_HeadlinerTextBlock {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 522px;
+  gap: 11px;
+  text-align: center;
+}
+
+.A_HeadlinerTextBlockFull {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.A_CardType {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: 14px;
+  right: 14px;
+  background-image: url('../src/images/TagQuiz.svg');
+
+  &.Sos {
+    background-image: image('../src/images/TagSos.svg');
+  }
+  &.Heading {
+    background-image: image('../src/images/TagHeading.svg');
+  }
 }

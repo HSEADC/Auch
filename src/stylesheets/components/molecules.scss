@@ -104,3 +104,19 @@
   margin-top: 35px;
   gap: 20px;
 }
+
+.M_ArticleTextSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.M_ArticleQuote {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}

@@ -219,12 +219,6 @@
   &.Picked {
     border: 4px solid var(--blueishblue);
   }
-
-  p {
-    width: 401px;
-    margin: 20px 0px 20px 40px;
-  }
-
 }
 
 .A_AnswerNumber {
@@ -243,4 +237,42 @@
   font-size: 36px;
   line-height: 123%;
   color: var(--black);
+}
+
+.A_ArticleHeading {
+  margin-bottom: 8px;
+  font-family: 'InterMedium';
+  font-size: 36px;
+  line-height: 123%;
+  color: var(--black);
+}
+
+.A_ParagraphHeading {
+  width: 687px;
+  font-family: 'InterMedium';
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--black);
+}
+
+.A_ArticleParagraph {
+  font-family: 'InterRegular';
+  font-size: 18px;
+  line-height: 146%;
+  color: black;
+}
+
+.A_QuoteText {
+  width: 398px;
+  font-family: 'InterMedium';
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--blueishblue);
+  text-align: center;
+  position: relative;
+}
+
+.A_QuoteMark {
+  width: 137px;
+  position: relative;
 }

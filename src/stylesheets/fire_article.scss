@@ -1,0 +1,31 @@
+body.fire_article {
+  background-color: var(--palegrey);
+  overflow-x: hidden;
+}
+
+body.fire_article section {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+body.fire_article .content {
+  width: 700px;
+  margin-top: 60px;
+}
+h2 {
+  font-family: "InterRegular";
+  font-size: 22px;
+  line-height: 119%;
+  font-weight: normal;
+  color: #231f1c;
+}
+h1 {
+  font-family: "InterMedium";
+
+  font-size: 36px;
+  line-height: 123%;
+  font-weight: normal;
+  color: #231f1c;
+}

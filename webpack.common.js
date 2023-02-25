@@ -124,15 +124,6 @@ module.exports = {
       // chunks: ['page']
     }),
 
-    // fire article page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/articles/fire.html',
-      filename: './articles/fire.html'
-      // chunks: ['page']
-    }),
-
     // temporary burn card page for prosmotr
     new HtmlWebpackPlugin({
       hash: true,

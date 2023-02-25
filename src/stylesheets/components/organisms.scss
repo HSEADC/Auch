@@ -5,7 +5,6 @@
   width: 100vw;
   height: 56px;
   background-color: var(--black);
-
 }
 
 .O_QuizBlock {
@@ -18,8 +17,7 @@
   padding: 40px 0 40px 0;
   border-radius: 8px;
   background-color: white;
-  filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
-
+  filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 }
 
 .O_Footer {
@@ -32,7 +30,6 @@
   margin-top: 140px;
   bottom: 0;
   background-color: var(--black);
-
 }
 
 .O_Card {
@@ -42,9 +39,9 @@
   flex-direction: column;
   justify-content: center;
   width: 700px;
-  margin-top:60px;
+  margin-top: 60px;
   border-radius: 8px;
-  filter: drop-shadow(2px 1px 15px rgba(0,0,0,0.1));
+  filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 }
 
 .O_ArticleLongread {
@@ -53,4 +50,27 @@
   flex-direction: column;
   margin-top: 54px;
   gap: 24px;
+}
+
+.O_CardBlock {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 940px;
+  margin-left: 22px;
+  gap: 20px;
+}
+.O_SosCard {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 220px;
+  height: 340px;
+  gap: 22px;
+  border-radius: 8px;
+  background-color: var(--white);
+  cursor: pointer;
+  filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 }

@@ -31,6 +31,25 @@
   overflow-x: hidden;
 }
 
+.S_MainBody {
+  background-color: var(--palegrey);
+  overflow-x: hidden;
+}
+
+.S_MainSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.S_MainContent {
+  width: 700px;
+  margin-top:60px;
+}
+
 .S_ArticleSection {
   position: relative;
   display: flex;
@@ -48,5 +67,15 @@
 .S_ArticleBody {
   background-color: var(--palegrey);
   overflow-x: hidden;
+}
+
+.S_MainCardsBlock {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 940px;
+  margin-top: 45px;
+  gap: 12px;
 }
 

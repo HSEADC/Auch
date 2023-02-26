@@ -55,12 +55,15 @@
 .O_CardBlock {
   position: relative;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  width: 940px;
-  margin-left: 22px;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 20px 20px;
+  //grid-column-start: 1;
+  //grid-column-end: 3;
+  //grid-template-columns: 1fr 1fr 1fr;
+  //grid-template-rows: 1fr 1fr 1fr;
 }
+
 .O_SosCard {
   position: relative;
   display: flex;
@@ -73,4 +76,14 @@
   background-color: var(--white);
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
+}
+
+.O_HeadlinerBlock {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 940px;
+  margin-top: 55px;
+  gap: 12px;
 }

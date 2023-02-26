@@ -8,6 +8,7 @@
   font-size: 14px;
   line-height: 146%;
   color: var(--palegrey);
+  cursor: pointer;
 
   &.Active {
     opacity: 1;
@@ -401,4 +402,12 @@
   &.Heading {
     background-image: image('../src/images/TagHeading.svg');
   }
+}
+
+.A_SectionHeading {
+  width: 940px;
+  font-family: 'InterMedium';
+  font-size: 36px;
+  line-height: 123%;
+  color: var(--black);
 }

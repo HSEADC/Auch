@@ -97,6 +97,15 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    // Internal pages
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/extras/main.html',
+      filename: './extras/main.html'
+      // chunks: ['page']
+    }),
+
     // Articles page
     new HtmlWebpackPlugin({
       hash: true,
@@ -130,15 +139,6 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/cards/burn.html',
       filename: './cards/burn.html'
-      // chunks: ['page']
-    }),
-
-    // temporary landing page for prosmotr
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/extras/main.html',
-      filename: './extras/main.html'
       // chunks: ['page']
     }),
 

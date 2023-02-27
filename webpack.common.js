@@ -159,6 +159,30 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/articlegallery.html',
+      filename: './articles/articlegallery.html'
+      // chunks: ['page']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/quizes/quizesgallery.html',
+      filename: './quizes/quizesgallery.html'
+      // chunks: ['page']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/cardsgallery.html',
+      filename: './cards/cardsgallery.html'
+      // chunks: ['page']
+    }),
+
     // A page for an article "Как собраться в пустыню"
     new HtmlWebpackPlugin({
       hash: true,

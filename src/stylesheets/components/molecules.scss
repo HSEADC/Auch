@@ -140,6 +140,26 @@
   gap: 6px;
 }
 
+.M_CloudTagRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 9px;
+}
+.M_CloudTagBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 742px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 9px;
+}
+
 .M_QuizCardBlockShort {
   position: relative;
   display: flex;
@@ -229,7 +249,24 @@
   align-items: center;
   background-image: url('../src/images/HeadlinerPic.png');
   background-size: contain;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
+}
+.M_HeadlinerTagsRow {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-left: 22px;
+  gap: 8px;
+}
+
+.M_SosCardRow {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  // margin-left: 22px;
+  gap: 20px;
 }

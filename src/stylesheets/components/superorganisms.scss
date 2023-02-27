@@ -23,7 +23,7 @@
 
 .S_QuizContent {
   width: 700px;
-  margin-top:60px;
+  margin-top: 60px;
 }
 
 .S_QuizBody {
@@ -47,7 +47,7 @@
 
 .S_MainContent {
   width: 700px;
-  margin-top:60px;
+  margin-top: 60px;
 }
 
 .S_ArticleSection {
@@ -61,7 +61,7 @@
 
 .S_ArticleContent {
   width: 700px;
-  margin-top:60px;
+  margin-top: 60px;
 }
 
 .S_ArticleBody {
@@ -79,3 +79,52 @@
   gap: 12px;
 }
 
+.S_ArticlesGalleryContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 940px;
+}
+.S_ArticlesGallerySection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+.S_QuizesGalleryContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 940px;
+}
+.S_QuizesGallerySection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+.S_CardsGalleryContent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 940px;
+}
+.S_CardsGallerySection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}

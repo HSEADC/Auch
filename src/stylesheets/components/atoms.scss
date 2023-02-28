@@ -426,13 +426,15 @@
   height: 70px;
   bottom: 14px;
   right: 14px;
-  background-image: url('../src/images/TagQuiz.svg');
+  background-image: url('../src/images/TagQuiz.png');
+  background-size: cover;
 
   &.Sos {
-    background-image: image('../src/images/TagSos.svg');
+    background-image: url('../src/images/TagSos.png');
   }
+
   &.Heading {
-    background-image: image('../src/images/TagHeading.svg');
+    background-image: url('../src/images/TagHeading.png');
   }
 }
 

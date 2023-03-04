@@ -34,8 +34,9 @@
   flex-direction: row;
   margin-right: 266px;
   gap: 48px;
+  cursor: pointer;
 
-  .W_LinksColoumn {
+  .W_LinksColumn {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -85,7 +86,6 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  opacity: 0.5;
   margin-top: 38px;
   gap: 6px;
 }
@@ -131,6 +131,7 @@
   margin-left: 22px;
   gap: 8px;
 }
+
 .M_TagsBlock {
   position: relative;
   display: flex;
@@ -148,13 +149,14 @@
   justify-content: center;
   gap: 9px;
 }
+
 .M_CloudTagBlock {
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 742px;
+  //width: 700px;
   margin-top: 50px;
   margin-bottom: 50px;
   gap: 9px;
@@ -177,13 +179,13 @@
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 
-  &.SpecialWide {
+  &.specialWide {
     background-color: var(--black);
   }
-  &.StandartNarrow {
+  &.standartNarrow {
     width: 220px;
   }
-  &.SpecialNarrow {
+  &.specialNarrow {
     width: 220px;
     background-color: var(--black);
   }
@@ -199,7 +201,7 @@
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 
-  &.Special {
+  &.special {
     width: 220px;
     background-color: var(--black);
   }
@@ -228,6 +230,7 @@
   flex-direction: column;
   gap: 6px;
 }
+
 .M_HeadlinerTagsRow {
   position: relative;
   display: flex;
@@ -240,7 +243,6 @@
 .M_Headliner {
   position: relative;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   width: 940px;
   height: 180px;
@@ -253,6 +255,7 @@
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 }
+
 .M_HeadlinerTagsRow {
   position: relative;
   display: flex;
@@ -267,6 +270,5 @@
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  // margin-left: 22px;
   gap: 20px;
 }

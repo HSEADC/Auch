@@ -4,13 +4,13 @@
   height: 40px;
   opacity: 0.6;
   padding: 10px 15px;
-  font-family: 'InterSemiBold';
+  font-family: 'InterSemiBold', sans-serif;
   font-size: 14px;
   line-height: 146%;
   color: var(--palegrey);
   cursor: pointer;
 
-  &.Active {
+  &.active {
     opacity: 1;
     border-bottom: solid;
     border-width: 2px;
@@ -23,7 +23,7 @@
   height: 30px;
   padding-left: 14px;
   border-radius: 40px;
-  font-family: 'InterLight';
+  font-family: 'InterLight', sans-serif;
   font-size: 12px;
   line-height: 115%;
   cursor: text;
@@ -43,7 +43,7 @@
     border-bottom: solid;
     border-width: 1px;
     border-color: var(--palegrey);
-    font-family: 'InterLight';
+    font-family: 'InterLight', sans-serif;
     font-size: 12px;
     line-height: 115%;
     background-color: var(--black);
@@ -68,8 +68,8 @@
   border: 0.75px solid var(--blueishblue);
   cursor: pointer;
 
-  p {
-    font-family: 'InterLight';
+  .A_DescriptionTagText {
+    font-family: 'InterLight', sans-serif;
     font-size: 12px;
     line-height: 115%;
     color: var(--blueishblue);
@@ -78,29 +78,29 @@
   &:hover {
     background-color: var(--blueishblue);
 
-    p {
+    .A_DescriptionTagText {
       color: var(--white);
     }
   }
 
-  &.Active {
+  &.active {
     background-color: var(--blueishblue);
 
-    p {
+    .A_DescriptionTagText {
       color: var(--palegrey);
     }
   }
-  &.InactiveYellow {
+  &.inactiveYellow {
     border-color: var(--sickyellow);
 
-    p {
+    .A_DescriptionTagText {
       color: var(--sickyellow);
     }
   }
-  &.InactiveWhite {
+  &.inactiveWhite {
     border-color: var(--white);
 
-    p {
+    .A_DescriptionTagText {
       color: var(--white);
     }
   }
@@ -109,13 +109,13 @@
 .A_CloudTag {
   display: inline-block;
   height: 35px;
-  padding: 4px 14px;
+  padding: 3.5px 20px 5px;
   border-radius: 44px;
-  border: 0.75px solid var(--blueishblue);
+  border: 1.5px solid var(--blueishblue);
   cursor: pointer;
 
-  p {
-    font-family: 'InterLight';
+  .A_CloudTagText {
+    font-family: 'InterLight', sans-serif;
     font-size: 18px;
     line-height: 147%;
     color: var(--blueishblue);
@@ -124,15 +124,15 @@
   &:hover {
     background-color: var(--blueishblue);
 
-    p {
+    .A_CloudTagText {
       color: var(--white);
     }
   }
 
-  &.Active {
+  &.active {
     background-color: var(--blueishblue);
 
-    p {
+    .A_CloudTagText {
       color: var(--palegrey);
     }
   }
@@ -155,7 +155,7 @@
 }
 
 .A_TimeData {
-  font-family: 'InterLight';
+  font-family: 'InterLight', sans-serif;
   font-size: 12px;
   line-height: 115%;
   color: var(--blueishblue);
@@ -176,7 +176,7 @@
   p {
     width: 612px;
     margin: 20px 0px 20px 0px;
-    font-family: 'InterItalic';
+    font-family: 'InterItalic', sans-serif;
     font-size: 14px;
     line-height: 146%;
     color: var(--blueishblue);
@@ -186,7 +186,7 @@
 .A_LinkToCardsSection {
   position: relative;
   margin-top: 30px;
-  font-family: 'InterLight';
+  font-family: 'InterLight', sans-serif;
   font-size: 12px;
   line-height: 115%;
   text-decoration: underline;
@@ -202,7 +202,7 @@
 
 .A_CardTextHeader {
   width: 100%;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   text-align: center;
@@ -210,7 +210,7 @@
 }
 
 .A_SeeYa {
-  font-family: 'InterRegular';
+  font-family: 'InterRegular', sans-serif;
   font-size: 18px;
   line-height: 146%;
   color: var(--palegrey);
@@ -218,7 +218,7 @@
 
 .A_LeaveMailCall {
   width: 242px;
-  font-family: 'InterLight';
+  font-family: 'InterLight', sans-serif;
   font-size: 12px;
   line-height: 115%;
   color: var(--palegrey);
@@ -226,7 +226,7 @@
 
 .A_FooterLink {
   margin: 4.5px 0px 4.5px 0px;
-  font-family: 'InterRegular';
+  font-family: 'InterRegular', sans-serif;
   font-size: 18px;
   line-height: 146%;
   color: var(--palegrey);
@@ -238,7 +238,7 @@
 
 .A_RightsReservedText {
   width: 242px;
-  font-family: 'InterLight';
+  font-family: 'InterLight', sans-serif;
   font-size: 12px;
   line-height: 115%;
   color: var(--palegrey);
@@ -246,7 +246,7 @@
 
 .A_QuizHeading {
   margin-bottom: 8px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 36px;
   line-height: 123%;
   color: var(--black);
@@ -260,14 +260,14 @@
   border: 2px solid var(--blueishblue);
   border-radius: 8px;
 
-  &.Picked {
+  &.picked {
     border: 4px solid var(--blueishblue);
   }
 }
 
 .A_AnswerNumber {
   width: 570px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   color: var(--black);
@@ -277,7 +277,7 @@
   width: 570px;
   margin-bottom: 8px;
   margin-top: 8px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 36px;
   line-height: 123%;
   color: var(--black);
@@ -285,7 +285,7 @@
 
 .A_ArticleHeading {
   margin-bottom: 8px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 36px;
   line-height: 123%;
   color: var(--black);
@@ -293,14 +293,14 @@
 
 .A_ParagraphHeading {
   width: 687px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   color: var(--black);
 }
 
 .A_ArticleParagraph {
-  font-family: 'InterRegular';
+  font-family: 'InterRegular', sans-serif;
   font-size: 18px;
   line-height: 146%;
   color: black;
@@ -309,7 +309,7 @@
 .A_QuoteText {
   position: relative;
   width: 398px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   text-align: center;
@@ -326,13 +326,13 @@
   width: 271px;
   margin-top: 22px;
   margin-left: 22px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   color: var(--black);
   cursor: pointer;
 
-  &.White {
+  &.white {
     color: var(--white);
   }
 }
@@ -342,13 +342,13 @@
   width: 173px;
   margin-top: 22px;
   margin-left: 22px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   color: var(--black);
   cursor: pointer;
 
-  &.White {
+  &.white {
     color: var(--white);
   }
 }
@@ -358,7 +358,7 @@
   width: 176px;
   margin-top: 6px;
   margin-left: 22px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   color: var(--black);
@@ -369,7 +369,7 @@
   position: relative;
   width: 176px;
   margin-left: 22px;
-  font-family: 'InterRegular';
+  font-family: 'InterRegular', sans-serif;
   font-size: 18px;
   line-height: 146%;
   color: var(--black);
@@ -383,24 +383,26 @@
   border-radius: 8px 8px 0px 0px;
   cursor: pointer;
 }
+
 .A_HeadlinerHeading {
   position: relative;
   width: 522px;
   margin-top: 30px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   color: var(--white);
 }
 
-.A_HeadlinerDesctiption {
+.A_HeadlinerDescription {
   position: relative;
   width: 522px;
-  font-family: 'InterLight';
+  font-family: 'InterLight', sans-serif;
   font-size: 14px;
   line-height: 146%;
   color: var(--white);
 }
+
 .A_HeadlinerTextBlock {
   position: relative;
   display: flex;
@@ -429,18 +431,18 @@
   background-image: url('../src/images/TagQuiz.png');
   background-size: cover;
 
-  &.Sos {
+  &.sos {
     background-image: url('../src/images/TagSos.png');
   }
 
-  &.Heading {
+  &.heading {
     background-image: url('../src/images/TagHeading.png');
   }
 }
 
 .A_SectionHeading {
   width: 940px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 36px;
   line-height: 123%;
   color: var(--black);

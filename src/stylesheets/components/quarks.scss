@@ -4,12 +4,13 @@
 }
 
 .Q_CardList{
-  font-family: 'InterRegular';
+  font-family: 'InterRegular', sans-serif;
   font-size: 18px;
   line-height: 146%;
   list-style: decimal;
   color: var(--blueishblue);
 }
+
 .Q_IfCorrect {
   height: 46px;
   margin-left: 50px;
@@ -18,7 +19,7 @@
 .Q_AnswerOptionText {
   width: 401px;
   margin: 20px 0px 20px 40px;
-  font-family: 'InterMedium';
+  font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
   color: var(--black);

@@ -63,13 +63,17 @@
 .O_SosCard {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  //justify-content: center;
   width: 220px;
   height: 340px;
-  gap: 22px;
+  padding-top: 40px;
+  gap: 4px;
   border-radius: 8px;
-  background-color: var(--white);
+  background-image: url('../src/images/CardOuterBackground.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 }

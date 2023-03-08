@@ -353,33 +353,23 @@
   }
 }
 
-.A_SosCardPreviewHeading {
+.A_CardOuterDescription {
   position: relative;
-  width: 176px;
-  margin-top: 6px;
-  margin-left: 22px;
-  font-family: 'InterMedium', sans-serif;
-  font-size: 22px;
-  line-height: 119%;
-  color: var(--black);
-  cursor: pointer;
-}
-
-.A_SosCardPreviewDescription {
-  position: relative;
-  width: 176px;
-  margin-left: 22px;
+  width: 191px;
   font-family: 'InterRegular', sans-serif;
   font-size: 18px;
   line-height: 146%;
-  color: var(--black);
+  color: var(--sickyellow);
+  text-align: center;
 }
 
-.A_SosCardImage {
+.A_CardOuterHeading {
   position: relative;
-  width: 220px;
-  height: 160px;
-
+  //display: flex;
+  //align-items: center;
+  //flex-direction: row;
+  //justify-content: center;
+  height: 37px;
   border-radius: 8px 8px 0px 0px;
   cursor: pointer;
 }

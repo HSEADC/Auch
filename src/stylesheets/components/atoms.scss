@@ -377,7 +377,6 @@
 .A_HeadlinerHeading {
   position: relative;
   width: 522px;
-  margin-top: 30px;
   font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
@@ -425,7 +424,7 @@
     background-image: url('../src/images/TagSos.png');
   }
 
-  &.heading {
+  &.headline {
     background-image: url('../src/images/TagHeading.png');
   }
 }
@@ -436,4 +435,30 @@
   font-size: 36px;
   line-height: 123%;
   color: var(--black);
+}
+
+.A_RecommendationHeading {
+  position: relative;
+  width: 700px;
+  margin-top: 65px;
+  font-family: 'InterMedium', sans-serif;
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--blueishblue);
+}
+
+.A_RecommendationCardImg {
+  position: relative;
+  width: 220px;
+  height: 160px;
+}
+
+.A_RecommendationCardText {
+  width: 174px;
+  margin-top: 15px;
+  font-family: 'InterItalic', sans-serif;
+  font-size: 14px;
+  line-height: 146%;
+  color: var(--blueishblue);
+
 }

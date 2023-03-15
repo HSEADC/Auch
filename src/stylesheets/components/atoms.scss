@@ -18,17 +18,6 @@
   }
 }
 
-.A_SearchBar {
-  width: 247px;
-  height: 30px;
-  padding-left: 14px;
-  border-radius: 40px;
-  font-family: 'InterLight', sans-serif;
-  font-size: 12px;
-  line-height: 115%;
-  cursor: text;
-}
-
 .A_MailInput {
   display: flex;
   align-items: flex-start;
@@ -50,61 +39,127 @@
   }
 }
 
-.A_TagsList {
+.C_HeadlinerTagsRow {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: row;
-  width: 238px;
-  height: 22px;
-  padding: 0px;
+  margin-left: 22px;
   gap: 8px;
+
+    .A_DescriptionTag {
+      display: inline-block;
+      height: 22px;
+      padding: 4px 14px;
+      border-radius: 44px;
+      border: 1px solid var(--blueishblue);
+      cursor: pointer;
+
+      .A_DescriptionTagText {
+        font-family: 'InterLight', sans-serif;
+        font-size: 12px;
+        line-height: 115%;
+        color: var(--blueishblue);
+      }
+
+      &:hover {
+        background-color: var(--blueishblue);
+
+        .A_DescriptionTagText {
+          color: var(--white);
+        }
+      }
+
+      &.active {
+        background-color: var(--blueishblue);
+
+        .A_DescriptionTagText {
+          color: var(--palegrey);
+        }
+      }
+      &.inactiveYellow {
+        border-color: var(--sickyellow);
+
+        .A_DescriptionTagText {
+          color: var(--sickyellow);
+        }
+      }
+      &.inactiveWhite {
+        border-color: var(--white);
+
+        .A_DescriptionTagText {
+          color: var(--white);
+        }
+      }
+    }
 }
 
-.A_DescriptionTag {
-  display: inline-block;
-  height: 22px;
-  padding: 4px 14px;
-  border-radius: 44px;
-  border: 0.75px solid var(--blueishblue);
-  cursor: pointer;
+.W_TagsBlock {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 150px;
+  gap: 6px;
+}
+// он должен быть внутри верхней обертки, но у нас есть место, где эта коллекция не в обертке
+.C_TagsRow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-left: 22px;
+  gap: 8px;
 
-  .A_DescriptionTagText {
-    font-family: 'InterLight', sans-serif;
-    font-size: 12px;
-    line-height: 115%;
-    color: var(--blueishblue);
-  }
-
-  &:hover {
-    background-color: var(--blueishblue);
+  .A_DescriptionTag {
+    display: inline-block;
+    height: 22px;
+    padding: 4px 14px;
+    border-radius: 44px;
+    border: 1px solid var(--blueishblue);
+    cursor: pointer;
 
     .A_DescriptionTagText {
-      color: var(--white);
+      font-family: 'InterLight', sans-serif;
+      font-size: 12px;
+      line-height: 115%;
+      color: var(--blueishblue);
     }
-  }
 
-  &.active {
-    background-color: var(--blueishblue);
+    &:hover {
+      background-color: var(--blueishblue);
 
-    .A_DescriptionTagText {
-      color: var(--palegrey);
+      .A_DescriptionTagText {
+        color: var(--white);
+      }
     }
-  }
-  &.inactiveYellow {
-    border-color: var(--sickyellow);
 
-    .A_DescriptionTagText {
-      color: var(--sickyellow);
+    &.active {
+      background-color: var(--blueishblue);
+
+      .A_DescriptionTagText {
+        color: var(--palegrey);
+      }
     }
-  }
-  &.inactiveWhite {
-    border-color: var(--white);
+    &.inactiveYellow {
+      border-color: var(--sickyellow);
 
-    .A_DescriptionTagText {
-      color: var(--white);
+      .A_DescriptionTagText {
+        color: var(--sickyellow);
+      }
+    }
+    &.inactiveWhite {
+      border-color: var(--white);
+
+      .A_DescriptionTagText {
+        color: var(--white);
+      }
     }
   }
 }
+
 
 .A_CloudTag {
   display: inline-block;
@@ -136,16 +191,6 @@
       color: var(--palegrey);
     }
   }
-}
-
-.A_SocialsList {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  width: 98px;
-  height: 20px;
-  padding: 0px;
-  gap: 6px;
 }
 
 .A_Socials {
@@ -265,7 +310,7 @@
   }
 }
 
-.A_AnswerNumber {
+.A_QuestionNumber {
   width: 570px;
   font-family: 'InterMedium', sans-serif;
   font-size: 22px;
@@ -273,7 +318,7 @@
   color: var(--black);
 }
 
-.A_AnswerHeading {
+.A_QuestionText {
   width: 570px;
   margin-bottom: 8px;
   margin-top: 8px;
@@ -353,17 +398,17 @@
   }
 }
 
-.A_CardOuterDescription {
+.A_SosCardDescription {
   position: relative;
-  width: 191px;
-  font-family: 'InterRegular', sans-serif;
-  font-size: 18px;
-  line-height: 146%;
+  width: 187px;
+  font-family: 'InterLight', sans-serif;
+  font-size: 14px;
+  line-height: 108.5%;
   color: var(--sickyellow);
   text-align: center;
 }
 
-.A_CardOuterHeading {
+.A_SosCardHeading {
   position: relative;
   //display: flex;
   //align-items: center;
@@ -390,25 +435,6 @@
   font-size: 14px;
   line-height: 146%;
   color: var(--white);
-}
-
-.A_HeadlinerTextBlock {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 522px;
-  gap: 11px;
-  text-align: center;
-}
-
-.A_HeadlinerTextBlockFull {
-  position: relative;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 19px;
 }
 
 .A_CardType {
@@ -460,5 +486,22 @@
   font-size: 14px;
   line-height: 146%;
   color: var(--blueishblue);
-
 }
+
+.A_CardText{
+  font-family: 'InterRegular', sans-serif;
+  font-size: 18px;
+  line-height: 146%;
+  list-style: decimal;
+  color: var(--blueishblue);
+}
+
+.A_AnswerOptionText {
+  width: 401px;
+  margin: 20px 0px 20px 40px;
+  font-family: 'InterMedium', sans-serif;
+  font-size: 22px;
+  line-height: 119%;
+  color: var(--black);
+}
+

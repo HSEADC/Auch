@@ -43,16 +43,6 @@
   }
 }
 
-.M_ContentMetaData {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 700px;
-  height: 43px;
-  padding: 0px;
-  gap: 7px;
-}
-
 .M_InteractiveLine {
   display: flex;
   align-items: center;
@@ -61,6 +51,16 @@
   height: 22px;
   padding: 0px;
   gap: 364px;
+
+  .W_SocialsList {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 98px;
+    height: 20px;
+    padding: 0px;
+    gap: 6px;
+  }
 }
 
 .M_CardContent {
@@ -71,14 +71,14 @@
   padding: 40px 0px 40px 0px;
   gap: 40px;
   background-color: white;
+}
 
-  .W_CardText {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 452px;
-    gap: 15px;
-  }
+.M_CardTextBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 452px;
+  gap: 15px;
 }
 
 .M_RightsReservedBlock {
@@ -122,26 +122,7 @@
   flex-direction: column;
   gap: 14px;
 }
-
-.M_TagsRow {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  margin-left: 22px;
-  gap: 8px;
-}
-
-.M_TagsBlock {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 150px;
-  gap: 6px;
-}
-
-.M_CloudTagRow {
+.C_CloudTagRow {
   position: relative;
   display: flex;
   align-items: center;
@@ -150,7 +131,7 @@
   gap: 9px;
 }
 
-.M_CloudTagBlock {
+.W_CloudTagBlock {
   position: relative;
   display: flex;
   align-items: center;
@@ -207,39 +188,23 @@
   }
 }
 
-.M_ArticleCardRow {
+.W_CardBlock {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  flex-direction: row;
   gap: 20px;
+
+  .C_ArticleCardRow {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
-.M_SosCardPreviewText {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 4px;
-}
 
-.M_SosCardPreview {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.M_HeadlinerTagsRow {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
-  margin-left: 22px;
-  gap: 8px;
-}
 
 .M_Headliner {
   position: relative;
@@ -258,19 +223,40 @@
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 }
 
-.M_HeadlinerTagsRow {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  margin-left: 22px;
-  gap: 8px;
-}
-
 .M_SosCardRow {
   position: relative;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   gap: 20px;
+}
+
+.M_HeadlinerTextBlock {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 522px;
+  gap: 11px;
+  text-align: center;
+}
+
+.M_HeadlinerTextBlockFull {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.M_SearchBar {
+  width: 247px;
+  height: 30px;
+  padding-left: 14px;
+  border-radius: 40px;
+  font-family: 'InterLight', sans-serif;
+  font-size: 12px;
+  line-height: 115%;
+  cursor: text;
 }

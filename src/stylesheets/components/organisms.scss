@@ -52,14 +52,6 @@
   gap: 24px;
 }
 
-.O_CardBlock {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-
 .O_SosCard {
   position: relative;
   display: flex;
@@ -119,4 +111,14 @@
   background-color: var(--white);
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
+}
+
+.O_ContentMetaData {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 700px;
+  height: 43px;
+  padding: 0px;
+  gap: 7px;
 }

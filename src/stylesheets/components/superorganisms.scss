@@ -136,4 +136,13 @@
 .S_RecommendationCardBlock {
   position: relative;
   width: 700px;
+
+  .C_RecommendationCardRow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
 }

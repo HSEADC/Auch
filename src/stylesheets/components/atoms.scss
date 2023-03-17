@@ -51,7 +51,7 @@
     .A_DescriptionTag {
       display: inline-block;
       height: 22px;
-      padding: 4px 14px;
+      padding: 3px 14px 4px 14px;
       border-radius: 44px;
       border: 1px solid var(--blueishblue);
       cursor: pointer;
@@ -116,7 +116,7 @@
   .A_DescriptionTag {
     display: inline-block;
     height: 22px;
-    padding: 4px 14px;
+    padding: 3px 14px 4px 14px;
     border-radius: 44px;
     border: 1px solid var(--blueishblue);
     cursor: pointer;
@@ -209,7 +209,6 @@
 .A_QuizHead {
   width: 700px;
   height: 200px;
-  background-color: var(--sickyellow);
 }
 
 .A_QuizHeadText {
@@ -218,7 +217,7 @@
   width: 700px;
   background-color: white;
 
-  p {
+  .A_EliteHeadText {
     width: 612px;
     margin: 20px 0px 20px 0px;
     font-family: 'InterItalic', sans-serif;
@@ -425,6 +424,7 @@
   font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
+  text-align: center;
   color: var(--white);
 }
 

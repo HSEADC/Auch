@@ -17,3 +17,5 @@
 @import 'stylesheets/components/quarks.scss';
 @import 'stylesheets/components/organisms.scss';
 @import 'stylesheets/components/superorganisms.scss';
+@import 'stylesheets/responsive/responsive_index.scss';
+@import 'stylesheets/responsive/responsive_articles.scss';

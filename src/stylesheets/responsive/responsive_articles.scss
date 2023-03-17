@@ -1,0 +1,261 @@
+@media only screen and (max-width: 390px) {
+
+  .O_NavigationBar {
+    display: none;
+  }
+
+  .M_StaticBar {
+    display: flex;
+  }
+
+  .Q_Logo {
+    margin-right: 0;
+  }
+
+  .M_NavigationLinks {
+    &.mobile {
+      display: flex;
+      justify-content: center;
+      margin-right: 0;
+    }
+  }
+
+  .A_SectionButton {
+    opacity: 0.6;
+    padding: 10px 15px;
+    color: var(--blueishblue);
+
+    &.active {
+      opacity: 1;
+      border-bottom: solid;
+      border-width: 2px;
+      border-color: var(--blueishblue);
+    }
+  }
+
+  .C_CloudTagRow {
+    width: 358px;
+  }
+
+  .S_ArticlesGalleryContent {
+    width: 358px;
+  }
+
+  .W_CardBlock {
+    .C_ArticleCardRow {
+      display: none;
+    }
+  }
+
+  .O_HeadlinerBlock {
+    width: 358px;
+    margin-top: 42px;
+    gap: 12px;
+  }
+
+  .A_SectionHeading {
+    width: 358px;
+    padding-bottom: 5px;
+    font-size: 32px;
+    line-height: 112%;
+    color: var(--black);
+  }
+
+  .M_Headliner {
+    width: 358px;
+    height: 272px;
+    background-image: none;
+    background-color: var(--blueishblue);
+  }
+
+  .M_HeadlinerTextBlock {
+    width: 321px;
+  }
+
+  .A_HeadlinerHeading {
+    width: 321px;
+    font-size: 22px;
+    line-height: 119%;
+  }
+
+  .A_HeadlinerDescription {
+    width: 321px;
+    font-family: 'InterLight', sans-serif;
+    font-size: 14px;
+    line-height: 146%;
+    color: var(--white);
+  }
+
+  .A_CardType  {
+    &.headline {
+      display: none;
+    }
+  }
+
+  .C_HeadlinerTagsRow {
+    margin-left: 0;
+  }
+
+  .S_MainCardsBlock {
+    width: 358px;
+    margin-top: 42px;
+    gap: 12px;
+  }
+
+  .M_ArticleCard {
+    width: 358px;
+  }
+
+  .O_Footer {
+    flex-direction: column;
+    width: 100vw;
+    height: 475px;
+    margin-top: 140px;
+    gap: 32px;
+    bottom: 0;
+    background-color: var(--black);
+  }
+
+  .M_FooterLinks {
+    align-items: center;
+    flex-direction: column;
+    margin-right: 0;
+    gap: 0;
+
+    .W_LinksColumn {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .M_RightsReservedBlock {
+    align-items: center;
+    margin: 0;
+  }
+
+  .M_MailCollectionBlock {
+    align-items: center;
+    width: 180px;
+    margin-right: 0;
+  }
+
+  .A_MailInput {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 178px;
+    opacity: 0.6;
+
+    .mailInput {
+      width: 178px;
+      text-align: center;
+      background-color: var(--black);
+    }
+  }
+
+  .A_LeaveMailCall {
+    width: 178px;
+    text-align: center;
+  }
+
+  .A_RightsReservedText {
+    width: 134px;
+    text-align: center;
+  }
+
+  .A_ArticleHeading {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 112%;
+  }
+
+  .S_ArticleContent {
+    width: 358px;
+    margin-top: 18px;
+  }
+
+  .M_InteractiveLine {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 358px;
+    height: 298px;
+    gap: 18px;
+
+    .W_SocialsList {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      width: 98px;
+      height: 30px;
+      padding: 0px;
+      gap: 6px;
+    }
+  }
+
+  .A_Socials {
+    width: 30px;
+    height: 30px;
+  }
+
+  .O_ContentMetaData {
+    height: 90px;
+  }
+
+  .M_HeadlineBlock {
+    width: 358px;
+    margin-top: 23px;
+    border-radius: 8px;
+  }
+
+  .A_QuizHead {
+    width: 358px;
+    height: 114px;
+    background-image: url('../src/images/Mobile_desertHeadPic.png');
+  }
+
+  .A_QuizHeadText {
+    width: 358px;
+
+    .A_EliteHeadText {
+      width: 298px;
+      font-size: 12px;
+      line-height: 115%;
+    }
+  }
+
+  .A_ParagraphHeading {
+    width: 358px;
+    font-size: 20px;
+    line-height: 108%;
+  }
+
+  .A_ArticleParagraph {
+    font-size: 18px;
+    line-height: 131%;
+  }
+
+  .M_ArticleQuote {
+    width: 358px;
+  }
+
+  .A_QuoteMark {
+    width: 71px;
+  }
+
+  .A_QuoteText {
+    width: 209px;
+    font-size: 20px;
+    line-height: 108%;
+  }
+
+  .O_ArticleLongread {
+    gap: 30px
+  }
+
+
+
+
+
+}

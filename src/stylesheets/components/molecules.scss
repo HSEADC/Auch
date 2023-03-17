@@ -3,6 +3,12 @@
   display: flex;
   align-items: center;
   margin-right: 221px;
+
+  &.mobile {
+    width: 100vw;
+    display: none;
+    margin-top: 8px;
+  }
 }
 
 .M_HeadlineBlock {
@@ -125,7 +131,9 @@
 .C_CloudTagRow {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  width: 750px;
   flex-direction: row;
   justify-content: center;
   gap: 9px;
@@ -259,4 +267,17 @@
   font-size: 12px;
   line-height: 115%;
   cursor: text;
+}
+
+// here starts mobile extra components
+
+.M_StaticBar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  height: 56px;
+  padding: 4px 20px 4px 30px;
+  background-color: var(--black);
 }

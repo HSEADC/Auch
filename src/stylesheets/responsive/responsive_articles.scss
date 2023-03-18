@@ -42,9 +42,8 @@
   }
 
   .W_CardBlock {
-    .C_ArticleCardRow {
-      display: none;
-    }
+    width: 358px;
+    flex-direction: column;
   }
 
   .O_HeadlinerBlock {
@@ -103,7 +102,12 @@
   }
 
   .M_ArticleCard {
+    display: none;
     width: 358px;
+
+    &.mobile {
+      display: block;
+    }
   }
 
   .O_Footer {
@@ -253,9 +257,4 @@
   .O_ArticleLongread {
     gap: 30px
   }
-
-
-
-
-
 }

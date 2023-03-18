@@ -11065,7 +11065,20 @@ var __webpack_exports__ = {};
 "use strict";
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(755);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+ // must AND WILL be replaced by vanilla js
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".MainLink").click(function () {
@@ -11092,7 +11105,71 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".Q_Logo").click(function () {
     document.location.href = "https://auch.adc.ac";
   });
-});
+}); // implementation of filtering by tags on gallery pages
+
+var cloudTags = document.getElementsByClassName("A_CloudTag");
+
+var unfilteredItems = _toConsumableArray(document.getElementsByClassName("M_ArticleCard"));
+
+var container = document.querySelector(".W_CardBlock");
+
+var _loop = function _loop(i) {
+  var currentCloudTag = cloudTags[i];
+  var currentTag = currentCloudTag.dataset.tags;
+  cloudTags[i].addEventListener('click', function () {
+    console.log(cloudTags[i].classList.contains("active"));
+
+    if (!cloudTags[i].classList.contains("active")) {
+      // untoggleAllCloudTags()
+      cloudTags[i].classList.toggle("active");
+      filterGalleryByTag(currentTag);
+    } else {
+      cloudTags[i].classList.toggle("active");
+      restoreUnfilteredItems();
+    }
+  });
+};
+
+for (var i = 0; i < cloudTags.length; i++) {
+  _loop(i);
+} // empties the gallery content container (deletes all content cards)
+
+
+function clearGalleryContainer() {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+} // this function filters out content items by a tag in input, deleting unrelated items
+
+
+function filterGalleryByTag(tag) {
+  // clear container before filtering, so only filtered cards can be added and displayed
+  clearGalleryContainer();
+
+  for (var _i = 0; _i < unfilteredItems.length; _i++) {
+    var contentItemTags = unfilteredItems[_i].dataset.tags.split(',');
+
+    if (contentItemTags.includes(tag)) {
+      container.appendChild(unfilteredItems[_i]);
+    }
+  }
+} // this function is toggled when a tag is clicked on second time in a row,
+// so it reverses the filtering and sets gallery back to first state
+
+
+function restoreUnfilteredItems() {
+  clearGalleryContainer();
+
+  for (var _i2 = 0; _i2 < unfilteredItems.length; _i2++) {
+    container.appendChild(unfilteredItems[_i2]);
+  }
+} // function untoggleAllCloudTags() {
+//     for (let i = 0; i < cloudTags.length; i++) {
+//         if (cloudTags[i].classList.contains("active")) {
+//             cloudTags[i].classList.toggle("active")
+//         }
+//     }
+// }
 })();
 
 /******/ })()

@@ -171,13 +171,20 @@
   &.specialWide {
     background-color: var(--black);
   }
+
   &.standartNarrow {
     width: 220px;
   }
+
   &.specialNarrow {
     width: 220px;
     background-color: var(--black);
   }
+
+  &.mobile {
+    display: none;
+  }
+
 }
 
 .M_QuizCard {
@@ -199,7 +206,9 @@
 .W_CardBlock {
   position: relative;
   display: flex;
-  flex-direction: column;
+  width: 940px;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 20px;
 

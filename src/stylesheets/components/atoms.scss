@@ -100,7 +100,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 150px;
+  width: 291px;
   gap: 6px;
 }
 // он должен быть внутри верхней обертки, но у нас есть место, где эта коллекция не в обертке
@@ -303,9 +303,18 @@
   width: 570px;
   border: 2px solid var(--blueishblue);
   border-radius: 8px;
+  cursor: pointer;
 
   &.picked {
     border: 4px solid var(--blueishblue);
+  }
+
+  &.right {
+    border: 4px solid var(--rightgreen);
+  }
+
+  &.wrong {
+    border: 4px solid var(--wrongred);
   }
 }
 
@@ -502,6 +511,15 @@
   font-family: 'InterMedium', sans-serif;
   font-size: 22px;
   line-height: 119%;
+  color: var(--black);
+}
+
+.A_ResultMeaning {
+  display: none;
+  width: 570px;
+  font-family: 'InterRegular', sans-serif;
+  font-size: 18px;
+  line-height: 146%;
   color: var(--black);
 }
 

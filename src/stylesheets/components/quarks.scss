@@ -5,6 +5,17 @@
 }
 
 .Q_IfCorrect {
+  width: 39px;
   height: 46px;
   margin-left: 50px;
+  background-image: none;
+  background-size: cover;
+
+  &.right {
+    background-image: url("../src/images/quizGreenTick.svg");
+  }
+
+  &.wrong {
+    background-image: url("../src/images/quizRedCross.svg");
+  }
 }

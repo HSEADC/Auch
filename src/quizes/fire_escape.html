@@ -11,10 +11,10 @@
   <body class="S_QuizaBody">
     <div class="O_NavigationBar">
       <div class="M_NavigationLinks">
-        <p class="A_SectionButton MainLink">Главная</p>
-        <p class="A_SectionButton ArticlesLink">Статьи</p>
-        <p class="A_SectionButton QuizesLink active">Тесты</p>
-        <p class="A_SectionButton CardsLink">Карточки</p>
+        <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
+        <p class="A_SectionButton ArticlesLink" onclick="location.href='https://auch.adc.ac/articles.html';">Статьи</p>
+        <p class="A_SectionButton QuizesLink active"  onclick="location.href='https://auch.adc.ac/quizes.html';">Тесты</p>
+        <p class="A_SectionButton CardsLink"  onclick="location.href='https://auch.adc.ac/cards.html';">Карточки</p>
       </div>
       <img src="../images/logoNav.svg" class="Q_Logo">
       <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу...">
@@ -38,30 +38,32 @@
           </div>
         </div>
         <div class="M_HeadlineBlock">
-          <img src="../images/distinguisher.png" alt="Это огнетушитель" class="A_QuizHead">
+          <img src="../images/fire_escapeHead.png" alt="Это огнетушитель" class="A_QuizHead">
           <div class="A_QuizHeadText">
-            <p class="A_EliteHeadText">Мы симулировали для вас ситуацию возгорания в жилом помещении.<br>
-              Узнайте, знаете, ли вы как действовать в такой ситуации.</p>
+            <p class="A_EliteHeadText">Вы проводили замечательный выходной, смотрели «Секс в большом городе», потягивая
+              космополитен, и курили на диване. И вдруг вы просыпаетесь от того, что Нью-Йорк в&nbspогне, и ваша квартира тоже.
+              Знаете, что делать?</p>
           </div>
         </div>
         <div class="O_QuizBlock">
-          <p class="A_QuestionNumber">1<span style="color: var(--blueishblue)">/</span>2</p>
-          <h1 class="A_QuestionText">Формулировка вопроса</h1>
+          <p class="A_QuestionNumber">x<span style="color: var(--blueishblue)">/</span>x</p>
+          <h1 class="A_QuestionText"></h1>
           <div class="M_AnswerList">
             <div class="A_AnswerOption">
-              <p class="A_AnswerOptionText">Котики любят котичься и пусичься</p>
-            </div>
-            <div class="A_AnswerOption picked">
-              <p class="A_AnswerOptionText">Ответик</p>
-              <img src="../images/quizRedCross.svg" alt="Wrong" class="Q_IfCorrect">
+              <p class="A_AnswerOptionText"></p>
+              <div class="Q_IfCorrect"></div>
             </div>
             <div class="A_AnswerOption">
-              <p class="A_AnswerOptionText">Ответик</p>
+              <p class="A_AnswerOptionText"></p>
+              <div class="Q_IfCorrect"></div>
             </div>
             <div class="A_AnswerOption">
-              <p class="A_AnswerOptionText">Ответик</p>
+              <p class="A_AnswerOptionText"></p>
+              <div class="Q_IfCorrect"></div>
             </div>
           </div>
+          <p class="A_ResultMeaning"></p>
+          <img class="M_ResultVisual" alt="result" src="../images/resultSnake.png">
         </div>
       </div>
       <div class="S_RecommendationCardBlock">
@@ -103,7 +105,6 @@
                     name="email"
                     placeholder="Ваш e-mail"
             />
-            <!--          <button id="emailb" name="button" type="submit">Отправить</button>-->
           </form>
         </div>
 

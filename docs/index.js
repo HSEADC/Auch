@@ -11078,7 +11078,9 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
- // must AND WILL be replaced by vanilla js
+ // REVIEW структура кода, пусть будут переменные сначала, потом функции, потом инициализация
+// как сделать, чтобы страница читала только специфический файл JS
+// must AND WILL be replaced by vanilla js
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".DesertLink").click(function () {
@@ -11097,11 +11099,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
 
 var cloudTags = document.getElementsByClassName("A_CloudTag");
 
-var unfilteredItems = _toConsumableArray(document.getElementsByClassName("M_ArticleCard"));
+var unfilteredItems = _toConsumableArray(document.getElementsByClassName("M_ArticleCard")); // REVIEW выгоднее было бы не сохранять вот так вот штучки, а работать в более JSONшкой системой
+
 
 var container = document.querySelector(".W_CardBlock");
 
 var _loop = function _loop(i) {
+  // REVIEW абстрагировать
   var currentCloudTag = cloudTags[i];
   var currentTag = currentCloudTag.dataset.tags;
   currentCloudTag.addEventListener('click', function () {
@@ -11164,11 +11168,13 @@ function untoggleAllCloudTags() {
 var questions = [{
   question: "Что делать в первую очередь?",
   answers: {
+    // использовать массив, ведь номера порядковые те же / КЛЮЧИ СДЕЛАТЬ НЕ ЦИФРАМИ?
     0: "Кричать и срочно звонить в скорую, пожарную и МЧС",
     1: "Побежать за ведром с водой или горшком с землей: все тушить",
     2: "Оценить степень беды, понять, насколько сильно все горит и&nbspпылает"
   },
-  right: 2
+  right: 2 // REVIEW если делать answers с массивом
+
 }, {
   question: "Вы поняли, что дело плохо, пожарные уже едут на вызов, а вы?",
   answers: {
@@ -11205,7 +11211,8 @@ var resultTable = {
   0: {
     preview: "Кажется, от вас остались одни угольки…",
     text: "Вы пока не готовы к такому, лучше прочитайте нашу статью про пожары и будьте внимательны",
-    imgLink: "../images/resultSnake2.png"
+    imgLink: "../images/resultSnake2.png" // забрать картинку из HTML (странненько) ИЛИ import image from "/path/"
+
   },
   1: {
     preview: "Вы почти спаслись!",
@@ -11239,6 +11246,7 @@ function initializeQuestion() {
 var answerOptionButtons = document.getElementsByClassName("A_AnswerOption");
 
 var _loop2 = function _loop2(_i5) {
+  // REVIEW закинуть это в функцию / абстрагировать
   var pickedOption = answerOptionButtons[_i5];
   pickedOption.addEventListener('click', function () {
     answerPicked(pickedOption, _i5);
@@ -11309,7 +11317,7 @@ function initializeResult() {
 } // should it be done here or 1st question better to be put in html manually
 
 
-initializeQuestion();
+initializeQuestion(); // REVIEW в DOM Ready запихнуть инициализацию
 })();
 
 /******/ })()

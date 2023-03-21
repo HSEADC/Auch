@@ -1,6 +1,9 @@
 import './index.css'
 import $ from 'jquery'
 
+// REVIEW структура кода, пусть будут переменные сначала, потом функции, потом инициализация
+// как сделать, чтобы страница читала только специфический файл JS
+
 // must AND WILL be replaced by vanilla js
 $(document).ready(function() {
     $(".DesertLink").click(function() {document.location.href="https://auch.adc.ac/articles/desert.html"});
@@ -11,10 +14,10 @@ $(document).ready(function() {
 
 // implementation of filtering by tags on gallery pages
 const cloudTags = document.getElementsByClassName("A_CloudTag")
-let unfilteredItems = [...document.getElementsByClassName("M_ArticleCard")]
+let unfilteredItems = [...document.getElementsByClassName("M_ArticleCard")] // REVIEW выгоднее было бы не сохранять вот так вот штучки, а работать в более JSONшкой системой
 const container = document.querySelector(".W_CardBlock")
 
-for (let i = 0; i < cloudTags.length; i++) {
+for (let i = 0; i < cloudTags.length; i++) { // REVIEW абстрагировать
     let currentCloudTag = cloudTags[i]
     let currentTag = currentCloudTag.dataset.tags
     currentCloudTag.addEventListener('click', () => {
@@ -78,12 +81,12 @@ function untoggleAllCloudTags() {
 let questions = [
     {
         question: "Что делать в первую очередь?",
-        answers: {
+        answers: { // использовать массив, ведь номера порядковые те же / КЛЮЧИ СДЕЛАТЬ НЕ ЦИФРАМИ?
             0: "Кричать и срочно звонить в скорую, пожарную и МЧС",
             1: "Побежать за ведром с водой или горшком с землей: все тушить",
             2: "Оценить степень беды, понять, насколько сильно все горит и&nbspпылает"
         },
-        right: 2
+        right: 2 // REVIEW если делать answers с массивом
     },
 
     {
@@ -129,7 +132,7 @@ const resultTable = {
     0: {
         preview: "Кажется, от вас остались одни угольки…",
         text: "Вы пока не готовы к такому, лучше прочитайте нашу статью про пожары и будьте внимательны",
-        imgLink: "../images/resultSnake2.png"
+        imgLink: "../images/resultSnake2.png" // забрать картинку из HTML (странненько) ИЛИ import image from "/path/"
     },
     1: {
         preview: "Вы почти спаслись!",
@@ -165,7 +168,7 @@ function initializeQuestion() {
 
 // Listen to buttons so an action can be caught
 const answerOptionButtons = document.getElementsByClassName("A_AnswerOption")
-for (let i = 0; i < answerOptionButtons.length; i++) {
+for (let i = 0; i < answerOptionButtons.length; i++) { // REVIEW закинуть это в функцию / абстрагировать
     let pickedOption = answerOptionButtons[i]
     pickedOption.addEventListener('click', () => {
         answerPicked(pickedOption, i)
@@ -175,7 +178,6 @@ for (let i = 0; i < answerOptionButtons.length; i++) {
 // function responsible for answerOption picking: gets data of a click, saves it, initializes next question
 function answerPicked(pickedOption, i) {
     isAnswerRight(pickedOption, i)
-
     setTimeout(function(){
         // get rid of all correct-or-not styles before initializing new question
         pickedOption.classList.remove("picked", "right", "wrong");
@@ -241,4 +243,4 @@ function initializeResult() {
 
 
 // should it be done here or 1st question better to be put in html manually
-initializeQuestion()
+initializeQuestion() // REVIEW в DOM Ready запихнуть инициализацию

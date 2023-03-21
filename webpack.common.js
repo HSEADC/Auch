@@ -160,6 +160,14 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/errors/404.html',
+      filename: './errors/404.html'
+      // chunks: ['page']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

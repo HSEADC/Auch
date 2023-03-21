@@ -19,3 +19,13 @@
     background-image: url("../src/images/quizRedCross.svg");
   }
 }
+
+.Q_CrossError{
+  position: absolute;
+  width: 501px;
+  height: 602px;
+  z-index: -1;
+  top: 115px;
+  left: 442px;
+  transform: rotate(17.61deg);
+}

@@ -1,16 +1,16 @@
 import './index.css'
-import $ from 'jquery'
+// import $ from 'jquery'
 
 // REVIEW структура кода, пусть будут переменные сначала, потом функции, потом инициализация
 // как сделать, чтобы страница читала только специфический файл JS
 
 // must AND WILL be replaced by vanilla js
-$(document).ready(function() {
-    $(".DesertLink").click(function() {document.location.href="https://auch.adc.ac/articles/desert.html"});
-    $(".FireEscapeLink").click(function() {document.location.href="https://auch.adc.ac/quizes/fire_escape.html"});
-    $(".BurnLink").click(function() {document.location.href="https://auch.adc.ac/cards/burn.html"});
-    $(".Q_Logo").click(function() {document.location.href="https://auch.adc.ac"});
-})
+// $(document).ready(function() {
+//     $(".DesertLink").click(function() {document.location.href="https://auch.adc.ac/articles/desert.html"});
+//     $(".FireEscapeLink").click(function() {document.location.href="https://auch.adc.ac/quizes/fire_escape.html"});
+//     $(".BurnLink").click(function() {document.location.href="https://auch.adc.ac/cards/burn.html"});
+//     $(".Q_Logo").click(function() {document.location.href="https://auch.adc.ac"});
+// })
 
 // implementation of filtering by tags on gallery pages
 const cloudTags = document.getElementsByClassName("A_CloudTag")

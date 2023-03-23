@@ -1,0 +1,43 @@
+@media only screen and (max-width: 390px) {
+
+  .Q_CrossError{
+    width: 318px;
+    height: 383px;
+    top: 265px;
+    left: 86px;
+  }
+
+  .A_BackButton {
+    margin-top: 23px;
+    margin-left: 16px;
+  }
+
+  .A_ErrorMark{
+    width: 258px;
+    height: 164px;
+  }
+
+  .A_ErrorFirstLine{
+    width: 358px;
+    font-size: 32px;
+    line-height: 112%;
+  }
+
+  .A_ErrorSecondLine{
+    width: 358px;
+    font-size: 14px;
+    line-height: 144%;
+  }
+
+  .M_ErrorText{
+    width: 358px;
+    margin-top: -30px;
+  }
+
+  .M_Error{
+    width: 358px;
+    margin-top: 122px;
+    margin-left: 16px;
+  }
+
+}

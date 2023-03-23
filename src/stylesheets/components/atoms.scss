@@ -523,3 +523,32 @@
   color: var(--black);
 }
 
+.A_BackButton {
+  margin-top: 43px;
+  margin-left: 50px;
+  font-family: 'InterLight', sans-serif;
+  font-size: 12px;
+  line-height: 146%;
+  color: var(--blueishblue);
+}
+
+.A_ErrorMark{
+  width: 459px;
+  height: 292px;
+}
+
+.A_ErrorFirstLine{
+  width: 460px;
+  font-family: 'InterMedium', sans-serif;
+  font-size: 36px;
+  line-height: 123%;
+  color: var(--blueishblue);
+}
+
+.A_ErrorSecondLine{
+  width: 460px;
+  font-family: 'InterRegular', sans-serif;
+  font-size: 18px;
+  line-height: 146%;
+  color: var(--blueishblue);
+}

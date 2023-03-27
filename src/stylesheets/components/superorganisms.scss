@@ -72,6 +72,24 @@
   width: 940px;
   margin-top: 45px;
   gap: 12px;
+
+  .W_CardBlock {
+    position: relative;
+    display: flex;
+    width: min-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+
+    .C_ArticleCardRow {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
 }
 
 .S_ArticlesGalleryContent {
@@ -81,6 +99,16 @@
   flex-direction: column;
   justify-content: center;
   width: 940px;
+
+  .W_CardBlock {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 
 .S_ArticlesGallerySection {
@@ -100,6 +128,16 @@
   flex-direction: column;
   justify-content: center;
   width: 940px;
+
+  .W_CardBlock {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 
 .S_QuizesGallerySection {
@@ -107,8 +145,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   width: 100vw;
+  min-height: 100%;
 }
 
 .S_CardsGalleryContent {
@@ -125,8 +163,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   width: 100vw;
+  min-height: 100%;
 }
 
 .S_RecommendationCardBlock {

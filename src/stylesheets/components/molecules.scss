@@ -183,6 +183,10 @@
 
   &.mobile {
     display: none;
+
+    &.special {
+      background-color: var(--black);
+    }
   }
 
 }
@@ -203,23 +207,7 @@
   }
 }
 
-.W_CardBlock {
-  position: relative;
-  display: flex;
-  width: 940px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 20px;
 
-  .C_ArticleCardRow {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 20px;
-  }
-}
 
 
 

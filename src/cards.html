@@ -9,6 +9,21 @@
   <title>«Ауч!» — самый безопасный ресурс</title>
 </head>
 <body class="S_MainBody">
+<div class="M_StaticBar">
+  <img src="images/logoNav.svg" class="Q_Logo"/>
+  <input
+          class="M_SearchBar"
+          type="search"
+          name="search"
+          placeholder="Я ищу..."
+  />
+</div>
+<div class="M_NavigationLinks mobile">
+  <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
+  <p class="A_SectionButton ArticlesLink active" onclick="location.href='https://auch.adc.ac/articles';">Статьи</p>
+  <p class="A_SectionButton QuizesLink" onclick="location.href='https://auch.adc.ac/quizes';">Тесты</p>
+  <p class="A_SectionButton CardsLink" onclick="location.href='https://auch.adc.ac/cards';">Карточки</p>
+</div>
 <div class="O_NavigationBar">
   <div class="M_NavigationLinks">
     <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
@@ -24,90 +39,111 @@
   <div class="S_CardsGalleryContent">
     <div class="W_CloudTagBlock">
       <div class="C_CloudTagRow">
-        <div class="A_CloudTag">
-          <p class="A_CloudTagText">первая помощь</p>
+        <div class="A_CloudTag" data-tags="Мастноу">
+          <p class="A_CloudTagText">Мастноу</p>
         </div>
-        <div class="A_CloudTag">
-          <p class="A_CloudTagText">мастноу</p>
+        <div class="A_CloudTag" data-tags="Бытовое">
+          <p class="A_CloudTagText">Бытовое</p>
         </div>
-        <div class="A_CloudTag">
-          <p class="A_CloudTagText">бытовое</p>
+        <div class="A_CloudTag" data-tags="Короткое">
+          <p class="A_CloudTagText">Короткое</p>
         </div>
-        <div class="A_CloudTag">
-          <p class="A_CloudTagText">короткое</p>
+        <div class="A_CloudTag" data-tags="В путешествии">
+          <p class="A_CloudTagText">В путешествии</p>
         </div>
-
-        <div class="A_CloudTag">
-          <p class="A_CloudTagText">в путешествии</p>
+        <div class="A_CloudTag" data-tags="Неочевидная очевидность">
+          <p class="A_CloudTagText">Неочевидная очевидность</p>
         </div>
-      </div>
-      <div class="C_CloudTagRow">
-        <div class="A_CloudTag">
-          <p class="A_CloudTagText">неочевидная очевидность</p>
-        </div>
-        <div class="A_CloudTag">
-          <p class="A_CloudTagText">с юморком</p>
-        </div>
-
-        <div class="A_CloudTag">
-          <p class="A_CloudTagText">Фильтр</p>
+        <div class="A_CloudTag" data-tags="С юморком">
+          <p class="A_CloudTagText">С юморком</p>
         </div>
       </div>
     </div>
 
     <div class="O_SosCardBlock">
-      <div class="M_SosCardRow">
-        <div class="O_SosCard">
-          <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
-          <p class="A_SosCardDescription">
-            Что предпринять при ожогах разной степени
-          </p>
-        </div>
-        <div class="O_SosCard">
-          <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
-          <p class="A_SosCardDescription">
-            Что предпринять при ожогах разной степени
-          </p>
-        </div>
-        <div class="O_SosCard">
-          <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
-          <p class="A_SosCardDescription">
-            Что предпринять при ожогах разной степени
-          </p>
-        </div>
-        <div class="O_SosCard">
-          <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
-          <p class="A_SosCardDescription">
-            Что предпринять при ожогах разной степени
-          </p>
-        </div>
-      </div>
+      <div class="O_SosCard bug" data-tags="В путешествии">
+        <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
+        <div class="M_SosCardPreview">
 
-      <div class="M_SosCardRow">
-        <div class="O_SosCard">
-          <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
-          <p class="A_SosCardDescription">
-            Что предпринять при ожогах разной степени
-          </p>
+          <div class="M_SosCardPreviewText">
+            <p class="A_SosCardDescription">
+              Что предпринять при ожогах разной степени
+            </p>
+          </div>
         </div>
-        <div class="O_SosCard">
-          <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
-          <p class="A_SosCardDescription">
-            Что предпринять при ожогах разной степени
-          </p>
+        <div class="A_CardType sos"></div>
+      </div>
+      <div class="O_SosCard burn" data-tags="Бытовые">
+        <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
+        <div class="M_SosCardPreview">
+
+          <div class="M_SosCardPreviewText">
+            <p class="A_SosCardDescription">
+              Что предпринять при ожогах разной степени
+            </p>
+          </div>
         </div>
-        <div class="O_SosCard">
-          <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
-          <p class="A_SosCardDescription">
-            Что предпринять при ожогах разной степени
-          </p>
+        <div class="A_CardType sos"></div>
+      </div>
+      <div class="O_SosCard dehydration" data-tags="Неочевидная очевидность">
+        <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
+        <div class="M_SosCardPreview">
+
+          <div class="M_SosCardPreviewText">
+            <p class="A_SosCardDescription">
+              Что предпринять при ожогах разной степени
+            </p>
+          </div>
         </div>
-        <div class="O_SosCard">
-          <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
-          <p class="A_SosCardDescription">
-            Что предпринять при ожогах разной степени
-          </p>
+        <div class="A_CardType sos"></div>
+      </div>
+      <div class="O_SosCard frostbite" data-tags="В путешествии">
+        <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
+        <div class="M_SosCardPreview">
+
+          <div class="M_SosCardPreviewText">
+            <p class="A_SosCardDescription">
+              Что предпринять при ожогах разной степени
+            </p>
+          </div>
         </div>
+        <div class="A_CardType sos"></div>
+      </div>
+      <div class="O_SosCard sprained" data-tags="Бытовое">
+        <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
+        <div class="M_SosCardPreview">
+
+          <div class="M_SosCardPreviewText">
+            <p class="A_SosCardDescription">
+              Что предпринять при ожогах разной степени
+            </p>
+          </div>
+        </div>
+        <div class="A_CardType sos"></div>
+      </div>
+      <div class="O_SosCard bonesOut" data-tags="В путешествии">
+        <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
+        <div class="M_SosCardPreview">
+
+          <div class="M_SosCardPreviewText">
+            <p class="A_SosCardDescription">
+              Что предпринять при ожогах разной степени
+            </p>
+          </div>
+        </div>
+        <div class="A_CardType sos"></div>
+      </div>
+      <div class="O_SosCard sunHeat" data-tags="В путешествии">
+        <img class="A_SosCardHeading" src="images/CardOuterHeading.png" alt=""/>
+        <div class="M_SosCardPreview">
+
+          <div class="M_SosCardPreviewText">
+            <p class="A_SosCardDescription">
+              Что предпринять при ожогах разной степени
+            </p>
+          </div>
+        </div>
+        <div class="A_CardType sos"></div>
       </div>
     </div>
   </div>

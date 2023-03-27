@@ -41,11 +41,6 @@
     width: 358px;
   }
 
-  .W_CardBlock {
-    width: 358px;
-    flex-direction: column;
-  }
-
   .O_HeadlinerBlock {
     width: 358px;
     margin-top: 42px;
@@ -99,6 +94,15 @@
     width: 358px;
     margin-top: 42px;
     gap: 12px;
+
+    .W_CardBlock {
+      width: 358px;
+      flex-direction: column;
+
+      .C_ArticleCardRow {
+        display: none;
+      }
+    }
   }
 
   .M_ArticleCard {
@@ -256,5 +260,103 @@
 
   .O_ArticleLongread {
     gap: 30px
+  }
+
+  .S_QuizesGalleryContent {
+    width: 358px;
+  }
+
+  .S_CardsGalleryContent {
+    width: 358px;
+  }
+
+  .O_SosCard {
+    width: 358px;
+    height: 340px;
+
+    &.mobile {
+      display: flex;
+    }
+
+    &.bug {
+      background-image: url('../src/images/bugMobile.png');
+    }
+
+    &.sunHeat {
+      background-image: url('../src/images/sunHeatMobile.png');
+    }
+
+    &.dehydration {
+      background-image: url('../src/images/dehydrationMobile.png');
+    }
+
+    &.frostbite {
+      background-image: url('../src/images/frostbiteMobile.png');
+    }
+
+    &.burn {
+      background-image: url('../src/images/burnMobile.png');
+    }
+
+    &.bonesOut {
+      background-image: url('../src/images/bonesOutMobile.png');
+    }
+
+    &.sprained {
+      background-image: url('../src/images/sprainedMobile.png');
+    }
+  }
+
+  .O_Card {
+    width: 358px;
+  }
+
+  .S_QuizContent {
+    width: 358px;
+    margin-top: 18px;
+  }
+
+  .A_AnswerOptionText {
+    width: 235px;
+    margin: 12px 0px 12px 20px;
+    font-family: 'InterRegular', sans-serif;
+    font-size: 14px;
+    line-height: 104.5%;
+  }
+
+  .Q_IfCorrect {
+    width: 23.25px;
+    height: 27.42px;
+    margin-left: 21px;
+  }
+
+  .A_QuestionText {
+    width: 327px;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    font-size: 22px;
+    line-height: 104.5%;
+  }
+
+  .M_AnswerList {
+    margin-top: 0;
+  }
+
+  .A_ResultMeaning {
+    width: 327px;
+    font-size: 14px;
+    line-height: 144%;
+    color: var(--black);
+  }
+
+  .M_ResultVisual {
+    width: 327px;
+    height: 121px;
+    margin-top: 25px;
+  }
+
+  .A_QuizHeading {
+    font-size: 32px;
+    line-height: 112%;
   }
 }

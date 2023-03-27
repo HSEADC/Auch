@@ -63,18 +63,50 @@
   padding-top: 40px;
   gap: 10px;
   border-radius: 8px;
-  background-image: url('../src/images/CardOuterBackground.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
+
+  &.mobile {
+    display: none;
+  }
+
+  &.bug {
+    background-image: url('../src/images/bugDesktop.png');
+  }
+
+  &.sunHeat {
+    background-image: url('../src/images/sunHeatDesktop.png');
+  }
+
+  &.dehydration {
+    background-image: url('../src/images/dehydrationDesktop.png');
+  }
+
+  &.frostbite {
+    background-image: url('../src/images/frostbiteDesktop.png');
+  }
+
+  &.burn {
+    background-image: url('../src/images/burnDesktop.png');
+  }
+
+  &.bonesOut {
+    background-image: url('../src/images/bonesOutDesktop.png');
+  }
+
+  &.sprained {
+    background-image: url('../src/images/sprainedDesktop.png');
+  }
 }
 
 .O_SosCardBlock {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 20px;
 }
 

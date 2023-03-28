@@ -50,6 +50,10 @@
   flex-direction: column;
   margin-top: 54px;
   gap: 24px;
+
+  .A_QuizHead {
+    height: 400px;
+  }
 }
 
 .O_SosCard {
@@ -154,7 +158,6 @@
   align-items: flex-start;
   flex-direction: column;
   width: 700px;
-  height: 43px;
   padding: 0px;
   gap: 7px;
 }

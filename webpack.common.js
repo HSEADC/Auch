@@ -133,12 +133,66 @@ module.exports = {
       // chunks: ['page']
     }),
 
-    // temporary burn card page for prosmotr
+    // burn card page for prosmotr
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards/burn.html',
       filename: './cards/burn.html'
+      // chunks: ['page']
+    }),
+
+    // insects card page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/insectscard.html',
+      filename: './cards/insectscard.html'
+      // chunks: ['page']
+    }),
+
+    // sunstroke card page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/sunstroke.html',
+      filename: './cards/sunstroke.html'
+      // chunks: ['page']
+    }),
+
+    // frostbite card page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/frostbite.html',
+      filename: './cards/frostbite.html'
+      // chunks: ['page']
+    }),
+
+    // twist card page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/twist.html',
+      filename: './cards/twist.html'
+      // chunks: ['page']
+    }),
+
+    // stretch card page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/stretch.html',
+      filename: './cards/stretch.html'
+      // chunks: ['page']
+    }),
+
+    // dehydration card page for prosmotr
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/dehydration.html',
+      filename: './cards/dehydration.html'
       // chunks: ['page']
     }),
 

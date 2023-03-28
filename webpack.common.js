@@ -160,6 +160,78 @@ module.exports = {
       // chunks: ['page']
     }),
 
+    // A page for an article "Детка, ты в огне"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/baby_on_fire.html',
+      filename: './articles/baby_on_fire.html'
+      // chunks: ['page']
+    }),
+
+    // A page for an article "Удивительный мир грибов"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/mushrooms.html',
+      filename: './articles/mushrooms.html'
+      // chunks: ['page']
+    }),
+
+    // A page for an article "10 самых badass змей"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/snakes.html',
+      filename: './articles/snakes.html'
+      // chunks: ['page']
+    }),
+
+    // A page for an article "Земля уходит из-под ног"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/earthquake.html',
+      filename: './articles/earthquake.html'
+      // chunks: ['page']
+    }),
+
+    // A page for an article "Слишком много воды"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/water.html',
+      filename: './articles/water.html'
+      // chunks: ['page']
+    }),
+
+    // A page for an article "А у нас в квартире газ!"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/gas.html',
+      filename: './articles/gas.html'
+      // chunks: ['page']
+    }),
+
+    // A page for an article "Клещи против комаров"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/insects.html',
+      filename: './articles/insects.html'
+      // chunks: ['page']
+    }),
+
+    // A page for an article "Выживешь ли ты под лавиной?"
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/articles/avalanche.html',
+      filename: './articles/avalanche.html'
+      // chunks: ['page']
+    }),
+
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',

@@ -143,6 +143,10 @@
   background-color: var(--white);
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
+
+  &.Mobile {
+    display: none;
+  }
 }
 
 .O_ContentMetaData {

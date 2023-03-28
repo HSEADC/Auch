@@ -359,4 +359,45 @@
     font-size: 32px;
     line-height: 112%;
   }
+
+  .S_RecommendationCardBlock {
+    width: 358px;
+
+    .C_RecommendationCardRow {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 15px;
+      gap: 6px;
+    }
+  }
+
+  .A_RecommendationHeading {
+    width: 358px;
+  }
+
+  .O_RecommendationCard {
+    width: 176px;
+    height: 192px;
+    margin-top: 0px;
+    gap: 4px;
+
+    &.Mobile {
+      display: flex;
+    }
+  }
+
+  .A_RecommendationCardImg {
+    width: 176px;
+    height: 128px;
+  }
+
+  .A_RecommendationCardText {
+    width: 141px;
+    margin-top: 12px;
+    font-size: 12px;
+  }
 }

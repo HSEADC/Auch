@@ -1,0 +1,11 @@
+const earthquakeRecommendation = document.getElementById("earthquakeRec")
+const snakeRecommendation = document.getElementById("snakeRec")
+const gasRecommendation = document.getElementById("gasRec")
+const waterRecommendation = document.getElementById("waterRec")
+const bugRecommendation = document.getElementById("bugRec")
+
+earthquakeRecommendation.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles/earthquake.html"})
+snakeRecommendation.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles/snakes.html"})
+gasRecommendation.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles/gas.html"})
+waterRecommendation.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles/water.html"})
+bugRecommendation.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles/insects.html"})

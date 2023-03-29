@@ -1,868 +1,868 @@
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body.index {
-    h1 {
-      font-size: 2.34vw;
-    }
-    p {
-      font-size: 2.34vw;
-    }
-    span {
-      font-size: 2.5vw;
-      -webkit-text-stroke: 0.15vw var(--sickyellow);
-    }
-    .mainlogo {
-      width: 71.29vw;
-    }
-    .ouch {
-      margin-top: 34%;
-    }
-    .arrow {
-      margin-left: 24%;
-    }
-    .arrowimg {
-      display: none;
-    }
-    .arrowimgtab {
-      display: block;
-      width: 9.08vw;
-    }
-    .firsttext {
-      padding-top: 4%;
-      margin-left: 4%;
-      width: 43vw;
-    }
-    .textstack {
-      display: none;
-    }
-    .textstacktab {
-      display: flex;
-      width: 95.5vw;
-    }
-    .textimg {
-      margin-top: 19%;
-    }
-    .back {
-      padding-top: 10%;
-    }
-    .backrect {
-      display: none;
-    }
-    .backrecttab {
-      display: block;
-      width: 83.01vw;
-    }
-    .cardsb {
-      margin-top: -100%;
-    }
-    .cards {
-      width: 59.86vw;
-    }
-    .secondtextb {
-      margin-top: 10%;
-    }
-    .secondtext {
-      width: 65vw;
-    }
-    .cib {
-      margin-left: 14%;
-      margin-top: -1%;
-    }
-    .cardillust {
-      width: 20vw;
-    }
-    .chib {
-      margin-left: 66%;
-      margin-top: -55%;
-    }
-    .checkillust {
-      width: 20vw;
-    }
-    .lasthead {
-      padding-top: 61%;
-    }
-    .lastheadimg {
-      display: none;
-    }
-    .lastheadimgtab {
-      display: block;
-      width: 59.57vw;
-    }
-    .lastdecript {
-      width: 41vw;
-    }
-    .emaild {
-      width: 100vw;
-      text-align: center;
-    }
-    #email {
-      font-family: 'Diagramatika';
-      color: var(--sickyellow);
-      padding: 5px 25px;
-      margin-top: 4%;
-      width: 33.01vw;
-      height: 3.73vh;
-      font-size: 1.56vw;
-      border: none;
-      border-radius: 66px;
-      background-color: var(--blueishblue);
-      cursor: pointer;
-      text-decoration: none;
-    }
-    #emailb {
-      font-family: 'Diagramatika';
-      margin-left: -10%;
-      color: var(--sickyellow);
-      font-size: 1.56vw;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-    }
-    .clock {
-      margin-top: 4%;
-      margin-left: 4%;
-    }
-    .clockillust {
-      width: 50vw;
-    }
-    .letter {
-      margin-top: -110%;
-      margin-left: 4%;
-    }
-    .letterillust {
-      width: 37vw;
-    }
-    .boy {
-      margin-top: -18%;
-      margin-left: 53%;
-    }
-    .boyillust {
-      width: 49vw;
-    }
-    .draw {
-      margin-top: -4%;
-      margin-left: 53%;
-    }
-    .drawillust {
-      width: 28vw;
-    }
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  body.index {
-    h1 {
-      font-size: 4.35vw;
-    }
-    p {
-      font-size: 4.35vw;
-    }
-    span {
-      font-size: 5.56vw;
-      -webkit-text-stroke: 0.15vw var(--sickyellow);
-    }
-    .underimg1,
-    .underimg2,
-    .underimg3 {
-      width: 21.74vw;
-    }
-    .mainlogo {
-      width: 87.92vw;
-    }
-    .ouch {
-      margin-top: 34%;
-    }
-    .arrow {
-      margin-top: -4%;
-      margin-left: 10%;
-    }
-    .arrowimg {
-      display: none;
-    }
-    .arrowimgmob {
-      display: block;
-      width: 9.9vw;
-    }
-    .firsttext {
-      padding-top: 7%;
-      margin-left: 8%;
-      width: 80vw;
-    }
-    .textstack {
-      display: none;
-    }
-    .textstackmob {
-      display: flex;
-      width: 98vw;
-    }
-    .textimg {
-      margin-top: 19%;
-    }
-    .back {
-      padding-top: 19%;
-    }
-    .backrect {
-      display: none;
-    }
-    .backrectmob {
-      display: block;
-      width: 100vw;
-    }
-    .cardsb {
-      margin-top: -167%;
-    }
-    .cards {
-      width: 71vw;
-    }
-    .secondtextb {
-      margin-top: 19%;
-    }
-    .secondtext {
-      width: 65vw;
-    }
-    .cib {
-      margin-left: 16%;
-      margin-top: -1%;
-    }
-    .cardillust {
-      width: 30vw;
-    }
-    .chib {
-      margin-left: 57%;
-      margin-top: -108%;
-    }
-    .checkillust {
-      width: 30vw;
-    }
-    .lasthead {
-      padding-top: 72%;
-    }
-    .lastheadimg {
-      display: none;
-    }
-    .lastheadimgmob {
-      display: block;
-      width: 87.68vw;
-    }
-    .lastdecript {
-      width: 75vw;
-    }
-    .emaild {
-      width: 100vw;
-      text-align: center;
-    }
-    #email {
-      font-family: 'Diagramatika';
-      color: var(--sickyellow);
-      padding: 5px 25px;
-      margin-top: 9%;
-      width: 70vw;
-      height: 6vh;
-      font-size: 3.86vw;
-      border: none;
-      border-radius: 66px;
-      background-color: var(--blueishblue);
-      cursor: pointer;
-      text-decoration: none;
-    }
-    #emailb {
-      font-family: 'Diagramatika';
-      margin-left: -24%;
-      color: var(--sickyellow);
-      font-size: 3.86vw;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-    }
-    .clock {
-      margin-top: 3%;
-      margin-left: -1%;
-    }
-    .clockillust {
-      width: 59vw;
-    }
-    .letter {
-      margin-top: -163%;
-      margin-left: -3%;
-    }
-    .letterillust {
-      width: 46vw;
-    }
-    .boy {
-      margin-top: -18%;
-      margin-left: 41%;
-    }
-    .boyillust {
-      width: 64vw;
-    }
-    .draw {
-      margin-top: 19%;
-      margin-left: 65%;
-    }
-    .drawillust {
-      width: 35vw;
-    }
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 359px) {
-  h1 {
-    font-size: 1.09vw;
-  }
-  h2 {
-    font-size: 11.25vw;
-  }
-  h3 {
-    font-size: 6.25vw;
-  }
-  h4 {
-    font-size: 3.75vw;
-  }
-  ol {
-    font-family: 'InterRegular';
-    font-size: 5.63vw;
-    font-weight: normal;
-    line-height: 131%;
-  }
-  h1 a {
-    text-decoration: none;
-    color: inherit;
-  }
-  a {
-    color: inherit;
-  }
-  hr {
-    border: 0.5px solid #3c65f7;
-  }
-  li {
-    margin-top: 5%;
-  }
-  .navback {
-    height: 9vh;
-  }
-  .navigation {
-    display: none;
-  }
-  .logodiv {
-    margin-top: -9vh;
-    margin-left: 39%;
-  }
-  .logo {
-    width: 20.63vw;
-  }
-  #search {
-    display: none;
-  }
-  .magnifier {
-    display: block;
-    width: 8.44vw;
-  }
-  .searchdiv {
-    text-align: auto;
-    margin-right: auto;
-    margin-left: 28%;
-    margin-top: -7vh;
-  }
-  .cardsdiv {
-    margin-top: 1%;
-  }
-  .cardsback {
-    display: none;
-  }
-  .cardsbackmob {
-    display: block;
-    width: 100vw;
-  }
-  .card {
-    top: 11%;
-    border-radius: 13px;
-    width: 90.94vw;
-    border: 1px solid #3c65f7;
-  }
-  .cardflex {
-    display: flex;
-    justify-content: space-around;
-  }
-  .cardheader {
-    margin-top: 10%;
-    padding-bottom: 6%;
-  }
-  .textheader {
-    margin-top: 9%;
-  }
-  .textflex {
-    margin-top: 3%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .text {
-    text-align: left;
-    width: 70vw;
-  }
-  .library {
-    margin-top: 4%;
-    padding-bottom: 12%;
-  }
-  .cross {
-    cursor: pointer;
-    width: 7.5vw;
-  }
-  .crossdiv {
-    z-index: 1;
-    position: absolute;
-    top: 13%;
-    left: 84%;
-  }
-}
-@media only screen and (min-width: 360px) and (max-width: 400px) {
-  body.S_CardBody {
-    h1 {
-      font-size: 1.09vw;
-    }
-    h2 {
-      font-size: 10vw;
-    }
-    h3 {
-      font-size: 5.56vw;
-    }
-    h4 {
-      font-size: 3.33vw;
-    }
-    ol {
-      font-size: 5vw;
-      line-height: 131%;
-    }
-    h1 a {
-      text-decoration: none;
-      color: inherit;
-    }
-    a {
-      color: inherit;
-    }
-    hr {
-      border: 0.5px solid #3c65f7;
-    }
-    li {
-      margin-top: 5%;
-    }
-    .navback {
-      height: 8vh;
-    }
-    .navigation {
-      display: none;
-    }
-    .logodiv {
-      margin-top: -7.5vh;
-      margin-left: 39%;
-    }
-    .logo {
-      width: 20.63vw;
-    }
-    #search {
-      display: none;
-    }
-    .magnifier {
-      display: block;
-      width: 8.44vw;
-    }
-    .searchdiv {
-      text-align: auto;
-      margin-right: auto;
-      margin-left: 28%;
-      margin-top: -5.5vh;
-    }
-    .cardsdiv {
-      margin-top: 1%;
-    }
-    .cardsback {
-      display: none;
-    }
-    .cardsbackmob {
-      display: block;
-      width: 100vw;
-    }
-    .card {
-      top: 11%;
-      border-radius: 13px;
-      width: 90.94vw;
-      border: 1px solid #3c65f7;
-    }
-    .cardflex {
-      display: flex;
-      justify-content: space-around;
-    }
-    .cardheader {
-      margin-top: 10%;
-      padding-bottom: 6%;
-    }
-    .textheader {
-      margin-top: 9%;
-    }
-    .textflex {
-      margin-top: 3%;
-      display: flex;
-      justify-content: space-around;
-    }
-    .text {
-      text-align: left;
-      width: 70vw;
-    }
-    .library {
-      margin-top: 4%;
-      padding-bottom: 12%;
-    }
-    .cross {
-      cursor: pointer;
-      width: 7.5vw;
-    }
-    .crossdiv {
-      z-index: 1;
-      position: absolute;
-      top: 13%;
-      left: 84%;
-    }
-  }
-}
-
-@media only screen and (min-width: 401px) and (max-width: 1024px) {
-  body.S_CardBody {
-    h1 {
-      font-size: 1.09vw;
-    }
-    h2 {
-      font-size: 8.7vw;
-    }
-    h3 {
-      font-size: 4.83vw;
-    }
-    h4 {
-      font-size: 2.9vw;
-    }
-    ol {
-      font-size: 4.35vw;
-      line-height: 131%;
-    }
-    h1 a {
-      text-decoration: none;
-      color: inherit;
-    }
-    a {
-      color: inherit;
-    }
-    hr {
-      border: 0.5px solid #3c65f7;
-    }
-    li {
-      margin-top: 4%;
-    }
-    .navback {
-      height: 8vh;
-    }
-    .navigation {
-      display: none;
-    }
-    .logodiv {
-      margin-top: -8.5vh;
-      margin-left: 39%;
-    }
-    .logo {
-      width: 20.63vw;
-    }
-    #search {
-      display: none;
-    }
-    .magnifier {
-      display: block;
-      width: 8.44vw;
-    }
-    .searchdiv {
-      text-align: auto;
-      margin-right: auto;
-      margin-left: 28%;
-      margin-top: -6vh;
-    }
-    .cardsdiv {
-      margin-top: 1%;
-    }
-    .cardsback {
-      display: none;
-    }
-    .cardsbackmob {
-      display: block;
-      width: 100vw;
-    }
-    .card {
-      top: 11%;
-      border-radius: 13px;
-      width: 86.71vw;
-      border: 1px solid #3c65f7;
-    }
-    .cardflex {
-      display: flex;
-      justify-content: space-around;
-    }
-    .cardheader {
-      margin-top: 5%;
-      padding-bottom: 4%;
-    }
-    .textheader {
-      margin-top: 5%;
-    }
-    .textflex {
-      margin-top: 0%;
-      display: flex;
-      justify-content: space-around;
-    }
-    .text {
-      text-align: left;
-      width: 78.02vw;
-    }
-    .library {
-      margin-top: 6%;
-      padding-bottom: 12%;
-    }
-    .cross {
-      cursor: pointer;
-      width: 5.8vw;
-    }
-    .crossdiv {
-      z-index: 1;
-      position: absolute;
-      top: 13%;
-      left: 85%;
-    }
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
-  body.desert {
-    h1 {
-      font-family: 'InterSemiBold';
-      font-size: 3.59vw;
-      font-weight: normal;
-    }
-    h2 {
-      font-family: 'InterMedium';
-      font-size: 8.21vw;
-      font-weight: normal;
-    }
-    h3 {
-      font-family: 'InterMedium';
-      font-size: 5.13vw;
-      font-weight: normal;
-    }
-    h4 {
-      font-family: 'InterLight';
-      font-size: 3.08vw;
-      font-weight: normal;
-      color: #3c65f7;
-    }
-    h5 {
-      font-family: 'InterItalic';
-      font-size: 3.08vw;
-      font-weight: normal;
-      color: #3c65f7;
-      line-height: 146%;
-    }
-    h6 {
-      font-family: 'InterRegular';
-      font-size: 6.15vw;
-      font-weight: normal;
-      color: #3c65f7;
-      line-height: 146%;
-    }
-    p {
-      font-family: 'InterRegular';
-      font-size: 4.62vw;
-      font-weight: normal;
-      line-height: 146%;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    hr {
-      border: 1px solid #3c65f7;
-    }
-    .navback {
-      height: 8vh;
-    }
-    .navigation {
-      margin-top: 6%;
-      margin-left: 7%;
-      width: 86.67vw;
-      display: flex;
-      justify-content: space-around;
-    }
-    .testsd {
-      opacity: 60%;
-      color: #3c65f7;
-      text-align: center;
-    }
-    .maind {
-      opacity: 60%;
-      color: #3c65f7;
-      text-align: center;
-    }
-    .articlesd {
-      color: #3c65f7;
-      text-align: center;
-    }
-    .cardsd {
-      opacity: 60%;
-      color: #3c65f7;
-      text-align: center;
-    }
-    .line {
-      margin-top: 12%;
-      background-color: #3c65f7;
-      width: 18.44vw;
-      height: 0.3vh;
-    }
-    .mainline {
-      display: none;
-    }
-    .cardsline {
-      display: none;
-    }
-    .testsline {
-      display: none;
-    }
-    .logodiv {
-      margin-top: -13.5vh;
-      margin-left: 39%;
-    }
-    .logo {
-      width: 20.63vw;
-    }
-    #search {
-      display: none;
-    }
-    .magnifier {
-      display: block;
-      width: 8.44vw;
-    }
-    .searchdiv {
-      text-align: auto;
-      margin-right: auto;
-      margin-left: 28%;
-      margin-top: -11.5vh;
-    }
-    .menuflex {
-      display: block;
-    }
-    .menuflexmob {
-      display: flex;
-      justify-content: space-between;
-    }
-    .artheaderflex {
-      margin-top: 9%;
-      display: flex;
-      justify-content: space-around;
-    }
-    .artheader {
-      width: 91.54vw;
-    }
-    .underheadflex {
-      margin-top: 4%;
-      display: flex;
-      justify-content: space-around;
-    }
-    .underhead {
-      width: 91.54vw;
-    }
-    .tag {
-      margin-left: 2%;
-      display: inline-block;
-      border-radius: 44px;
-      border: 1px solid #3c65f7;
-    }
-    .tagtext {
-      padding: 4px 11px 4px 11px;
-    }
-    .tagflex {
-      margin-top: 1.5%;
-      display: flex;
-      margin-left: -2%;
-    }
-    .socialflex {
-      margin-top: 5%;
-      margin-left: 0%;
-      width: 36.92vw;
-      display: flex;
-      justify-content: space-between;
-    }
-    .vk {
-      width: 7.69vw;
-    }
-    .ok {
-      width: 7.69vw;
-    }
-    .pinterest {
-      width: 7.69vw;
-    }
-    .tg {
-      width: 7.69vw;
-    }
-    .artpicflex {
-      margin-top: 6%;
-      display: flex;
-      justify-content: space-around;
-    }
-    .artpic {
-      overflow: hidden;
-      width: 91.54vw;
-      border-radius: 8px;
-      background-color: #ffffff;
-    }
-    .goat {
-      width: 93vw;
-      margin-top: -1%;
-    }
-    .pictextflex {
-      margin-top: 2%;
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 3%;
-    }
-    .pictext {
-      width: 76.41vw;
-    }
-    .maintextflex {
-      margin-top: 2%;
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 18%;
-    }
-    .maintext {
-      width: 78.97vw;
-    }
-    .text {
-      margin-top: 1%;
-    }
-    .textheader {
-      margin-top: 5%;
-    }
-    .text {
-      margin-top: 5%;
-    }
-    .adding {
-      margin-top: 4%;
-      display: block;
-    }
-    .quote1 {
-      margin-top: 0%;
-      width: 17.7vw;
-    }
-    .addtext {
-      margin-top: 0%;
-      text-align: center;
-      width: 78.97vw;
-    }
-    .quote2 {
-      transform: rotate(-180deg);
-      margin-top: 0%;
-      margin-left: 77%;
-      width: 17.7vw;
-    }
-  }
-}
+//@media only screen and (min-width: 768px) and (max-width: 1024px) {
+//  body.index {
+//    h1 {
+//      font-size: 2.34vw;
+//    }
+//    p {
+//      font-size: 2.34vw;
+//    }
+//    span {
+//      font-size: 2.5vw;
+//      -webkit-text-stroke: 0.15vw var(--sickyellow);
+//    }
+//    .mainlogo {
+//      width: 71.29vw;
+//    }
+//    .ouch {
+//      margin-top: 34%;
+//    }
+//    .arrow {
+//      margin-left: 24%;
+//    }
+//    .arrowimg {
+//      display: none;
+//    }
+//    .arrowimgtab {
+//      display: block;
+//      width: 9.08vw;
+//    }
+//    .firsttext {
+//      padding-top: 4%;
+//      margin-left: 4%;
+//      width: 43vw;
+//    }
+//    .textstack {
+//      display: none;
+//    }
+//    .textstacktab {
+//      display: flex;
+//      width: 95.5vw;
+//    }
+//    .textimg {
+//      margin-top: 19%;
+//    }
+//    .back {
+//      padding-top: 10%;
+//    }
+//    .backrect {
+//      display: none;
+//    }
+//    .backrecttab {
+//      display: block;
+//      width: 83.01vw;
+//    }
+//    .cardsb {
+//      margin-top: -100%;
+//    }
+//    .cards {
+//      width: 59.86vw;
+//    }
+//    .secondtextb {
+//      margin-top: 10%;
+//    }
+//    .secondtext {
+//      width: 65vw;
+//    }
+//    .cib {
+//      margin-left: 14%;
+//      margin-top: -1%;
+//    }
+//    .cardillust {
+//      width: 20vw;
+//    }
+//    .chib {
+//      margin-left: 66%;
+//      margin-top: -55%;
+//    }
+//    .checkillust {
+//      width: 20vw;
+//    }
+//    .lasthead {
+//      padding-top: 61%;
+//    }
+//    .lastheadimg {
+//      display: none;
+//    }
+//    .lastheadimgtab {
+//      display: block;
+//      width: 59.57vw;
+//    }
+//    .lastdecript {
+//      width: 41vw;
+//    }
+//    .emaild {
+//      width: 100vw;
+//      text-align: center;
+//    }
+//    #email {
+//      font-family: 'Diagramatika';
+//      color: var(--sickyellow);
+//      padding: 5px 25px;
+//      margin-top: 4%;
+//      width: 33.01vw;
+//      height: 3.73vh;
+//      font-size: 1.56vw;
+//      border: none;
+//      border-radius: 66px;
+//      background-color: var(--blueishblue);
+//      cursor: pointer;
+//      text-decoration: none;
+//    }
+//    #emailb {
+//      font-family: 'Diagramatika';
+//      margin-left: -10%;
+//      color: var(--sickyellow);
+//      font-size: 1.56vw;
+//      border: none;
+//      background: transparent;
+//      cursor: pointer;
+//    }
+//    .clock {
+//      margin-top: 4%;
+//      margin-left: 4%;
+//    }
+//    .clockillust {
+//      width: 50vw;
+//    }
+//    .letter {
+//      margin-top: -110%;
+//      margin-left: 4%;
+//    }
+//    .letterillust {
+//      width: 37vw;
+//    }
+//    .boy {
+//      margin-top: -18%;
+//      margin-left: 53%;
+//    }
+//    .boyillust {
+//      width: 49vw;
+//    }
+//    .draw {
+//      margin-top: -4%;
+//      margin-left: 53%;
+//    }
+//    .drawillust {
+//      width: 28vw;
+//    }
+//  }
+//}
+//
+//@media only screen and (min-width: 320px) and (max-width: 767px) {
+//  body.index {
+//    h1 {
+//      font-size: 4.35vw;
+//    }
+//    p {
+//      font-size: 4.35vw;
+//    }
+//    span {
+//      font-size: 5.56vw;
+//      -webkit-text-stroke: 0.15vw var(--sickyellow);
+//    }
+//    .underimg1,
+//    .underimg2,
+//    .underimg3 {
+//      width: 21.74vw;
+//    }
+//    .mainlogo {
+//      width: 87.92vw;
+//    }
+//    .ouch {
+//      margin-top: 34%;
+//    }
+//    .arrow {
+//      margin-top: -4%;
+//      margin-left: 10%;
+//    }
+//    .arrowimg {
+//      display: none;
+//    }
+//    .arrowimgmob {
+//      display: block;
+//      width: 9.9vw;
+//    }
+//    .firsttext {
+//      padding-top: 7%;
+//      margin-left: 8%;
+//      width: 80vw;
+//    }
+//    .textstack {
+//      display: none;
+//    }
+//    .textstackmob {
+//      display: flex;
+//      width: 98vw;
+//    }
+//    .textimg {
+//      margin-top: 19%;
+//    }
+//    .back {
+//      padding-top: 19%;
+//    }
+//    .backrect {
+//      display: none;
+//    }
+//    .backrectmob {
+//      display: block;
+//      width: 100vw;
+//    }
+//    .cardsb {
+//      margin-top: -167%;
+//    }
+//    .cards {
+//      width: 71vw;
+//    }
+//    .secondtextb {
+//      margin-top: 19%;
+//    }
+//    .secondtext {
+//      width: 65vw;
+//    }
+//    .cib {
+//      margin-left: 16%;
+//      margin-top: -1%;
+//    }
+//    .cardillust {
+//      width: 30vw;
+//    }
+//    .chib {
+//      margin-left: 57%;
+//      margin-top: -108%;
+//    }
+//    .checkillust {
+//      width: 30vw;
+//    }
+//    .lasthead {
+//      padding-top: 72%;
+//    }
+//    .lastheadimg {
+//      display: none;
+//    }
+//    .lastheadimgmob {
+//      display: block;
+//      width: 87.68vw;
+//    }
+//    .lastdecript {
+//      width: 75vw;
+//    }
+//    .emaild {
+//      width: 100vw;
+//      text-align: center;
+//    }
+//    #email {
+//      font-family: 'Diagramatika';
+//      color: var(--sickyellow);
+//      padding: 5px 25px;
+//      margin-top: 9%;
+//      width: 70vw;
+//      height: 6vh;
+//      font-size: 3.86vw;
+//      border: none;
+//      border-radius: 66px;
+//      background-color: var(--blueishblue);
+//      cursor: pointer;
+//      text-decoration: none;
+//    }
+//    #emailb {
+//      font-family: 'Diagramatika';
+//      margin-left: -24%;
+//      color: var(--sickyellow);
+//      font-size: 3.86vw;
+//      border: none;
+//      background: transparent;
+//      cursor: pointer;
+//    }
+//    .clock {
+//      margin-top: 3%;
+//      margin-left: -1%;
+//    }
+//    .clockillust {
+//      width: 59vw;
+//    }
+//    .letter {
+//      margin-top: -163%;
+//      margin-left: -3%;
+//    }
+//    .letterillust {
+//      width: 46vw;
+//    }
+//    .boy {
+//      margin-top: -18%;
+//      margin-left: 41%;
+//    }
+//    .boyillust {
+//      width: 64vw;
+//    }
+//    .draw {
+//      margin-top: 19%;
+//      margin-left: 65%;
+//    }
+//    .drawillust {
+//      width: 35vw;
+//    }
+//  }
+//}
+//
+//@media only screen and (min-width: 320px) and (max-width: 359px) {
+//  h1 {
+//    font-size: 1.09vw;
+//  }
+//  h2 {
+//    font-size: 11.25vw;
+//  }
+//  h3 {
+//    font-size: 6.25vw;
+//  }
+//  h4 {
+//    font-size: 3.75vw;
+//  }
+//  ol {
+//    font-family: 'InterRegular';
+//    font-size: 5.63vw;
+//    font-weight: normal;
+//    line-height: 131%;
+//  }
+//  h1 a {
+//    text-decoration: none;
+//    color: inherit;
+//  }
+//  a {
+//    color: inherit;
+//  }
+//  hr {
+//    border: 0.5px solid #3c65f7;
+//  }
+//  li {
+//    margin-top: 5%;
+//  }
+//  .navback {
+//    height: 9vh;
+//  }
+//  .navigation {
+//    display: none;
+//  }
+//  .logodiv {
+//    margin-top: -9vh;
+//    margin-left: 39%;
+//  }
+//  .logo {
+//    width: 20.63vw;
+//  }
+//  #search {
+//    display: none;
+//  }
+//  .magnifier {
+//    display: block;
+//    width: 8.44vw;
+//  }
+//  .searchdiv {
+//    text-align: auto;
+//    margin-right: auto;
+//    margin-left: 28%;
+//    margin-top: -7vh;
+//  }
+//  .cardsdiv {
+//    margin-top: 1%;
+//  }
+//  .cardsback {
+//    display: none;
+//  }
+//  .cardsbackmob {
+//    display: block;
+//    width: 100vw;
+//  }
+//  .card {
+//    top: 11%;
+//    border-radius: 13px;
+//    width: 90.94vw;
+//    border: 1px solid #3c65f7;
+//  }
+//  .cardflex {
+//    display: flex;
+//    justify-content: space-around;
+//  }
+//  .cardheader {
+//    margin-top: 10%;
+//    padding-bottom: 6%;
+//  }
+//  .textheader {
+//    margin-top: 9%;
+//  }
+//  .textflex {
+//    margin-top: 3%;
+//    display: flex;
+//    justify-content: space-around;
+//  }
+//  .text {
+//    text-align: left;
+//    width: 70vw;
+//  }
+//  .library {
+//    margin-top: 4%;
+//    padding-bottom: 12%;
+//  }
+//  .cross {
+//    cursor: pointer;
+//    width: 7.5vw;
+//  }
+//  .crossdiv {
+//    z-index: 1;
+//    position: absolute;
+//    top: 13%;
+//    left: 84%;
+//  }
+//}
+//@media only screen and (min-width: 360px) and (max-width: 400px) {
+//  body.S_CardBody {
+//    h1 {
+//      font-size: 1.09vw;
+//    }
+//    h2 {
+//      font-size: 10vw;
+//    }
+//    h3 {
+//      font-size: 5.56vw;
+//    }
+//    h4 {
+//      font-size: 3.33vw;
+//    }
+//    ol {
+//      font-size: 5vw;
+//      line-height: 131%;
+//    }
+//    h1 a {
+//      text-decoration: none;
+//      color: inherit;
+//    }
+//    a {
+//      color: inherit;
+//    }
+//    hr {
+//      border: 0.5px solid #3c65f7;
+//    }
+//    li {
+//      margin-top: 5%;
+//    }
+//    .navback {
+//      height: 8vh;
+//    }
+//    .navigation {
+//      display: none;
+//    }
+//    .logodiv {
+//      margin-top: -7.5vh;
+//      margin-left: 39%;
+//    }
+//    .logo {
+//      width: 20.63vw;
+//    }
+//    #search {
+//      display: none;
+//    }
+//    .magnifier {
+//      display: block;
+//      width: 8.44vw;
+//    }
+//    .searchdiv {
+//      text-align: auto;
+//      margin-right: auto;
+//      margin-left: 28%;
+//      margin-top: -5.5vh;
+//    }
+//    .cardsdiv {
+//      margin-top: 1%;
+//    }
+//    .cardsback {
+//      display: none;
+//    }
+//    .cardsbackmob {
+//      display: block;
+//      width: 100vw;
+//    }
+//    .card {
+//      top: 11%;
+//      border-radius: 13px;
+//      width: 90.94vw;
+//      border: 1px solid #3c65f7;
+//    }
+//    .cardflex {
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//    .cardheader {
+//      margin-top: 10%;
+//      padding-bottom: 6%;
+//    }
+//    .textheader {
+//      margin-top: 9%;
+//    }
+//    .textflex {
+//      margin-top: 3%;
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//    .text {
+//      text-align: left;
+//      width: 70vw;
+//    }
+//    .library {
+//      margin-top: 4%;
+//      padding-bottom: 12%;
+//    }
+//    .cross {
+//      cursor: pointer;
+//      width: 7.5vw;
+//    }
+//    .crossdiv {
+//      z-index: 1;
+//      position: absolute;
+//      top: 13%;
+//      left: 84%;
+//    }
+//  }
+//}
+//
+//@media only screen and (min-width: 401px) and (max-width: 1024px) {
+//  body.S_CardBody {
+//    h1 {
+//      font-size: 1.09vw;
+//    }
+//    h2 {
+//      font-size: 8.7vw;
+//    }
+//    h3 {
+//      font-size: 4.83vw;
+//    }
+//    h4 {
+//      font-size: 2.9vw;
+//    }
+//    ol {
+//      font-size: 4.35vw;
+//      line-height: 131%;
+//    }
+//    h1 a {
+//      text-decoration: none;
+//      color: inherit;
+//    }
+//    a {
+//      color: inherit;
+//    }
+//    hr {
+//      border: 0.5px solid #3c65f7;
+//    }
+//    li {
+//      margin-top: 4%;
+//    }
+//    .navback {
+//      height: 8vh;
+//    }
+//    .navigation {
+//      display: none;
+//    }
+//    .logodiv {
+//      margin-top: -8.5vh;
+//      margin-left: 39%;
+//    }
+//    .logo {
+//      width: 20.63vw;
+//    }
+//    #search {
+//      display: none;
+//    }
+//    .magnifier {
+//      display: block;
+//      width: 8.44vw;
+//    }
+//    .searchdiv {
+//      text-align: auto;
+//      margin-right: auto;
+//      margin-left: 28%;
+//      margin-top: -6vh;
+//    }
+//    .cardsdiv {
+//      margin-top: 1%;
+//    }
+//    .cardsback {
+//      display: none;
+//    }
+//    .cardsbackmob {
+//      display: block;
+//      width: 100vw;
+//    }
+//    .card {
+//      top: 11%;
+//      border-radius: 13px;
+//      width: 86.71vw;
+//      border: 1px solid #3c65f7;
+//    }
+//    .cardflex {
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//    .cardheader {
+//      margin-top: 5%;
+//      padding-bottom: 4%;
+//    }
+//    .textheader {
+//      margin-top: 5%;
+//    }
+//    .textflex {
+//      margin-top: 0%;
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//    .text {
+//      text-align: left;
+//      width: 78.02vw;
+//    }
+//    .library {
+//      margin-top: 6%;
+//      padding-bottom: 12%;
+//    }
+//    .cross {
+//      cursor: pointer;
+//      width: 5.8vw;
+//    }
+//    .crossdiv {
+//      z-index: 1;
+//      position: absolute;
+//      top: 13%;
+//      left: 85%;
+//    }
+//  }
+//}
+//
+//@media only screen and (min-width: 320px) and (max-width: 1024px) {
+//  body.desert {
+//    h1 {
+//      font-family: 'InterSemiBold';
+//      font-size: 3.59vw;
+//      font-weight: normal;
+//    }
+//    h2 {
+//      font-family: 'InterMedium';
+//      font-size: 8.21vw;
+//      font-weight: normal;
+//    }
+//    h3 {
+//      font-family: 'InterMedium';
+//      font-size: 5.13vw;
+//      font-weight: normal;
+//    }
+//    h4 {
+//      font-family: 'InterLight';
+//      font-size: 3.08vw;
+//      font-weight: normal;
+//      color: #3c65f7;
+//    }
+//    h5 {
+//      font-family: 'InterItalic';
+//      font-size: 3.08vw;
+//      font-weight: normal;
+//      color: #3c65f7;
+//      line-height: 146%;
+//    }
+//    h6 {
+//      font-family: 'InterRegular';
+//      font-size: 6.15vw;
+//      font-weight: normal;
+//      color: #3c65f7;
+//      line-height: 146%;
+//    }
+//    p {
+//      font-family: 'InterRegular';
+//      font-size: 4.62vw;
+//      font-weight: normal;
+//      line-height: 146%;
+//    }
+//    a {
+//      text-decoration: none;
+//      color: inherit;
+//    }
+//    hr {
+//      border: 1px solid #3c65f7;
+//    }
+//    .navback {
+//      height: 8vh;
+//    }
+//    .navigation {
+//      margin-top: 6%;
+//      margin-left: 7%;
+//      width: 86.67vw;
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//    .testsd {
+//      opacity: 60%;
+//      color: #3c65f7;
+//      text-align: center;
+//    }
+//    .maind {
+//      opacity: 60%;
+//      color: #3c65f7;
+//      text-align: center;
+//    }
+//    .articlesd {
+//      color: #3c65f7;
+//      text-align: center;
+//    }
+//    .cardsd {
+//      opacity: 60%;
+//      color: #3c65f7;
+//      text-align: center;
+//    }
+//    .line {
+//      margin-top: 12%;
+//      background-color: #3c65f7;
+//      width: 18.44vw;
+//      height: 0.3vh;
+//    }
+//    .mainline {
+//      display: none;
+//    }
+//    .cardsline {
+//      display: none;
+//    }
+//    .testsline {
+//      display: none;
+//    }
+//    .logodiv {
+//      margin-top: -13.5vh;
+//      margin-left: 39%;
+//    }
+//    .logo {
+//      width: 20.63vw;
+//    }
+//    #search {
+//      display: none;
+//    }
+//    .magnifier {
+//      display: block;
+//      width: 8.44vw;
+//    }
+//    .searchdiv {
+//      text-align: auto;
+//      margin-right: auto;
+//      margin-left: 28%;
+//      margin-top: -11.5vh;
+//    }
+//    .menuflex {
+//      display: block;
+//    }
+//    .menuflexmob {
+//      display: flex;
+//      justify-content: space-between;
+//    }
+//    .artheaderflex {
+//      margin-top: 9%;
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//    .artheader {
+//      width: 91.54vw;
+//    }
+//    .underheadflex {
+//      margin-top: 4%;
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//    .underhead {
+//      width: 91.54vw;
+//    }
+//    .tag {
+//      margin-left: 2%;
+//      display: inline-block;
+//      border-radius: 44px;
+//      border: 1px solid #3c65f7;
+//    }
+//    .tagtext {
+//      padding: 4px 11px 4px 11px;
+//    }
+//    .tagflex {
+//      margin-top: 1.5%;
+//      display: flex;
+//      margin-left: -2%;
+//    }
+//    .socialflex {
+//      margin-top: 5%;
+//      margin-left: 0%;
+//      width: 36.92vw;
+//      display: flex;
+//      justify-content: space-between;
+//    }
+//    .vk {
+//      width: 7.69vw;
+//    }
+//    .ok {
+//      width: 7.69vw;
+//    }
+//    .pinterest {
+//      width: 7.69vw;
+//    }
+//    .tg {
+//      width: 7.69vw;
+//    }
+//    .artpicflex {
+//      margin-top: 6%;
+//      display: flex;
+//      justify-content: space-around;
+//    }
+//    .artpic {
+//      overflow: hidden;
+//      width: 91.54vw;
+//      border-radius: 8px;
+//      background-color: #ffffff;
+//    }
+//    .goat {
+//      width: 93vw;
+//      margin-top: -1%;
+//    }
+//    .pictextflex {
+//      margin-top: 2%;
+//      display: flex;
+//      justify-content: space-around;
+//      padding-bottom: 3%;
+//    }
+//    .pictext {
+//      width: 76.41vw;
+//    }
+//    .maintextflex {
+//      margin-top: 2%;
+//      display: flex;
+//      justify-content: space-around;
+//      padding-bottom: 18%;
+//    }
+//    .maintext {
+//      width: 78.97vw;
+//    }
+//    .text {
+//      margin-top: 1%;
+//    }
+//    .textheader {
+//      margin-top: 5%;
+//    }
+//    .text {
+//      margin-top: 5%;
+//    }
+//    .adding {
+//      margin-top: 4%;
+//      display: block;
+//    }
+//    .quote1 {
+//      margin-top: 0%;
+//      width: 17.7vw;
+//    }
+//    .addtext {
+//      margin-top: 0%;
+//      text-align: center;
+//      width: 78.97vw;
+//    }
+//    .quote2 {
+//      transform: rotate(-180deg);
+//      margin-top: 0%;
+//      margin-left: 77%;
+//      width: 17.7vw;
+//    }
+//  }
+//}

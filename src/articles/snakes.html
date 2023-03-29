@@ -6,6 +6,16 @@
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=no"
   />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://auch.adc.ac/articles/snakes.html" />
+  <meta property="og:title" content="Ауч! – Ресурс безопасной жизни" />
+  <meta property="og:description" content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!" />
+  <meta property="og:image" content="https://auch.adc.ac/share/ogImage.png" />
+  <meta name="title" content="Ауч! – Ресурс безопасной жизни" />
+  <meta
+          name="description"
+          content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!"
+  />
   <title>10 самых badass змей</title>
 </head>
 <body class="S_ArticleBody">
@@ -13,26 +23,27 @@
   <img src="../images/logoNav.svg" class="Q_Logo"/>
   <input
           class="M_SearchBar"
+          id="searchBarMob"
           type="search"
           name="search"
           placeholder="Я ищу..."
   />
 </div>
 <div class="M_NavigationLinks mobile">
-  <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-  <p class="A_SectionButton ArticlesLink active" onclick="location.href='https://auch.adc.ac/articles';">Статьи</p>
-  <p class="A_SectionButton QuizesLink" onclick="location.href='https://auch.adc.ac/quizes';">Тесты</p>
-  <p class="A_SectionButton CardsLink" onclick="location.href='https://auch.adc.ac/cards';">Карточки</p>
+  <p class="A_SectionButton MainLink">Главная</p>
+  <p class="A_SectionButton ArticlesLink active">Статьи</p>
+  <p class="A_SectionButton QuizesLink">Тесты</p>
+  <p class="A_SectionButton CardsLink">Карточки</p>
 </div>
 <div class="O_NavigationBar">
   <div class="M_NavigationLinks">
-    <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-    <p class="A_SectionButton ArticlesLink active" onclick="location.href='https://auch.adc.ac/articles.html';">Статьи</p>
-    <p class="A_SectionButton QuizesLink"  onclick="location.href='https://auch.adc.ac/quizes.html';">Тесты</p>
-    <p class="A_SectionButton CardsLink"  onclick="location.href='https://auch.adc.ac/cards.html';">Карточки</p>
+    <p class="A_SectionButton MainLink">Главная</p>
+    <p class="A_SectionButton ArticlesLink active">Статьи</p>
+    <p class="A_SectionButton QuizesLink">Тесты</p>
+    <p class="A_SectionButton CardsLink">Карточки</p>
   </div>
   <img src="../images/logoNav.svg" class="Q_Logo">
-  <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу...">
+  <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу..." id="searchBar">
 </div>
 <section class="S_ArticleSection">
   <div class="S_ArticleContent">
@@ -92,6 +103,7 @@
         <h2 class="A_ParagraphHeading">Черная мамба</h2>
         <article class="A_ArticleParagraph">
           Черная мамба&nbsp;&mdash; самая быстрая змея в&nbsp;мире, живущая в&nbsp;Африке. Она способна развивать скорость до&nbsp;20&nbsp;км/ч и&nbsp;является одной из&nbsp;самых ядовитых змей в&nbsp;мире.
+        </article>
         <div class="A_QuizHead">
         <img src="../images/snakes4.png" alt="Змеи" class="Q_QuizHead">
         </div>
@@ -100,8 +112,9 @@
         <h2 class="A_ParagraphHeading">Коралловая змея</h2>
         <article class="A_ArticleParagraph">
           Коралловая змея&nbsp;&mdash; красочная змея, обитающая в&nbsp;тропических регионах Азии и&nbsp;Австралии. Ее&nbsp;красно-желто-черно-белая окраска служит предупреждением для потенциальных хищников, хотя похожа на&nbsp;мармеладного червяка.
+        </article>
         <div class="A_QuizHead">
-        <img src="../images/snakes5.png" alt="Змеи" class="Q_QuizHead">
+          <img src="../images/snakes5.png" alt="Змеи" class="Q_QuizHead">
         </div>
       </div>
       <div class="M_ArticleTextSection">
@@ -135,6 +148,7 @@
         <h2 class="A_ParagraphHeading">Тигровая змея</h2>
         <article class="A_ArticleParagraph">
         Тигровая змея&nbsp;&mdash; змея, обитающая в&nbsp;Азии и&nbsp;известная своими острыми зубами и&nbsp;сильным ядом. Ее&nbsp;именно так и&nbsp;называют из-за полосатого рисунка на&nbsp;спине, напоминающего тигра
+        </article>
         <div class="A_QuizHead">
         <img src="../images/snakes9.png" alt="Змеи" class="Q_QuizHead">
         </div>
@@ -156,24 +170,24 @@
   <div class="S_RecommendationCardBlock">
     <p class="A_RecommendationHeading">Вам также пригодится:</p>
     <div class="C_RecommendationCardRow">
-      <div class="O_RecommendationCard">
-        <img class="A_RecommendationCardImg" src="../images/protoSnake.png">
-        <p class="A_RecommendationCardText">Куснула змея, переживешь?</p>
+      <div class="O_RecommendationCard" id="earthquakeRec">
+        <img class="A_RecommendationCardImg" src="../images/earthquake_recommendation_pic.png">
+        <p class="A_RecommendationCardText">Земля уходит из-под ног</p>
 
       </div>
-      <div class="O_RecommendationCard">
-        <img class="A_RecommendationCardImg" src="../images/protoSnake.png">
-        <p class="A_RecommendationCardText">Куснула змея, переживешь?</p>
+      <div class="O_RecommendationCard" id="bugRec">
+        <img class="A_RecommendationCardImg" src="../images/bug_reccomendation_pic.png">
+        <p class="A_RecommendationCardText">Клещи против комаров</p>
 
       </div>
-      <div class="O_RecommendationCard">
-        <img class="A_RecommendationCardImg" src="../images/protoSnake.png">
-        <p class="A_RecommendationCardText">Куснула змея, переживешь?</p>
+      <div class="O_RecommendationCard" id="gasRec">
+        <img class="A_RecommendationCardImg" src="../images/gas_reccomendation_pic.png">
+        <p class="A_RecommendationCardText">А у нас в квартире газ!</p>
 
       </div>
-      <div class="O_RecommendationCard Mobile">
-        <img class="A_RecommendationCardImg" src="../images/protoSnake.png">
-        <p class="A_RecommendationCardText">Куснула змея, переживешь?</p>
+      <div class="O_RecommendationCard Mobile" id="waterRec">
+        <img class="A_RecommendationCardImg" src="../images/water_reccomendation_pic.png">
+        <p class="A_RecommendationCardText">Слишком много воды</p>
 
       </div>
     </div>
@@ -203,13 +217,13 @@
   </div>
   <div class="M_FooterLinks">
     <div class="W_LinksColumn">
-      <p class="A_FooterLink">tg↗</p>
-      <p class="A_FooterLink">vk↗</p>
-      <p class="A_FooterLink">e-mail↗</p>
+      <p class="A_FooterLink" id="tg">tg↗</p>
+      <p class="A_FooterLink" id="vk">vk↗</p>
+      <p class="A_FooterLink">mail↗</p>
     </div>
     <div class="W_LinksColumn">
-      <p class="A_FooterLink">about↗</p>
-      <p class="A_FooterLink">portfolio↗</p>
+      <p class="A_FooterLink" id="about">about↗</p>
+      <p class="A_FooterLink" id="portfolio">portfolio↗</p>
     </div>
   </div>
   <div class="M_RightsReservedBlock">

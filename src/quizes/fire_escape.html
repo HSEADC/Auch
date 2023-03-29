@@ -6,33 +6,44 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://auch.adc.ac/quizes/fire_escape.html" />
+    <meta property="og:title" content="Ауч! – Ресурс безопасной жизни" />
+    <meta property="og:description" content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!" />
+    <meta property="og:image" content="https://auch.adc.ac/share/ogImage.png" />
+    <meta name="title" content="Ауч! – Ресурс безопасной жизни" />
+    <meta
+            name="description"
+            content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!"
+    />
     <title>Курил. Уснул. Пожар. Что дальше?</title>
   </head>
   <body class="S_QuizBody">
-  <div class="M_StaticBar">
-    <img src="../images/logoNav.svg" class="Q_Logo"/>
-    <input
-            class="M_SearchBar"
-            type="search"
-            name="search"
-            placeholder="Я ищу..."
-    />
-  </div>
-  <div class="M_NavigationLinks mobile">
-    <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-    <p class="A_SectionButton ArticlesLink" onclick="location.href='https://auch.adc.ac/articles';">Статьи</p>
-    <p class="A_SectionButton QuizesLink active" onclick="location.href='https://auch.adc.ac/quizes';">Тесты</p>
-    <p class="A_SectionButton CardsLink" onclick="location.href='https://auch.adc.ac/cards';">Карточки</p>
-  </div>
+    <div class="M_StaticBar">
+      <img src="../images/logoNav.svg" class="Q_Logo"/>
+      <input
+              class="M_SearchBar"
+              id="searchBarMob"
+              type="search"
+              name="search"
+              placeholder="Я ищу..."
+      />
+    </div>
+    <div class="M_NavigationLinks mobile">
+      <p class="A_SectionButton" id="MainLinkMob">Главная</p>
+      <p class="A_SectionButton" id="ArticlesLinkMob">Статьи</p>
+      <p class="A_SectionButton active" id="QuizesLinkMob">Тесты</p>
+      <p class="A_SectionButton" id="CardsLinkMob">Карточки</p>
+    </div>
     <div class="O_NavigationBar">
       <div class="M_NavigationLinks">
-        <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-        <p class="A_SectionButton ArticlesLink" onclick="location.href='https://auch.adc.ac/articles.html';">Статьи</p>
-        <p class="A_SectionButton QuizesLink active"  onclick="location.href='https://auch.adc.ac/quizes.html';">Тесты</p>
-        <p class="A_SectionButton CardsLink"  onclick="location.href='https://auch.adc.ac/cards.html';">Карточки</p>
+        <p class="A_SectionButton" id="MainLink">Главная</p>
+        <p class="A_SectionButton" id="ArticlesLink">Статьи</p>
+        <p class="A_SectionButton active" id="QuizesLink">Тесты</p>
+        <p class="A_SectionButton" id="CardsLink">Карточки</p>
       </div>
       <img src="../images/logoNav.svg" class="Q_Logo">
-      <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу...">
+      <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу..." id="searchBar">
     </div>
     <section class="S_QuizSection">
       <div class="S_QuizContent">
@@ -55,9 +66,9 @@
         <div class="M_HeadlineBlock">
           <img src="../images/fire_escapeHead.png" alt="Это огнетушитель" class="A_QuizHead">
           <div class="A_QuizHeadText">
-            <p class="A_EliteHeadText">Вы проводили замечательный выходной, смотрели «Секс в большом городе», потягивая
-              космополитен, и курили на диване. И вдруг вы&nbsp;просыпаетесь от того, что Нью-Йорк в&nbspогне, и&nbsp;ваша квартира тоже.
-              Знаете, что делать?</p>
+            <p class="A_EliteHeadText">Вы&nbsp;проводили замечательный выходной, смотрели секс в&nbsp;большом городе,
+              потягивая космополитен, и&nbsp;курили на&nbsp;диване. И&nbsp;вдруг вы&nbsp;просыпаетесь от&nbsp;того что
+              Ньюйорк в&nbsp;огне и&nbsp;ваша квартира тоже. Знаете что делать?</p>
           </div>
         </div>
         <div class="O_QuizBlock">
@@ -78,32 +89,20 @@
             </div>
           </div>
           <p class="A_ResultMeaning"></p>
-          <img class="M_ResultVisual" alt="result" src="../images/resultSnake.png">
+          <div class="M_ResultVisual"></div>
         </div>
       </div>
       <div class="S_RecommendationCardBlock">
         <p class="A_RecommendationHeading">Вам также пригодится:</p>
         <div class="C_RecommendationCardRow">
-          <div class="O_RecommendationCard">
-            <img class="A_RecommendationCardImg" src="../images/protoSnake.png">
-            <p class="A_RecommendationCardText">Куснула змея, переживешь?</p>
-
-          </div>
-          <div class="O_RecommendationCard">
-            <img class="A_RecommendationCardImg" src="../images/protoSnake.png">
-            <p class="A_RecommendationCardText">Куснула змея, переживешь?</p>
-
-          </div>
-          <div class="O_RecommendationCard">
-            <img class="A_RecommendationCardImg" src="../images/protoSnake.png">
-            <p class="A_RecommendationCardText">Куснула змея, переживешь?</p>
-
-          </div>
-          <div class="O_RecommendationCard Mobile">
-            <img class="A_RecommendationCardImg" src="../images/protoSnake.png">
-            <p class="A_RecommendationCardText">Куснула змея, переживешь?</p>
-
-          </div>
+          <a href="https://auch.adc.ac/errors/404.html" style="text-decoration: none"><div class="O_RecommendationCard">
+            <img class="A_RecommendationCardImg" src="../images/mushrooms_recommendation_pic.png">
+            <p class="A_RecommendationCardText">Двое из ларца — грибы двойники</p>
+          </div></a>
+          <a href="https://auch.adc.ac/quizes/what_danger.html" style="text-decoration: none"><div class="O_RecommendationCard">
+            <img class="A_RecommendationCardImg" src="../images/danger_recommendation_pic.png">
+            <p class="A_RecommendationCardText">Какая ты опасность?</p>
+          </div></a>
         </div>
       </div>
 
@@ -131,13 +130,13 @@
       </div>
       <div class="M_FooterLinks">
         <div class="W_LinksColumn">
-          <p class="A_FooterLink">tg↗</p>
-          <p class="A_FooterLink">vk↗</p>
-          <p class="A_FooterLink">e-mail↗</p>
+          <p class="A_FooterLink" id="tg">tg↗</p>
+          <p class="A_FooterLink" id="vk">vk↗</p>
+          <p class="A_FooterLink">mail↗</p>
         </div>
         <div class="W_LinksColumn">
-          <p class="A_FooterLink">about↗</p>
-          <p class="A_FooterLink">portfolio↗</p>
+          <p class="A_FooterLink" id="about">about↗</p>
+          <p class="A_FooterLink" id="portfolio">portfolio↗</p>
         </div>
       </div>
       <div class="M_RightsReservedBlock">

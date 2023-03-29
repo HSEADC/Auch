@@ -6,6 +6,16 @@
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=no"
   />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://auch.adc.ac/cards/burn.html" />
+  <meta property="og:title" content="Ауч! – Ресурс безопасной жизни" />
+  <meta property="og:description" content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!" />
+  <meta property="og:image" content="https://auch.adc.ac/share/ogImage.png" />
+  <meta name="title" content="Ауч! – Ресурс безопасной жизни" />
+  <meta
+          name="description"
+          content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!"
+  />
   <title>Ожог</title>
 </head>
 <body class="S_CardBody">
@@ -13,26 +23,27 @@
   <img src="../images/logoNav.svg" class="Q_Logo"/>
   <input
           class="M_SearchBar"
+          id="searchBarMob"
           type="search"
           name="search"
           placeholder="Я ищу..."
   />
 </div>
 <div class="M_NavigationLinks mobile">
-  <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-  <p class="A_SectionButton ArticlesLink" onclick="location.href='https://auch.adc.ac/articles';">Статьи</p>
-  <p class="A_SectionButton QuizesLink" onclick="location.href='https://auch.adc.ac/quizes';">Тесты</p>
-  <p class="A_SectionButton CardsLink active" onclick="location.href='https://auch.adc.ac/cards';">Карточки</p>
+  <p class="A_SectionButton" id="MainLinkMob">Главная</p>
+  <p class="A_SectionButton" id="ArticlesLinkMob">Статьи</p>
+  <p class="A_SectionButton" id="QuizesLinkMob">Тесты</p>
+  <p class="A_SectionButton active" id="CardsLinkMob">Карточки</p>
 </div>
 <div class="O_NavigationBar">
   <div class="M_NavigationLinks">
-    <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-    <p class="A_SectionButton ArticlesLink" onclick="location.href='https://auch.adc.ac/articles.html';">Статьи</p>
-    <p class="A_SectionButton QuizesLink"  onclick="location.href='https://auch.adc.ac/quizes.html';">Тесты</p>
-    <p class="A_SectionButton CardsLink active"  onclick="location.href='https://auch.adc.ac/cards.html';">Карточки</p>
+    <p class="A_SectionButton" id="MainLink">Главная</p>
+    <p class="A_SectionButton" id="ArticlesLink">Статьи</p>
+    <p class="A_SectionButton" id="QuizesLink">Тесты</p>
+    <p class="A_SectionButton active" id="CardsLink">Карточки</p>
   </div>
   <img src="../images/logoNav.svg" class="Q_Logo">
-  <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу...">
+  <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу..." id="searchBar">
 </div>
 <section class="S_CardSection">
     <div class="O_Card">
@@ -83,13 +94,13 @@
   </div>
   <div class="M_FooterLinks">
     <div class="W_LinksColumn">
-      <p class="A_FooterLink">tg↗</p>
-      <p class="A_FooterLink">vk↗</p>
-      <p class="A_FooterLink">e-mail↗</p>
+      <p class="A_FooterLink" id="tg">tg↗</p>
+      <p class="A_FooterLink" id="vk">vk↗</p>
+      <p class="A_FooterLink">mail↗</p>
     </div>
     <div class="W_LinksColumn">
-      <p class="A_FooterLink">about↗</p>
-      <p class="A_FooterLink">portfolio↗</p>
+      <p class="A_FooterLink" id="about">about↗</p>
+      <p class="A_FooterLink" id="portfolio">portfolio↗</p>
     </div>
   </div>
   <div class="M_RightsReservedBlock">

@@ -9,7 +9,11 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    fire_escape: './src/javascript/fire_escape.js',
+    what_danger: './src/javascript/what_danger.js',
+    navbar: './src/javascript/navbar.js',
+    article: './src/javascript/article.js'
   },
   output: {
     filename: '[name].js',
@@ -84,8 +88,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/index.html',
-      filename: './index.html'
-      // chunks: ['index']
+      filename: './index.html',
+      chunks: ['index', 'navbar']
     }),
 
     // Internal pages
@@ -93,8 +97,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards.html',
-      filename: './cards.html'
-      // chunks: ['page']
+      filename: './cards.html',
+      chunks: ['navbar', 'index']
     }),
 
     // Internal pages
@@ -102,8 +106,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/extras/main.html',
-      filename: './extras/main.html'
-      // chunks: ['page']
+      filename: './extras/main.html',
+      chunks: ['navbar', 'index']
     }),
 
     // Articles page
@@ -111,8 +115,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles.html',
-      filename: './articles.html'
-      // chunks: ['page']
+      filename: './articles.html',
+      chunks: ['navbar', 'index']
     }),
 
     // Quizes page
@@ -120,8 +124,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/quizes.html',
-      filename: './quizes.html'
-      // chunks: ['page']
+      filename: './quizes.html',
+      chunks: ['navbar', 'index']
     }),
 
     // fireEscape quiz page
@@ -129,8 +133,17 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/quizes/fire_escape.html',
-      filename: './quizes/fire_escape.html'
-      // chunks: ['page']
+      filename: './quizes/fire_escape.html',
+      chunks: ['index', 'fire_escape', 'navbar']
+    }),
+
+    // whatDanger quiz page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/quizes/what_danger.html',
+      filename: './quizes/what_danger.html',
+      chunks: ['index', 'what_danger', 'navbar']
     }),
 
     // burn card page for prosmotr
@@ -138,8 +151,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards/burn.html',
-      filename: './cards/burn.html'
-      // chunks: ['page']
+      filename: './cards/burn.html',
+      chunks: ['navbar', 'index']
     }),
 
     // insects card page for prosmotr
@@ -147,8 +160,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards/insectscard.html',
-      filename: './cards/insectscard.html'
-      // chunks: ['page']
+      filename: './cards/insectscard.html',
+      chunks: ['navbar', 'index']
     }),
 
     // sunstroke card page for prosmotr
@@ -156,8 +169,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards/sunstroke.html',
-      filename: './cards/sunstroke.html'
-      // chunks: ['page']
+      filename: './cards/sunstroke.html',
+      chunks: ['navbar', 'index']
     }),
 
     // frostbite card page for prosmotr
@@ -165,17 +178,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards/frostbite.html',
-      filename: './cards/frostbite.html'
-      // chunks: ['page']
-    }),
-
-    // twist card page for prosmotr
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/cards/twist.html',
-      filename: './cards/twist.html'
-      // chunks: ['page']
+      filename: './cards/frostbite.html',
+      chunks: ['navbar', 'index']
     }),
 
     // stretch card page for prosmotr
@@ -183,8 +187,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards/stretch.html',
-      filename: './cards/stretch.html'
-      // chunks: ['page']
+      filename: './cards/stretch.html',
+      chunks: ['navbar', 'index']
     }),
 
     // dehydration card page for prosmotr
@@ -192,8 +196,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards/dehydration.html',
-      filename: './cards/dehydration.html'
-      // chunks: ['page']
+      filename: './cards/dehydration.html',
+      chunks: ['navbar', 'index']
     }),
 
     // temporary about page for prosmotr
@@ -201,8 +205,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/about.html',
-      filename: './about.html'
-      // chunks: ['page']
+      filename: './about.html',
+      chunks: ['navbar', 'index']
     }),
 
     // A page for an article "Как собраться в пустыню"
@@ -210,8 +214,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/desert.html',
-      filename: './articles/desert.html'
-      // chunks: ['page']
+      filename: './articles/desert.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // A page for an article "Детка, ты в огне"
@@ -219,8 +223,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/baby_on_fire.html',
-      filename: './articles/baby_on_fire.html'
-      // chunks: ['page']
+      filename: './articles/baby_on_fire.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // A page for an article "Удивительный мир грибов"
@@ -228,8 +232,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/mushrooms.html',
-      filename: './articles/mushrooms.html'
-      // chunks: ['page']
+      filename: './articles/mushrooms.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // A page for an article "10 самых badass змей"
@@ -237,8 +241,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/snakes.html',
-      filename: './articles/snakes.html'
-      // chunks: ['page']
+      filename: './articles/snakes.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // A page for an article "Земля уходит из-под ног"
@@ -246,8 +250,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/earthquake.html',
-      filename: './articles/earthquake.html'
-      // chunks: ['page']
+      filename: './articles/earthquake.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // A page for an article "Слишком много воды"
@@ -255,8 +259,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/water.html',
-      filename: './articles/water.html'
-      // chunks: ['page']
+      filename: './articles/water.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // A page for an article "А у нас в квартире газ!"
@@ -264,8 +268,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/gas.html',
-      filename: './articles/gas.html'
-      // chunks: ['page']
+      filename: './articles/gas.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // A page for an article "Клещи против комаров"
@@ -273,8 +277,8 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/insects.html',
-      filename: './articles/insects.html'
-      // chunks: ['page']
+      filename: './articles/insects.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // A page for an article "Выживешь ли ты под лавиной?"
@@ -282,16 +286,16 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/articles/avalanche.html',
-      filename: './articles/avalanche.html'
-      // chunks: ['page']
+      filename: './articles/avalanche.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/errors/404.html',
-      filename: './errors/404.html'
-      // chunks: ['page']
+      filename: './errors/404.html',
+      chunks: ['navbar', 'index', 'article']
     }),
 
     // Partials

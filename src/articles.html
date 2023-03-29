@@ -6,6 +6,16 @@
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=no"
   />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://auch.adc.ac/articles.html" />
+  <meta property="og:title" content="Ауч! – Ресурс безопасной жизни" />
+  <meta property="og:description" content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!" />
+  <meta property="og:image" content="https://auch.adc.ac/share/ogImage.png" />
+  <meta name="title" content="Ауч! – Ресурс безопасной жизни" />
+  <meta
+          name="description"
+          content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!"
+  />
   <title>«Ауч!» — самый безопасный ресурс</title>
 </head>
 <body class="S_MainBody">
@@ -13,26 +23,27 @@
   <img src="images/logoNav.svg" class="Q_Logo"/>
   <input
           class="M_SearchBar"
+          id="searchBarMob"
           type="search"
           name="search"
           placeholder="Я ищу..."
   />
 </div>
 <div class="M_NavigationLinks mobile">
-  <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-  <p class="A_SectionButton ArticlesLink active" onclick="location.href='https://auch.adc.ac/articles';">Статьи</p>
-  <p class="A_SectionButton QuizesLink" onclick="location.href='https://auch.adc.ac/quizes';">Тесты</p>
-  <p class="A_SectionButton CardsLink" onclick="location.href='https://auch.adc.ac/cards';">Карточки</p>
+  <p class="A_SectionButton MainLink">Главная</p>
+  <p class="A_SectionButton ArticlesLink active">Статьи</p>
+  <p class="A_SectionButton QuizesLink">Тесты</p>
+  <p class="A_SectionButton CardsLink">Карточки</p>
 </div>
 <div class="O_NavigationBar">
   <div class="M_NavigationLinks">
-    <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-    <p class="A_SectionButton ArticlesLink active" onclick="location.href='https://auch.adc.ac/articles.html';">Статьи</p>
-    <p class="A_SectionButton QuizesLink"  onclick="location.href='https://auch.adc.ac/quizes.html';">Тесты</p>
-    <p class="A_SectionButton CardsLink"  onclick="location.href='https://auch.adc.ac/cards.html';">Карточки</p>
+    <p class="A_SectionButton MainLink">Главная</p>
+    <p class="A_SectionButton ArticlesLink active">Статьи</p>
+    <p class="A_SectionButton QuizesLink">Тесты</p>
+    <p class="A_SectionButton CardsLink">Карточки</p>
   </div>
   <img src="images/logoNav.svg" class="Q_Logo">
-  <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу...">
+  <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу..." id="searchBar">
 </div>
 
 <section class="S_ArticlesGallerySection">
@@ -60,7 +71,7 @@
       </div>
     </div>
     <div class="W_CardBlock">
-      <div class="M_ArticleCard" data-tags="В путешествии">
+      <a href="https://auch.adc.ac/articles/desert.html" style="text-decoration: none"><div class="M_ArticleCard" data-tags="В путешествии">
         <div class="M_QuizCardBlock">
           <h2 class="A_ArticleCardHeading">
             Как собраться в&nbspпустыню?
@@ -73,8 +84,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard specialNarrow" data-tags="Мастноу,Бытовое">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/baby_on_fire.html" style="text-decoration: none"><div class="M_ArticleCard specialNarrow" data-tags="Мастноу,Бытовое">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort white">
             Детка, ты в огне
@@ -90,8 +101,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard" data-tags="В путешествии,С юморком,Короткое">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/mushrooms.html" style="text-decoration: none"><div class="M_ArticleCard" data-tags="В путешествии,С юморком,Короткое">
         <div class="M_QuizCardBlock">
           <h2 class="A_ArticleCardHeading">
             Удивительный мир грибов
@@ -110,8 +121,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard standartNarrow" data-tags="В путешествии">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/avalanche.html" style="text-decoration: none"><div class="M_ArticleCard standartNarrow" data-tags="В путешествии">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             Выживешь<br>ли ты под...?
@@ -124,8 +135,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard standartNarrow" data-tags="Бытовое">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/water.html" style="text-decoration: none"><div class="M_ArticleCard standartNarrow" data-tags="Бытовое">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             Слишком много воды
@@ -138,8 +149,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard standartNarrow" data-tags="В путешествии,С юморком,Короткое">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/insects.html" style="text-decoration: none"><div class="M_ArticleCard standartNarrow" data-tags="В путешествии,С юморком,Короткое">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             Клещи против комаров
@@ -158,8 +169,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard specialNarrow" data-tags="Мастноу">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/earthquake.html" style="text-decoration: none"><div class="M_ArticleCard specialNarrow" data-tags="Мастноу">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort white">
             Земля уходит из под ног
@@ -172,8 +183,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard standartNarrow" data-tags="Короткое,С юморком">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/snakes.html" style="text-decoration: none"><div class="M_ArticleCard standartNarrow" data-tags="Короткое,С юморком">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             10 самых badass змей
@@ -189,8 +200,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard standartNarrow" data-tags="Бытовое,Неочевидная очевидность">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/gas.html" style="text-decoration: none"><div class="M_ArticleCard standartNarrow" data-tags="Бытовое,Неочевидная очевидность">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             А у нас в квартире газ!
@@ -206,9 +217,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div></a>
       <!--      mobile adaptive elements-->
-      <div class="M_ArticleCard mobile" data-tags="В путешествии">
+      <a href="https://auch.adc.ac/articles/desert.html" style="text-decoration: none"><div class="M_ArticleCard mobile" data-tags="В путешествии">
         <div class="M_QuizCardBlock">
           <h2 class="A_ArticleCardHeading">
             Как собраться в&nbspпустыню?
@@ -221,8 +232,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard specialWide mobile" data-tags="Мастноу,Бытовое">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/baby_on_fire.html" style="text-decoration: none"><div class="M_ArticleCard specialWide mobile" data-tags="Мастноу,Бытовое">
         <div class="M_QuizCardBlock">
           <h2 class="A_ArticleCardHeading white">
             Детка, ты в огне
@@ -238,8 +249,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard mobile" data-tags="В путешествии,С юморком,Короткое">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/mushrooms.html" style="text-decoration: none"><div class="M_ArticleCard mobile" data-tags="В путешествии,С юморком,Короткое">
         <div class="M_QuizCardBlock">
           <h2 class="A_ArticleCardHeading">
             Удивительный мир грибов
@@ -258,8 +269,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard mobile" data-tags="В путешествии">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/avalanche.html" style="text-decoration: none"><div class="M_ArticleCard mobile" data-tags="В путешествии">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             Выживешьли ты под...?
@@ -272,8 +283,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard mobile" data-tags="Бытовое">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/water.html" style="text-decoration: none"><div class="M_ArticleCard mobile" data-tags="Бытовое">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             Слишком много воды
@@ -286,8 +297,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard mobile" data-tags="В путешествии,С юморком,Короткое">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/insects.html" style="text-decoration: none"><div class="M_ArticleCard mobile" data-tags="В путешествии,С юморком,Короткое">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             Клещи против комаров
@@ -306,8 +317,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard specialWide mobile" data-tags="Мастноу">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/earthquake.html" style="text-decoration: none"><div class="M_ArticleCard specialWide mobile" data-tags="Мастноу">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort white">
             Земля уходит из под ног
@@ -320,8 +331,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard mobile" data-tags="Короткое,С юморком">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/snakes.html" style="text-decoration: none"><div class="M_ArticleCard mobile" data-tags="Короткое,С юморком">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             10 самых badass змей
@@ -337,8 +348,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="M_ArticleCard mobile" data-tags="Бытовое,Неочевидная очевидность">
+      </div></a>
+      <a href="https://auch.adc.ac/articles/gas.html" style="text-decoration: none"><div class="M_ArticleCard mobile" data-tags="Бытовое,Неочевидная очевидность">
         <div class="M_QuizCardBlockShort">
           <h2 class="A_ArticleCardHeadingShort">
             А у нас в квартире газ!
@@ -354,7 +365,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div></a>
     </div>
   </div>
 </section>
@@ -383,13 +394,13 @@
   </div>
   <div class="M_FooterLinks">
     <div class="W_LinksColumn">
-      <p class="A_FooterLink">tg↗</p>
-      <p class="A_FooterLink">vk↗</p>
-      <p class="A_FooterLink">e-mail↗</p>
+      <p class="A_FooterLink" id="tg">tg↗</p>
+      <p class="A_FooterLink" id="vk">vk↗</p>
+      <p class="A_FooterLink">mail↗</p>
     </div>
     <div class="W_LinksColumn">
-      <p class="A_FooterLink">about↗</p>
-      <p class="A_FooterLink">portfolio↗</p>
+      <p class="A_FooterLink" id="about">about↗</p>
+      <p class="A_FooterLink" id="portfolio">portfolio↗</p>
     </div>
   </div>
   <div class="M_RightsReservedBlock">

@@ -221,8 +221,9 @@
   text-align: center;
   align-items: center;
   background-image: url('../src/images/HeadlinerPic.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--blueishblue);
   cursor: pointer;
   filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 }
@@ -283,6 +284,9 @@
   width: 570px;
   height: 223px;
   margin-top: 20px;
+  background-image: url("../src/images/resultSnake.png");
+  background-size: cover;
+  border-radius: 8px;
 }
 
 .M_ErrorText{

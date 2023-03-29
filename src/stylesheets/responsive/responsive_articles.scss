@@ -395,4 +395,39 @@
     margin-top: 12px;
     font-size: 12px;
   }
+
+  .A_AnswerOption {
+    width: 327px;
+  }
+
+  .A_QuestionNumber {
+    width: 327px;
+  }
+
+  .A_CardHead {
+    width: 358px;
+    height: 102px;
+  }
+
+  .M_CardContent {
+    width: 358px;
+    padding: 40px 0px 40px 0px;
+    gap: 40px;
+  }
+
+  .M_CardTextBlock {
+    width: 302px;
+    padding: 0 20px
+  }
+
+  .A_CardTextHeader {
+    font-size: 20px;
+    line-height: 108%;
+  }
+
+  .A_CardText{
+    font-size: 14px;
+    line-height: 144%;
+  }
+
 }

@@ -295,7 +295,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/errors/404.html',
       filename: './errors/404.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index']
     }),
 
     // Partials

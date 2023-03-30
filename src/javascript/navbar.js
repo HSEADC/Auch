@@ -16,7 +16,6 @@ const vk = document.getElementById('id')
 const about = document.getElementById('about')
 const portfolio = document.getElementById('portfolio')
 
-
 searchBar.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.isComposing ||event.keyCode === 13) {

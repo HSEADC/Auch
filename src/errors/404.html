@@ -19,12 +19,21 @@
       />
     </div>
     <div class="M_NavigationLinks mobile">
-      <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
-      <p class="A_SectionButton ArticlesLink" onclick="location.href='https://auch.adc.ac/articles';">Статьи</p>
-      <p class="A_SectionButton QuizesLink" onclick="location.href='https://auch.adc.ac/quizes';">Тесты</p>
-      <p class="A_SectionButton CardsLink" onclick="location.href='https://auch.adc.ac/cards';">Карточки</p>
+      <p class="A_SectionButton" id="MainLinkMob">Главная</p>
+      <p class="A_SectionButton" id="ArticlesLinkMob">Статьи</p>
+      <p class="A_SectionButton active" id="QuizesLinkMob">Тесты</p>
+      <p class="A_SectionButton" id="CardsLinkMob">Карточки</p>
     </div>
     <div class="O_NavigationBar">
+      <div class="M_NavigationLinks">
+        <p class="A_SectionButton" id="MainLink">Главная</p>
+        <p class="A_SectionButton" id="ArticlesLink">Статьи</p>
+        <p class="A_SectionButton active" id="QuizesLink">Тесты</p>
+        <p class="A_SectionButton" id="CardsLink">Карточки</p>
+      </div>
+      <img src="../images/logoNav.svg" class="Q_Logo">
+      <input class="M_SearchBar" type="search" name="search" placeholder="Я ищу..." id="searchBar">
+    </div>
       <div class="M_NavigationLinks">
         <p class="A_SectionButton MainLink" onclick="location.href='https://auch.adc.ac';">Главная</p>
         <p class="A_SectionButton ArticlesLink" onclick="location.href='https://auch.adc.ac/articles.html';">Статьи</p>

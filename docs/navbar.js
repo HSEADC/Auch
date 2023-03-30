@@ -12,10 +12,17 @@ var cardsLinkMob = document.getElementById('CardsLinkMob');
 var searchBar = document.getElementById('searchBar');
 var searchBarMobile = document.getElementById('searchBarMob');
 var tg = document.getElementById('tg');
-var vk = document.getElementById('id');
+var vk = document.getElementById('vk');
 var about = document.getElementById('about');
 var portfolio = document.getElementById('portfolio');
 searchBar.addEventListener("keyup", function (event) {
+  event.preventDefault();
+
+  if (event.isComposing || event.keyCode === 13) {
+    document.location.href = "https://auch.adc.ac/errors/404.html";
+  }
+});
+searchBarMobile.addEventListener("keyup", function (event) {
   event.preventDefault();
 
   if (event.isComposing || event.keyCode === 13) {
@@ -45,13 +52,6 @@ quizesLinkMob.addEventListener('click', function () {
 });
 cardsLinkMob.addEventListener('click', function () {
   document.location.href = "https://auch.adc.ac/cards";
-});
-searchBarMobile.addEventListener("keyup", function (event) {
-  event.preventDefault();
-
-  if (event.isComposing || event.keyCode === 13) {
-    document.location.href = "https://auch.adc.ac/errors/404.html";
-  }
 });
 tg.addEventListener('click', function () {
   document.location.href = "https://t.me/ouchsafe";

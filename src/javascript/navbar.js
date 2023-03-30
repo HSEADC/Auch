@@ -1,12 +1,12 @@
 // NAVIGATION BAR LINKS
-const mainLink = document.getElementById("MainLink")
-const articlesLink = document.getElementById("ArticlesLink")
-const quizesLink = document.getElementById("QuizesLink")
-const cardsLink = document.getElementById("CardsLink")
-const mainLinkMob = document.getElementById("MainLinkMob")
-const articlesLinkMob = document.getElementById("ArticlesLinkMob")
-const quizesLinkMob = document.getElementById("QuizesLinkMob")
-const cardsLinkMob = document.getElementById("CardsLinkMob")
+const mainLink = document.getElementById('MainLink')
+const articlesLink = document.getElementById('ArticlesLink')
+const quizesLink = document.getElementById('QuizesLink')
+const cardsLink = document.getElementById('CardsLink')
+const mainLinkMob = document.getElementById('MainLinkMob')
+const articlesLinkMob = document.getElementById('ArticlesLinkMob')
+const quizesLinkMob = document.getElementById('QuizesLinkMob')
+const cardsLinkMob = document.getElementById('CardsLinkMob')
 
 const searchBar = document.getElementById('searchBar')
 const searchBarMobile = document.getElementById('searchBarMob')
@@ -16,12 +16,22 @@ const vk = document.getElementById('id')
 const about = document.getElementById('about')
 const portfolio = document.getElementById('portfolio')
 
+
 searchBar.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.isComposing ||event.keyCode === 13) {
             document.location.href="https://auch.adc.ac/errors/404.html"
         }
 })
+
+mainLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
+articlesLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles"})
+quizesLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac/quizes"})
+cardsLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac/cards"})
+mainLinkMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
+articlesLinkMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles"})
+quizesLinkMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac/quizes"})
+cardsLinkMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac/cards"})
 
 searchBarMobile.addEventListener("keyup", function(event) {
     event.preventDefault();
@@ -36,11 +46,4 @@ about.addEventListener('click', () => {document.location.href="https://6hm8g8l.g
 portfolio.addEventListener('click', () => {document.location.href="https://portfolio.hse.ru/Project/169138"})
 
 
-mainLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
-articlesLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles"})
-quizesLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac/quizes"})
-cardsLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac/cards"})
-mainLinkMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
-articlesLinkMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles"})
-quizesLinkMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac/quizes"})
-cardsLinkMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac/cards"})
+

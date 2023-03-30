@@ -160,3 +160,25 @@
   padding: 0px;
   gap: 7px;
 }
+
+.O_QuizLink {
+  position: relative;
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 700px;
+height: 200px;
+margin-top: 40px;
+padding: 20px;
+gap: 10px;
+border-radius: 8px;
+background: var(--white);
+cursor: pointer;
+box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.1);
+
+.A_ArticleParagraph{
+  width: 280px;
+  height: 120px;
+}
+}

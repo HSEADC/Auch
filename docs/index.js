@@ -17,7 +17,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var cloudTags = document.getElementsByClassName("A_CloudTag");
 
-var unfilteredItems = _toConsumableArray(document.getElementsByClassName("M_ArticleCard")); // REVIEW выгоднее было бы не сохранять вот так вот штучки, а работать в более JSONшкой системой
+var unfilteredItems = _toConsumableArray(document.getElementsByClassName("M_ArticleCard")).concat(_toConsumableArray(document.getElementsByClassName("O_SosCard"))); // REVIEW выгоднее было бы не сохранять вот так вот штучки, а работать в более JSONшкой системой
 
 
 var container = document.querySelector(".W_CardBlock");

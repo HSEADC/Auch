@@ -156,6 +156,16 @@
   flex-direction: column;
   justify-content: center;
   width: 940px;
+
+  .W_CardBlock {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 
 .S_CardsGallerySection {

@@ -382,6 +382,7 @@
 
 .A_ArticleCardHeading {
   position: relative;
+  overflow: hidden;
   width: 271px;
   height: 53px;
   margin-top: 22px;
@@ -403,6 +404,8 @@
 
 .A_ArticleCardHeadingShort {
   position: relative;
+  display: -webkit-box;
+  overflow: hidden;
   width: 173px;
   height: 53px;
   margin-top: 22px;
@@ -412,6 +415,10 @@
   line-height: 119%;
   color: var(--black);
   cursor: pointer;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  text-overflow: ellipsis;
 
   &.white {
     color: var(--white);

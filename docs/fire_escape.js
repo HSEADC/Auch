@@ -49,14 +49,13 @@ const fire_escape_res3_namespaceObject = __webpack_require__.p + "images/3024f15
 
 
  // here starts the test mechanics part (every quiz instance must be on  separate page but how)
-//array of objects of questions
+
+var answerOptionButtons = document.getElementsByClassName("A_AnswerOption"); //array of objects of questions
 
 var questions = [{
   question: "Что делать в&nbsp;первую очередь?",
-  answers: [// использовать массив, ведь номера порядковые те же / КЛЮЧИ СДЕЛАТЬ НЕ ЦИФРАМИ?
-  "Кричать и&nbsp;срочно звонить в&nbsp;скорую, пожарную и&nbsp;МЧС", "Побежать за&nbsp;ведром с&nbsp;водой или горшком с&nbsp;землей все тушить", "Оценить степень беды, понять, насколько сильно все горит и&nbsp;пылает"],
-  right: 2 // REVIEW если делать answers с массивом
-
+  answers: ["Кричать и&nbsp;срочно звонить в&nbsp;скорую, пожарную и&nbsp;МЧС", "Побежать за&nbsp;ведром с&nbsp;водой или горшком с&nbsp;землей все тушить", "Оценить степень беды, понять, насколько сильно все горит и&nbsp;пылает"],
+  right: 2
 }, {
   question: "Вы&nbsp;поняли, что дело плохо, пожарные уже едут на&nbsp;вызов, а&nbsp;вы?",
   answers: ["Запрусь в&nbsp;ванной, я&nbsp;в&nbsp;воде пожар не&nbsp;страшен", "Быстрее в&nbsp;окно, пятый этаж не&nbsp;так высоко!", "Папку с&nbsp;документами, кота подмышку и&nbsp;на&nbsp;выход шагом марш"],
@@ -91,7 +90,20 @@ var resultTable = [{
   imgLink: fire_escape_res3_namespaceObject
 }]; // what answer must be displayed ATM
 
-var currentQuestion = 0; // function that looks up the currentQuestion number and displays the needed question from an array
+var currentQuestion = 0;
+
+for (var i = 0; i < answerOptionButtons.length; i++) {
+  // REVIEW закинуть это в функцию / абстрагировать
+  pickOption(answerOptionButtons[i], i);
+} // this function is made just to avoid defining functions inside loops
+
+
+function pickOption(option, i) {
+  option.addEventListener('click', function () {
+    answerPicked(option, i);
+  });
+} // function that looks up the currentQuestion number and displays the needed question from an array
+
 
 function initializeQuestion() {
   // displays current question number as well
@@ -102,24 +114,9 @@ function initializeQuestion() {
   questionElement.innerHTML = questions[currentQuestion].question;
   var answerOptionBlanks = document.getElementsByClassName("A_AnswerOptionText"); // iterate over every answer option blank and display all needed answer options from questions array
 
-  for (var i = 0; i < answerOptionBlanks.length; i++) {
-    answerOptionBlanks[i].innerHTML = questions[currentQuestion].answers[i];
+  for (var _i = 0; _i < answerOptionBlanks.length; _i++) {
+    answerOptionBlanks[_i].innerHTML = questions[currentQuestion].answers[_i];
   }
-} // Listen to buttons so an action can be caught
-
-
-var answerOptionButtons = document.getElementsByClassName("A_AnswerOption");
-
-var _loop = function _loop(i) {
-  // REVIEW закинуть это в функцию / абстрагировать
-  var pickedOption = answerOptionButtons[i];
-  pickedOption.addEventListener('click', function () {
-    answerPicked(pickedOption, i);
-  });
-};
-
-for (var i = 0; i < answerOptionButtons.length; i++) {
-  _loop(i);
 } // function responsible for answerOption picking: gets data of a click, saves it, initializes next question
 
 
@@ -158,10 +155,10 @@ function judge() {
   var biggestSoFar = 0;
   var mostPopular = 0;
 
-  for (var _i = 0; _i < Object.keys(answeredWeight).length; _i++) {
-    if (answeredWeight[_i] > biggestSoFar) {
-      biggestSoFar = answeredWeight[_i];
-      mostPopular = _i;
+  for (var _i2 = 0; _i2 < Object.keys(answeredWeight).length; _i2++) {
+    if (answeredWeight[_i2] > biggestSoFar) {
+      biggestSoFar = answeredWeight[_i2];
+      mostPopular = _i2;
     }
   }
 

@@ -15,10 +15,15 @@ var tg = document.getElementById('tg');
 var vk = document.getElementById('vk');
 var about = document.getElementById('about');
 var portfolio = document.getElementById('portfolio');
+var logo = document.getElementById('logoLink');
+logo.addEventListener('click', function () {
+  document.location.href = "https://auch.adc.ac";
+});
 searchBar.addEventListener("keyup", function (event) {
   event.preventDefault();
 
   if (event.isComposing || event.keyCode === 13) {
+    // event.keyCode seems to be not supported by some browsers but I kept it just in case
     document.location.href = "https://auch.adc.ac/errors/404.html";
   }
 });

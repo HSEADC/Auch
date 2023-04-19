@@ -4,16 +4,18 @@ import fire_escape_res3 from '../images/fire_escape_res3.png'
 
 // here starts the test mechanics part (every quiz instance must be on  separate page but how)
 
+const answerOptionButtons = document.getElementsByClassName("A_AnswerOption")
+
 //array of objects of questions
 let questions = [
     {
         question: "Что делать в&nbsp;первую очередь?",
-        answers: [ // использовать массив, ведь номера порядковые те же / КЛЮЧИ СДЕЛАТЬ НЕ ЦИФРАМИ?
+        answers: [
             "Кричать и&nbsp;срочно звонить в&nbsp;скорую, пожарную и&nbsp;МЧС",
             "Побежать за&nbsp;ведром с&nbsp;водой или горшком с&nbsp;землей все тушить",
             "Оценить степень беды, понять, насколько сильно все горит и&nbsp;пылает"
         ],
-        right: 2 // REVIEW если делать answers с массивом
+        right: 2
     },
 
     {
@@ -86,6 +88,17 @@ const resultTable = [
 // what answer must be displayed ATM
 let currentQuestion = 0
 
+for (let i = 0; i < answerOptionButtons.length; i++) { // REVIEW закинуть это в функцию / абстрагировать
+    pickOption(answerOptionButtons[i], i)
+}
+
+// this function is made just to avoid defining functions inside loops
+function pickOption(option, i) {
+    option.addEventListener('click', () => {
+        answerPicked(option, i)
+    })
+}
+
 // function that looks up the currentQuestion number and displays the needed question from an array
 function initializeQuestion() {
     // displays current question number as well
@@ -101,15 +114,6 @@ function initializeQuestion() {
     for (let i = 0; i < answerOptionBlanks.length; i++) {
         answerOptionBlanks[i].innerHTML = questions[currentQuestion].answers[i]
     }
-}
-
-// Listen to buttons so an action can be caught
-const answerOptionButtons = document.getElementsByClassName("A_AnswerOption")
-for (let i = 0; i < answerOptionButtons.length; i++) { // REVIEW закинуть это в функцию / абстрагировать
-    let pickedOption = answerOptionButtons[i]
-    pickedOption.addEventListener('click', () => {
-        answerPicked(pickedOption, i)
-    })
 }
 
 // function responsible for answerOption picking: gets data of a click, saves it, initializes next question

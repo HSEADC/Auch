@@ -382,31 +382,9 @@
 
 .A_ArticleCardHeading {
   position: relative;
-  overflow: hidden;
-  width: 271px;
-  height: 53px;
-  margin-top: 22px;
-  margin-left: 22px;
-  font-family: 'InterMedium', sans-serif;
-  font-size: 22px;
-  line-height: 119%;
-  color: var(--black);
-  cursor: pointer;
-
-  &.white {
-    color: var(--white);
-  }
-
-  &.standartNarrow {
-    width: 173px;
-  }
-}
-
-.A_ArticleCardHeadingShort {
-  position: relative;
   display: -webkit-box;
   overflow: hidden;
-  width: 173px;
+  width: 271px;
   height: 53px;
   margin-top: 22px;
   margin-left: 22px;
@@ -422,6 +400,14 @@
 
   &.white {
     color: var(--white);
+  }
+
+  &.standartNarrow {
+    width: 173px;
+  }
+
+  &.short {
+    width: 173px;
   }
 }
 

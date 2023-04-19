@@ -16,9 +16,13 @@ const vk = document.getElementById('vk')
 const about = document.getElementById('about')
 const portfolio = document.getElementById('portfolio')
 
+const logo = document.getElementById('logoLink')
+
+logo.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
+
 searchBar.addEventListener("keyup", function(event) {
         event.preventDefault();
-        if (event.isComposing ||event.keyCode === 13) {
+        if (event.isComposing ||event.keyCode === 13) { // event.keyCode seems to be not supported by some browsers but I kept it just in case
             document.location.href="https://auch.adc.ac/errors/404.html"
         }
 })

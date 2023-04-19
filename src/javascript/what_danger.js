@@ -104,6 +104,20 @@ const resultTable = [
 // what answer must be displayed ATM
 let currentQuestion = 0
 
+// Listen to buttons so an action can be caught
+const answerOptionButtons = document.getElementsByClassName("A_AnswerOption")
+
+for (let i = 0; i < answerOptionButtons.length; i++) { // REVIEW закинуть это в функцию / абстрагировать
+    pickOption(answerOptionButtons[i], i)
+}
+
+// this function is made just to avoid defining functions inside loops
+function pickOption(option, i) {
+    option.addEventListener('click', () => {
+        answerPicked(option, i)
+    })
+}
+
 // function that looks up the currentQuestion number and displays the needed question from an array
 function initializeQuestion() {
     // displays current question number as well
@@ -119,15 +133,6 @@ function initializeQuestion() {
     for (let i = 0; i < answerOptionBlanks.length; i++) {
         answerOptionBlanks[i].innerHTML = questions[currentQuestion].answers[i]
     }
-}
-
-// Listen to buttons so an action can be caught
-const answerOptionButtons = document.getElementsByClassName("A_AnswerOption")
-for (let i = 0; i < answerOptionButtons.length; i++) { // REVIEW закинуть это в функцию / абстрагировать
-    let pickedOption = answerOptionButtons[i]
-    pickedOption.addEventListener('click', () => {
-        answerPicked(pickedOption, i)
-    })
 }
 
 // function responsible for answerOption picking: gets data of a click, saves it, initializes next question

@@ -16,6 +16,11 @@
           name="description"
           content="С «Ауч!» вы можете делать все, что так долго хотели и быть уверенными в своей безопасности!"
   />
+  <link rel="icon" href="../images/favicon.ico" sizes="any">
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+  <script type="text/javascript">VK.init({apiId: 51619884, onlyWidgets: true});</script>
   <title>10 самых badass змей</title>
 </head>
 <body class="S_ArticleBody">
@@ -162,36 +167,40 @@
         <img src="../images/snakes10.png" alt="Змеи" class="Q_QuizHead">
         </div>
       </div>
-
     </div>
 
+    <div class="S_RecommendationCardBlock">
+      <p class="A_RecommendationHeading">Вам также пригодится:</p>
+      <div class="C_RecommendationCardRow">
+        <div class="O_RecommendationCard" id="earthquakeRec">
+          <img class="A_RecommendationCardImg" src="../images/earthquake_recommendation_pic.png">
+          <p class="A_RecommendationCardText">Земля уходит из-под ног</p>
 
-  </div>
-  <div class="S_RecommendationCardBlock">
-    <p class="A_RecommendationHeading">Вам также пригодится:</p>
-    <div class="C_RecommendationCardRow">
-      <div class="O_RecommendationCard" id="earthquakeRec">
-        <img class="A_RecommendationCardImg" src="../images/earthquake_recommendation_pic.png">
-        <p class="A_RecommendationCardText">Земля уходит из-под ног</p>
+        </div>
+        <div class="O_RecommendationCard" id="bugRec">
+          <img class="A_RecommendationCardImg" src="../images/bug_reccomendation_pic.png">
+          <p class="A_RecommendationCardText">Клещи против комаров</p>
 
-      </div>
-      <div class="O_RecommendationCard" id="bugRec">
-        <img class="A_RecommendationCardImg" src="../images/bug_reccomendation_pic.png">
-        <p class="A_RecommendationCardText">Клещи против комаров</p>
+        </div>
+        <div class="O_RecommendationCard" id="gasRec">
+          <img class="A_RecommendationCardImg" src="../images/gas_reccomendation_pic.png">
+          <p class="A_RecommendationCardText">А у нас в квартире газ!</p>
 
-      </div>
-      <div class="O_RecommendationCard" id="gasRec">
-        <img class="A_RecommendationCardImg" src="../images/gas_reccomendation_pic.png">
-        <p class="A_RecommendationCardText">А у нас в квартире газ!</p>
+        </div>
+        <div class="O_RecommendationCard Mobile" id="waterRec">
+          <img class="A_RecommendationCardImg" src="../images/water_reccomendation_pic.png">
+          <p class="A_RecommendationCardText">Слишком много воды</p>
 
-      </div>
-      <div class="O_RecommendationCard Mobile" id="waterRec">
-        <img class="A_RecommendationCardImg" src="../images/water_reccomendation_pic.png">
-        <p class="A_RecommendationCardText">Слишком много воды</p>
-
+        </div>
       </div>
     </div>
+
+    <div id="vk_comments"></div>
+    <script type="text/javascript">
+      VK.Widgets.Comments("vk_comments", {limit: 5, attach: "*"});
+    </script>
   </div>
+
 </section>
 
 <div class="O_Footer">

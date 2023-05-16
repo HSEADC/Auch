@@ -1,3 +1,5 @@
+
+
 // NAVIGATION BAR LINKS
 const mainLink = document.getElementById('MainLink')
 const articlesLink = document.getElementById('ArticlesLink')

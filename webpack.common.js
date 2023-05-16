@@ -13,7 +13,8 @@ module.exports = {
     fire_escape: './src/javascript/fire_escape.js',
     what_danger: './src/javascript/what_danger.js',
     navbar: './src/javascript/navbar.js',
-    article: './src/javascript/article.js'
+    article: './src/javascript/article.js',
+    search: './src/search.js'
   },
   output: {
     filename: '[name].js',
@@ -144,6 +145,15 @@ module.exports = {
       template: './src/quizes/what_danger.html',
       filename: './quizes/what_danger.html',
       chunks: ['index', 'what_danger', 'navbar']
+    }),
+
+    // search page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'navbar', 'search']
     }),
 
     // burn card page for prosmotr

@@ -14,7 +14,9 @@ module.exports = {
     what_danger: './src/javascript/what_danger.js',
     navbar: './src/javascript/navbar.js',
     article: './src/javascript/article.js',
-    search: './src/search.js'
+    search: './src/search.js',
+    searchBar: './src/searchbar.jsx',
+    universal_tag: './src/javascript/universal_tag.js'
   },
   output: {
     filename: '[name].js',
@@ -234,7 +236,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/baby_on_fire.html',
       filename: './articles/baby_on_fire.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index', 'article', 'universal_tag']
     }),
 
     // A page for an article "Удивительный мир грибов"
@@ -243,7 +245,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/mushrooms.html',
       filename: './articles/mushrooms.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index', 'article', 'universal_tag']
     }),
 
     // A page for an article "10 самых badass змей"
@@ -252,7 +254,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/snakes.html',
       filename: './articles/snakes.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index', 'article', 'universal_tag']
     }),
 
     // A page for an article "Земля уходит из-под ног"
@@ -261,7 +263,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/earthquake.html',
       filename: './articles/earthquake.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index', 'article', 'universal_tag']
     }),
 
     // A page for an article "Слишком много воды"
@@ -270,7 +272,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/water.html',
       filename: './articles/water.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index', 'article', 'universal_tag']
     }),
 
     // A page for an article "А у нас в квартире газ!"
@@ -279,7 +281,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/gas.html',
       filename: './articles/gas.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index', 'article', 'universal_tag']
     }),
 
     // A page for an article "Клещи против комаров"
@@ -288,7 +290,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/insects.html',
       filename: './articles/insects.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index', 'article', 'universal_tag']
     }),
 
     // A page for an article "Выживешь ли ты под лавиной?"
@@ -297,7 +299,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles/avalanche.html',
       filename: './articles/avalanche.html',
-      chunks: ['navbar', 'index', 'article']
+      chunks: ['navbar', 'index', 'article', 'universal_tag']
     }),
 
     new HtmlWebpackPlugin({

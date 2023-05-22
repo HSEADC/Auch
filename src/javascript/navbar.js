@@ -25,7 +25,7 @@ logo.addEventListener('click', () => {document.location.href="https://auch.adc.a
 searchBar.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.isComposing ||event.keyCode === 13) { // event.keyCode seems to be not supported by some browsers but I kept it just in case
-            document.location.href="https://auch.adc.ac/errors/404.html"
+            document.location.href="https://auch.adc.ac/search.html"
         }
 })
 
@@ -49,3 +49,7 @@ tg.addEventListener('click', () => {document.location.href="https://t.me/ouchsaf
 vk.addEventListener('click', () => {document.location.href="https://vk.com/ouchsafe"})
 about.addEventListener('click', () => {document.location.href="https://6hm8g8l.github.io/landing/"})
 portfolio.addEventListener('click', () => {document.location.href="https://portfolio.hse.ru/Project/169138"})
+
+document.addEventListener('DOMContentLoaded', () => {
+    pickTag()
+})

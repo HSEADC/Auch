@@ -155,21 +155,131 @@
 .O_QuizLink {
   position: relative;
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-width: 700px;
-height: 200px;
-margin-top: 40px;
-padding: 20px;
-gap: 10px;
-border-radius: 8px;
-background: var(--white);
-cursor: pointer;
-box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 200px;
+  margin-top: 40px;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--white);
+  cursor: pointer;
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.1);
 
 .A_ArticleParagraph{
   width: 280px;
   height: 120px;
 }
 }
+
+.O_Search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 940px;
+  margin-top: 20px;
+  gap: 20px;
+
+  .A_Input {
+    position: relative;
+    width: 700px;
+    height: 40px;
+    gap: 10px;
+    padding-left: 20px;
+    border-radius: 100px;
+    border-color: var(--blueishblue);
+    border-width: 1px;
+    background: var(--white);
+
+    font-family: 'InterRegular', sans-serif;
+    font-size: 18px;
+    line-height: 115%;
+    color: var(--blueishblue);
+  }
+
+  .A_Input::placeholder {
+    color: var(--blueishblue);
+    opacity: 0.4;
+  }
+
+  .A_Button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    //padding: 20px;
+    border-radius: 100px;
+    background: var(--blueishblue);
+    cursor: pointer;
+
+    font-family: 'InterRegular', sans-serif;
+    font-size: 18px;
+    line-height: 115%;
+    color: var(--sickyellow);
+  }
+}
+
+.S_Content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 940px;
+  margin-top: 34px;
+  gap: 12px;
+
+  .O_ContentItem {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    height: 66px;
+    padding: 0px 40px;
+    //gap: 10px;
+    border-radius: 100px;
+    border-color: var(--blueishblue);
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    cursor: pointer;
+
+    .A_ContentItemTitle {
+      font-family: 'InterRegular', sans-serif;
+      font-size: 18px;
+      line-height: 146%;
+      color: var(--dirtyblack);
+    }
+
+    .C_ContentItemTags {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 7px;
+    }
+
+    .A_ContentItemTag {
+      display: inline-block;
+      height: 22px;
+      padding: 3px 14px 4px 14px;
+      border-radius: 44px;
+      border: 1px solid var(--blueishblue);
+
+      font-family: 'InterLight', sans-serif;
+      font-size: 12px;
+      line-height: 115%;
+      color: var(--blueishblue);
+
+    }
+  }
+}
+
+

@@ -554,3 +554,25 @@
   line-height: 146%;
   color: var(--blueishblue);
 }
+
+.A_SearchHeading {
+  width: 940px;
+  padding-top:59px;
+  font-family: 'InterMedium', sans-serif;
+  font-size: 36px;
+  line-height: 123%;
+  color: var(--black);
+}
+
+.A_NothingFound {
+  font-family: 'InterMedium', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  line-height: 119%;
+  color: var(--blueishblue);
+
+  .A_LinkUp {
+    text-decoration: underline;
+    color: var(--blueishblue)
+  }
+}

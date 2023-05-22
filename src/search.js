@@ -22,38 +22,38 @@ function getPathFromUrl(url) {
 }
 
 function createContentCard(contentItemData) {
-    // const contentItem = document.createElement('div')
-    // contentItem.classList.add('O_ContentItem')
+    const contentItem = document.createElement('div')
+    contentItem.classList.add('O_ContentItem')
     //
     // const contentItemCover = document.createElement('img')
     // contentItemCover.classList.add('A_ContentItemCover')
     // contentItemCover.src = contentItemData.image
     //
-    // const contentItemTags = document.createElement('div')
-    // contentItemTags.classList.add('C_ContentItemTags')
+    const contentItemTags = document.createElement('div')
+    contentItemTags.classList.add('C_ContentItemTags')
     //
-    // contentItemData.tags.forEach((tag) => {
-    //     const contentItemTag = document.createElement('div')
-    //     contentItemTag.classList.add('A_ContentItemTag')
-    //     contentItemTag.innerText = tag
-    //     contentItemTags.appendChild(contentItemTag)
-    // })
+    contentItemData.tags.forEach((tag) => {
+        const contentItemTag = document.createElement('div')
+        contentItemTag.classList.add('A_ContentItemTag')
+        contentItemTag.innerText = tag
+        contentItemTags.appendChild(contentItemTag)
+    })
     //
-    // const contentItemTitle = document.createElement('h2')
-    // contentItemTitle.classList.add('A_ContentItemTitle')
-    // contentItemTitle.innerText = contentItemData.title
+    const contentItemTitle = document.createElement('h2')
+    contentItemTitle.classList.add('A_ContentItemTitle')
+    contentItemTitle.innerText = contentItemData.title
     //
     // const contentItemDescription = document.createElement('p')
     // contentItemDescription.classList.add('A_ContentItemDescription')
     // contentItemDescription.innerText = contentItemData.description
     //
     // contentItem.appendChild(contentItemCover)
-    // contentItem.appendChild(contentItemTags)
-    // contentItem.appendChild(contentItemTitle)
+    contentItem.appendChild(contentItemTitle)
+    contentItem.appendChild(contentItemTags)
     // contentItem.appendChild(contentItemDescription)
-    //
-    // return contentItem
-    alert(contentItemData)
+
+
+    return contentItem
 }
 
 function renderCardsByIds(container, ids) {
@@ -62,7 +62,12 @@ function renderCardsByIds(container, ids) {
     ids.forEach((id) => {
         content.forEach((item) => {
             if (item.id === id) {
-                container.appendChild(createContentCard(item))
+                // adding a link
+                const link = document.createElement('a')
+                link.style = "text-decoration: none"
+                link.href = item.link
+                link.appendChild(createContentCard(item))
+                container.appendChild(link)
             }
         })
     })
@@ -77,6 +82,7 @@ function rerenderSearchedContent(requestText) {
     content.forEach((contentItem) => {
         const nbspRegex = /[\u202F\u00A0]/gm
         const punctuationRegex = /[.,\/#!$%\^&\*;:{}=\-_`~()]/gm
+        const tags = contentItem.tags.toString().split(',')
         let { title, description } = contentItem
 
         title = title.replaceAll(nbspRegex, ' ')
@@ -84,9 +90,9 @@ function rerenderSearchedContent(requestText) {
         description = description.replaceAll(nbspRegex, ' ')
         description = description.replaceAll(punctuationRegex, '')
 
+
         if (requestText.length >= 3) {
-            alert("hi")
-            if (title.includes(requestText) || description.includes(requestText)) {
+            if (title.includes(requestText) || description.includes(requestText) || tags.includes(requestText)) {
                 contentItemIds.push(contentItem.id)
             }
         } else {
@@ -103,7 +109,10 @@ function rerenderSearchedContent(requestText) {
 
 function renderNothingFound() {
     const contentItemsContainer = document.querySelector('.S_Content')
-    contentItemsContainer.innerHTML = 'Ничего не найдено'
+    const A_NothingFound = document.createElement('p')
+    A_NothingFound.classList.add('A_NothingFound')
+    A_NothingFound.innerHTML = 'Не нашли, что искали? :(<br> <a class="A_LinkUp" href="mailto: dperednya@edu.hse.ru">Свяжитесь с нами!<a>'
+    contentItemsContainer.appendChild(A_NothingFound)
 }
 
 function initSearch() {

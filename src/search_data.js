@@ -22,12 +22,11 @@ function getPostTeasers() {
                     content.push({
                         id: record.id,
                         tags: record.fields['Tags'],
-                        image: record.fields['Image'],
                         title: record.fields['Title'],
+                        link: record.fields['Link'],
                         description: record.fields['Description']
                     })
                 })
-
                 resolve(content)
             })
     })

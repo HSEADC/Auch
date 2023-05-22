@@ -24,7 +24,7 @@ searchBar.addEventListener("keyup", function (event) {
 
   if (event.isComposing || event.keyCode === 13) {
     // event.keyCode seems to be not supported by some browsers but I kept it just in case
-    document.location.href = "https://auch.adc.ac/errors/404.html";
+    document.location.href = "https://auch.adc.ac/search.html";
   }
 });
 searchBarMobile.addEventListener("keyup", function (event) {
@@ -69,6 +69,9 @@ about.addEventListener('click', function () {
 });
 portfolio.addEventListener('click', function () {
   document.location.href = "https://portfolio.hse.ru/Project/169138";
+});
+document.addEventListener('DOMContentLoaded', function () {
+  pickTag();
 });
 /******/ })()
 ;

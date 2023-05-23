@@ -3956,19 +3956,21 @@ function rerenderSearchedContent(requestText) {
   content.forEach(function (contentItem) {
     var nbspRegex = /[\u202F\u00A0]/gm;
     var punctuationRegex = /[.,\/#!$%\^&\*;:{}=\-_`~()]/gm;
-    var tags = contentItem.tags.toString().split(',');
+    var numberRegex = /^\d/;
+    var tags = contentItem.tags.toString().toLowerCase().split(',');
     var title = contentItem.title,
         description = contentItem.description;
     title = title.replaceAll(nbspRegex, ' ');
-    title = title.replaceAll(punctuationRegex, '');
+    title = title.replaceAll(punctuationRegex, '').toLowerCase();
     description = description.replaceAll(nbspRegex, ' ');
-    description = description.replaceAll(punctuationRegex, '');
+    description = description.replaceAll(punctuationRegex, '').toLowerCase();
+    requestText = requestText.toLowerCase();
 
-    if (requestText.length >= 3) {
+    if (requestText.length >= 3 && !numberRegex.test(requestText)) {
       if (title.includes(requestText) || description.includes(requestText) || tags.includes(requestText)) {
         contentItemIds.push(contentItem.id);
       }
-    } else {
+    } else if (!numberRegex.test(requestText)) {
       contentItemIds.push(contentItem.id);
     }
   });

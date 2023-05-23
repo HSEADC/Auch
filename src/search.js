@@ -82,20 +82,22 @@ function rerenderSearchedContent(requestText) {
     content.forEach((contentItem) => {
         const nbspRegex = /[\u202F\u00A0]/gm
         const punctuationRegex = /[.,\/#!$%\^&\*;:{}=\-_`~()]/gm
-        const tags = contentItem.tags.toString().split(',')
+        const numberRegex = /^\d/
+        const tags = contentItem.tags.toString().toLowerCase().split(',')
         let { title, description } = contentItem
 
         title = title.replaceAll(nbspRegex, ' ')
-        title = title.replaceAll(punctuationRegex, '')
+        title = title.replaceAll(punctuationRegex, '').toLowerCase()
         description = description.replaceAll(nbspRegex, ' ')
-        description = description.replaceAll(punctuationRegex, '')
+        description = description.replaceAll(punctuationRegex, '').toLowerCase()
 
+        requestText = requestText.toLowerCase()
 
-        if (requestText.length >= 3) {
+        if (requestText.length >= 3 && !numberRegex.test(requestText)) {
             if (title.includes(requestText) || description.includes(requestText) || tags.includes(requestText)) {
                 contentItemIds.push(contentItem.id)
             }
-        } else {
+        } else if (!numberRegex.test(requestText)) {
             contentItemIds.push(contentItem.id)
         }
     })

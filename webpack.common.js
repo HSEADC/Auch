@@ -310,6 +310,14 @@ module.exports = {
       chunks: ['navbar', 'index']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './404.html',
+      filename: './404.html',
+      chunks: ['navbar', 'index']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

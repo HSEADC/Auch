@@ -3855,6 +3855,7 @@ function getPostTeasers() {
           id: record.id,
           tags: record.fields['Tags'],
           title: record.fields['Title'],
+          category: record.fields['Category'],
           link: record.fields['Link'],
           description: record.fields['Description']
         });
@@ -3920,7 +3921,11 @@ function createContentCard(contentItemData) {
 
   var contentItemTitle = document.createElement('h2');
   contentItemTitle.classList.add('A_ContentItemTitle');
-  contentItemTitle.innerText = contentItemData.title; //
+  var contentItemSpan = document.createElement('span');
+  contentItemSpan.classList.add('Q_ContentItemSpan');
+  contentItemSpan.innerHTML = "[".concat(contentItemData.category.toUpperCase()[0], "] ");
+  contentItemTitle.innerText = contentItemData.title;
+  contentItemTitle.insertBefore(contentItemSpan, contentItemTitle.firstChild); //
   // const contentItemDescription = document.createElement('p')
   // contentItemDescription.classList.add('A_ContentItemDescription')
   // contentItemDescription.innerText = contentItemData.description

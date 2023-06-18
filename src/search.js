@@ -41,7 +41,13 @@ function createContentCard(contentItemData) {
     //
     const contentItemTitle = document.createElement('h2')
     contentItemTitle.classList.add('A_ContentItemTitle')
+
+    const contentItemSpan = document.createElement('span')
+    contentItemSpan.classList.add('Q_ContentItemSpan')
+    contentItemSpan.innerHTML = `[${contentItemData.category.toUpperCase()[0]}] `
+
     contentItemTitle.innerText = contentItemData.title
+    contentItemTitle.insertBefore(contentItemSpan, contentItemTitle.firstChild);
     //
     // const contentItemDescription = document.createElement('p')
     // contentItemDescription.classList.add('A_ContentItemDescription')

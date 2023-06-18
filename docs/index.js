@@ -17,7 +17,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var cloudTags = document.getElementsByClassName("A_CloudTag");
 
-var unfilteredItems = _toConsumableArray(document.getElementsByClassName("M_ArticleCard")).concat(_toConsumableArray(document.getElementsByClassName("O_SosCard"))); // REVIEW выгоднее было бы не сохранять вот так вот штучки, а работать в более JSONшкой системой
+var unfilteredItems = _toConsumableArray(document.getElementsByClassName("link-card")); // REVIEW выгоднее было бы не сохранять вот так вот штучки, а работать в более JSONшкой системой
 
 
 var container = document.querySelector(".W_CardBlock");
@@ -55,7 +55,9 @@ function filterGalleryByTag(tag) {
   clearGalleryContainer();
 
   for (var _i = 0; _i < unfilteredItems.length; _i++) {
-    var contentItemTags = unfilteredItems[_i].dataset.tags.split(',');
+    var currentItem = unfilteredItems[_i].getElementsByTagName('div')[0];
+
+    var contentItemTags = currentItem.dataset.tags.split(',');
 
     if (contentItemTags.includes(tag)) {
       container.appendChild(unfilteredItems[_i]);

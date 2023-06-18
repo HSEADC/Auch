@@ -2,7 +2,7 @@ import './index.css'
 
 // FILTERING BY TAGS ON GALLERY PAGES
 const cloudTags = document.getElementsByClassName("A_CloudTag")
-let unfilteredItems = [...document.getElementsByClassName("M_ArticleCard")].concat([...document.getElementsByClassName("O_SosCard")]) // REVIEW выгоднее было бы не сохранять вот так вот штучки, а работать в более JSONшкой системой
+let unfilteredItems = [...document.getElementsByClassName("link-card")] // REVIEW выгоднее было бы не сохранять вот так вот штучки, а работать в более JSONшкой системой
 const container = document.querySelector(".W_CardBlock")
 
 for (let i = 0; i < cloudTags.length; i++) { // REVIEW абстрагировать
@@ -35,7 +35,8 @@ function filterGalleryByTag(tag) {
     clearGalleryContainer()
 
     for (let i = 0; i < unfilteredItems.length; i++) {
-        let contentItemTags = unfilteredItems[i].dataset.tags.split(',')
+        let currentItem = unfilteredItems[i].getElementsByTagName('div')[0]
+        let contentItemTags = currentItem.dataset.tags.split(',')
 
         if (contentItemTags.includes(tag)) {
             container.appendChild(unfilteredItems[i])

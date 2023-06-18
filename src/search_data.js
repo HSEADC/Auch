@@ -23,6 +23,7 @@ function getPostTeasers() {
                         id: record.id,
                         tags: record.fields['Tags'],
                         title: record.fields['Title'],
+                        category: record.fields['Category'],
                         link: record.fields['Link'],
                         description: record.fields['Description']
                     })

@@ -13,3 +13,5 @@ function pickTag() {
 document.addEventListener('DOMContentLoaded', () => {
     pickTag()
 })
+
+export { pickTag }

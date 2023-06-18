@@ -1,4 +1,4 @@
-
+import { pickTag } from './universal_tag'
 
 // NAVIGATION BAR LINKS
 const mainLink = document.getElementById('MainLink')
@@ -25,7 +25,7 @@ logo.addEventListener('click', () => {document.location.href="https://auch.adc.a
 searchBar.addEventListener("keyup", function(event) {
         event.preventDefault();
         if (event.isComposing ||event.keyCode === 13) { // event.keyCode seems to be not supported by some browsers but I kept it just in case
-            document.location.href="https://auch.adc.ac/search.html"
+            document.location.href="https://auch.adc.ac/search.html" + `?request=${searchBar.value}`
         }
 })
 

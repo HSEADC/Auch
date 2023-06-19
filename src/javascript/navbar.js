@@ -17,8 +17,11 @@ const tg = document.getElementById('tg')
 const vk = document.getElementById('vk')
 const about = document.getElementById('about')
 const portfolio = document.getElementById('portfolio')
+const mailto = document.getElementById('mailto')
 
 const logo = document.getElementById('logoLink')
+
+mailto.addEventListener('click', () => {document.location.href="mailto: dperednya@edu.hse.ru"})
 
 logo.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
 
@@ -35,7 +38,6 @@ searchBarMobile.addEventListener("keyup", function(event) {
         document.location.href="https://auch.adc.ac/errors/404.html"
     }
 })
-
 mainLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
 articlesLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac/articles"})
 quizesLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac/quizes"})

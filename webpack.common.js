@@ -16,7 +16,8 @@ module.exports = {
     article: './src/javascript/article.js',
     search: './src/search.js',
     searchBar: './src/searchbar.jsx',
-    universal_tag: './src/javascript/universal_tag.js'
+    universal_tag: './src/javascript/universal_tag.js',
+    back_button: './src/javascript/back_button.js'
   },
   output: {
     filename: '[name].js',
@@ -104,15 +105,6 @@ module.exports = {
       chunks: ['navbar', 'index']
     }),
 
-    // Internal pages
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/extras/main.html',
-      filename: './extras/main.html',
-      chunks: ['navbar', 'index']
-    }),
-
     // Articles page
     new HtmlWebpackPlugin({
       hash: true,
@@ -149,7 +141,6 @@ module.exports = {
       chunks: ['index', 'what_danger', 'navbar']
     }),
 
-    // search page
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -158,7 +149,6 @@ module.exports = {
       chunks: ['index', 'navbar', 'search']
     }),
 
-    // burn card page for prosmotr
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -167,7 +157,6 @@ module.exports = {
       chunks: ['navbar', 'index']
     }),
 
-    // insects card page for prosmotr
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -176,7 +165,6 @@ module.exports = {
       chunks: ['navbar', 'index']
     }),
 
-    // sunstroke card page for prosmotr
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -185,7 +173,6 @@ module.exports = {
       chunks: ['navbar', 'index']
     }),
 
-    // frostbite card page for prosmotr
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -194,7 +181,6 @@ module.exports = {
       chunks: ['navbar', 'index']
     }),
 
-    // stretch card page for prosmotr
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
@@ -203,21 +189,11 @@ module.exports = {
       chunks: ['navbar', 'index']
     }),
 
-    // dehydration card page for prosmotr
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
       template: './src/cards/dehydration.html',
       filename: './cards/dehydration.html',
-      chunks: ['navbar', 'index']
-    }),
-
-    // temporary about page for prosmotr
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/about.html',
-      filename: './about.html',
       chunks: ['navbar', 'index']
     }),
 
@@ -305,17 +281,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './src/errors/404.html',
-      filename: './errors/404.html',
-      chunks: ['navbar', 'index']
-    }),
-
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
       template: './404.html',
       filename: './404.html',
-      chunks: ['navbar', 'index']
+      chunks: ['navbar', 'index', 'back_button']
     }),
 
     // Partials

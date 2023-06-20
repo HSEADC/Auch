@@ -346,7 +346,7 @@ module.exports = {
       hash: true,
       scriptLoading: 'blocking',
       template: './src/download_pages/must_down.html',
-      filename: './download_pages/mountain_down.html',
+      filename: './download_pages/must_down.html',
       chunks: ['navbar', 'index']
     }),
 

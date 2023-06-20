@@ -21,6 +21,8 @@ const mailto = document.getElementById('mailto')
 const logo = document.getElementById('logoLink')
 const logoMob = document.getElementById('logoLinkMob')
 
+
+
 mailto.addEventListener('click', () => {document.location.href="mailto: dperednya@edu.hse.ru"})
 
 logo.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
@@ -32,7 +34,6 @@ searchBar.addEventListener("keyup", function(event) {
             document.location.href="https://auch.adc.ac/search.html" + `?request=${searchBar.value}`
         }
 })
-
 searchBarMobile.addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.isComposing ||event.keyCode === 13) {

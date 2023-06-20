@@ -329,7 +329,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './download_pages/forest_down.html',
+      template: './src/download_pages/forest_down.html',
       filename: './download_pages/forest_down.html',
       chunks: ['navbar', 'index']
     }),
@@ -337,7 +337,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './download_pages/mountain_down.html',
+      template: './src/download_pages/mountain_down.html',
       filename: './download_pages/mountain_down.html',
       chunks: ['navbar', 'index']
     }),
@@ -345,7 +345,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './download_pages/must_down.html',
+      template: './src/download_pages/must_down.html',
       filename: './download_pages/mountain_down.html',
       chunks: ['navbar', 'index']
     }),
@@ -353,7 +353,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './download_pages/river_down.html',
+      template: './src/download_pages/river_down.html',
       filename: './download_pages/river_down.html',
       chunks: ['navbar', 'index']
     }),

@@ -431,23 +431,21 @@
   }
 
   .O_QuizLink {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 358px;
-  height: auto;
-  margin-top: 40px;
-  padding-bottom: 0px;
-  gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 358px;
+    height: auto;
+    margin-top: 40px;
+    padding-bottom: 0px;
+    gap: 20px;
 
-  .A_ArticleParagraph{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 320px;
-    height: 60px;
+    .A_ArticleParagraph {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 320px;
+      height: 60px;
+    }
   }
-
-  }
-
 }

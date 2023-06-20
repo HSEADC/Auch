@@ -21,8 +21,6 @@ const mailto = document.getElementById('mailto')
 const logo = document.getElementById('logoLink')
 const logoMob = document.getElementById('logoLinkMob')
 
-
-
 mailto.addEventListener('click', () => {document.location.href="mailto: dperednya@edu.hse.ru"})
 
 logo.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})

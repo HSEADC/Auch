@@ -367,7 +367,7 @@ module.exports = {
         priority: 'replace'
       }
     ])
-  ],
+  ]
   // optimization: {
   //   minimizer: [new CssMinimizerPlugin()]
   // }

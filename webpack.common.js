@@ -42,7 +42,6 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader',
           {
             loader: 'postcss-loader',
             options: {
@@ -50,7 +49,8 @@ module.exports = {
                 plugins: [['postcss-preset-env']]
               }
             }
-          }
+          },
+          'sass-loader'
         ]
       },
       {
@@ -369,8 +369,6 @@ module.exports = {
     ])
   ],
   // optimization: {
-  //   minimizer: [new CssMinimizerPlugin({
-  //     exclude: [/docs/]
-  //   })]
+  //   minimizer: [new CssMinimizerPlugin()]
   // }
 }

@@ -329,31 +329,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './forest_down.html',
-      filename: './forest_down.html',
+      template: './download_pages/forest_down.html',
+      filename: './download_pages/forest_down.html',
       chunks: ['navbar', 'index']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './mountain_down.html',
-      filename: './mountain_down.html',
+      template: './download_pages/mountain_down.html',
+      filename: './download_pages/mountain_down.html',
       chunks: ['navbar', 'index']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './must_down.html',
+      template: './download_pages/must_down.html',
+      filename: './download_pages/mountain_down.html',
       chunks: ['navbar', 'index']
     }),
 
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
-      template: './forest_down.html',
-      filename: './river_down.html',
+      template: './download_pages/river_down.html',
+      filename: './download_pages/river_down.html',
       chunks: ['navbar', 'index']
     }),
 

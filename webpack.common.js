@@ -160,6 +160,46 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       scriptLoading: 'blocking',
+      template: './src/cards/apacheSos.html',
+      filename: './cards/apacheSos.html',
+      chunks: ['navbar', 'index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/bearMeeting.html',
+      filename: './cards/bearMeeting.html',
+      chunks: ['navbar', 'index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/brokenBone.html',
+      filename: './cards/brokenBone.html',
+      chunks: ['navbar', 'index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/lost.html',
+      filename: './cards/lost.html',
+      chunks: ['navbar', 'index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/cards/someoneDrowning.html',
+      filename: './cards/someoneDrowning.html',
+      chunks: ['navbar', 'index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
       template: './src/cards/insectscard.html',
       filename: './cards/insectscard.html',
       chunks: ['navbar', 'index']

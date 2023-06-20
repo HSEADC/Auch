@@ -103,6 +103,26 @@
   &.sprained {
     background-image: url('../src/images/sprainedDesktop.png');
   }
+
+  &.bearMeeting {
+    background-image: url('../src/images/bearMeetingDesktop.png');
+  }
+
+  &.apacheSos {
+    background-image: url('../src/images/apacheSosDesktop.png');
+  }
+
+  &.brokenBone {
+    background-image: url('../src/images/brokenBoneDesktop.png');
+  }
+
+  &.someoneDrowning {
+    background-image: url('../src/images/someoneDrowningDesktop.png');
+  }
+
+  &.lost {
+    background-image: url('../src/images/lostDesktop.png');
+  }
 }
 
 .O_HeadlinerBlock {
@@ -113,6 +133,16 @@
   width: 940px;
   margin-top: 55px;
   gap: 12px;
+
+  .W_PackCardBlock {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
 
 .O_RecommendationCardRow {
@@ -141,6 +171,19 @@
   &.Mobile {
     display: none;
   }
+}
+
+.O_PackCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--sickyellow);
+  width: 220px;
+  height: 140px;
+  padding: 34px 15px;
+  gap: 4px;
+  border-radius: 8px;
+  filter: drop-shadow(2px 1px 15px rgba(0, 0, 0, 0.1));
 }
 
 .O_ContentMetaData {

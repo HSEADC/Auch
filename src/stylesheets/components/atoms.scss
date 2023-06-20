@@ -612,3 +612,51 @@
   text-overflow: ellipsis;
   text-align: center;
 }
+
+.A_DownloadHead {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.A_DownloadDescription {
+  position: relative;
+  width: 100%;
+  padding-right: 360px;
+  margin-top: 14px;
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 104.5%;
+  color: var(--blueishblue);
+}
+
+.A_DownloadContentDescription {
+  width: 100%;
+  padding-right: 360px;
+  margin-top: 64px;
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 104.5%;
+  color: var(--dirtyblack);
+}
+
+.A_DownloadContentList {
+  width: 100%;
+  padding-right: 360px;
+  margin-top: 14px;
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 104.5%;
+  color: var(--dirtyblack);
+
+  li {
+    margin: 10px 0;
+  }
+}
+

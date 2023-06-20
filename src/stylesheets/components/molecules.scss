@@ -306,3 +306,42 @@
   margin-top: 98px;
   margin-left: 170px;
 }
+
+.M_DownloadLeadBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 45px;
+
+  .A_DownloadHeading {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 123%;
+    color: var(--dirtyblack);
+  }
+
+  button {
+    position: relative;
+    color: white;
+    background-color: var(--blueishblue);
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 119%;
+    border-radius: 100px;
+    border-width: 0;
+    padding: 10px 26px 10px 26px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--sickyellow);
+      color: var(--dirtyblack);
+      border-width: 2px;
+    }
+  }
+}

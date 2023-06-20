@@ -118,7 +118,7 @@
   flex-direction: column;
   //justify-content: center;
   width: 100vw;
-  min-height: 100%;
+  min-height: calc(100vh - 371px);
 }
 
 .S_QuizesGalleryContent {
@@ -146,7 +146,7 @@
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  min-height: 100%;
+  min-height: calc(100vh - 371px);
 }
 
 .S_CardsGalleryContent {
@@ -174,7 +174,26 @@
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  min-height: 100%;
+  min-height: calc(100vh - 371px);
+}
+
+.W_DownloadSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: calc(100vh - 371px);
+
+  .S_DownloadContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 940px;
+    margin-top: 55px;
+  }
 }
 
 .S_RecommendationCardBlock {

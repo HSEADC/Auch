@@ -326,6 +326,37 @@ module.exports = {
       chunks: ['navbar', 'index', 'back_button']
     }),
 
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './forest_down.html',
+      filename: './forest_down.html',
+      chunks: ['navbar', 'index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './mountain_down.html',
+      filename: './mountain_down.html',
+      chunks: ['navbar', 'index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './must_down.html',
+      chunks: ['navbar', 'index']
+    }),
+
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './forest_down.html',
+      filename: './river_down.html',
+      chunks: ['navbar', 'index']
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

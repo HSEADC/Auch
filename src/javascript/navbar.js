@@ -18,12 +18,13 @@ const vk = document.getElementById('vk')
 const about = document.getElementById('about')
 const portfolio = document.getElementById('portfolio')
 const mailto = document.getElementById('mailto')
-
 const logo = document.getElementById('logoLink')
+const logoMob = document.getElementById('logoLinkMob')
 
 mailto.addEventListener('click', () => {document.location.href="mailto: dperednya@edu.hse.ru"})
 
 logo.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
+logoMob.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})
 
 searchBar.addEventListener("keyup", function(event) {
         event.preventDefault();

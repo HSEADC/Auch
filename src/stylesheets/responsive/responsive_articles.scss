@@ -472,12 +472,14 @@
   .A_DownloadDescription {
     margin-top: 30px;
     padding-right: 0;
+    width: 100%;
   }
 
   .M_DownloadLeadBlock {
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 18px;
     gap: 10px;
 
     .A_DownloadHeading {
@@ -496,12 +498,13 @@
       font-family: 'InterRegular';
       font-style: normal;
       font-weight: 500;
-      font-size: 22px;
+      font-size: 18px;
       line-height: 119%;
       border-radius: 100px;
       border-width: 0;
       padding: 10px 26px 10px 26px;
       cursor: pointer;
+      margin-top: 8px;
 
       &:hover {
         background-color: var(--sickyellow);
@@ -531,6 +534,14 @@
     height: 102px;
     border-radius: 8px;
     object-fit: cover;
+  }
+
+  .O_HeadlinerBlock {
+
+    .W_PackCardBlock {
+      width: 100vw;
+      margin-left: calc(calc(-1 * 100vw - 358px) * 1/12);
+    }
   }
 
 }

@@ -621,8 +621,7 @@
 
 .A_DownloadDescription {
   position: relative;
-  width: 100%;
-  padding-right: 360px;
+  width: calc(100% - 360px);
   margin-top: 14px;
   font-family: 'InterRegular';
   font-style: normal;

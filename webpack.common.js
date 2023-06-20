@@ -368,7 +368,7 @@ module.exports = {
       }
     ])
   ],
-  optimization: {
-    minimizer: [new CssMinimizerPlugin()]
-  }
+  // optimization: {
+  //   minimizer: [new CssMinimizerPlugin()]
+  // }
 }

@@ -35,7 +35,7 @@ searchBar.addEventListener("keyup", function(event) {
 searchBarMobile.addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.isComposing ||event.keyCode === 13) {
-        document.location.href="https://auch.adc.ac/errors/404.html"
+        document.location.href="https://auch.adc.ac/search.html" + `?request=${searchBarMobile.value}`
     }
 })
 mainLink.addEventListener('click', () => {document.location.href="https://auch.adc.ac"})

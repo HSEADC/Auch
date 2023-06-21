@@ -296,10 +296,6 @@
     &.bonesOut {
       background-image: url('../src/images/bonesOutMobile.png');
     }
-
-    &.sprained {
-      background-image: url('../src/images/sprainedMobile.png');
-    }
   }
 
   .O_Card {
@@ -560,6 +556,41 @@
     padding: 24px 32px 24px 42px;
   }
 
+  .A_SearchHeading {
+    width: 358px;
+    font-size: 32px;
+  }
+
+  .O_Search {
+    width: 358px;
+    flex-direction: column;
+
+    .A_Input {
+      width: 358px;
+    }
+
+    .A_Button {
+      width: 358px;
+    }
+  }
+
+  .S_Content {
+    width: 358px;
+
+    .O_ContentItem {
+      width: 358px;
+
+      .A_ContentItemTitle {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .C_ContentItemTags {
+        display: none;
+      }
+    }
+  }
 
 
 }

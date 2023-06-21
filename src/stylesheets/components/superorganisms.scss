@@ -38,7 +38,7 @@
 
 .S_MainSection {
   position: relative;
-  min-height: 80%;
+  min-height: calc(100vh - 371px);
   display: flex;
   align-items: center;
   flex-direction: column;

@@ -103,7 +103,7 @@ function pickOption(option, i) {
 function initializeQuestion() {
     // displays current question number as well
     const questionNumStr = document.querySelector(".A_QuestionNumber")
-    questionNumStr.innerHTML = `${currentQuestion + 1} <span style="color: var(--blueishblue)">/</span> ${questions.length}`
+    questionNumStr.innerHTML = `<span style="color: var(--blueishblue)">${currentQuestion + 1} /</span> ${questions.length}`
 
     // display question itself
     const questionElement = document.querySelector(".A_QuestionText")

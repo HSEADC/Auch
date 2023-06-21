@@ -225,8 +225,9 @@
   .A_EliteHeadText {
     width: 612px;
     margin: 20px 0px 20px 0px;
-    font-family: 'InterItalic', sans-serif;
-    font-size: 14px;
+    font-family: 'InterMain', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 146%;
     color: var(--blueishblue);
   }
@@ -451,7 +452,7 @@
   position: absolute;
   width: 70px;
   height: 70px;
-  bottom: 14px;
+  bottom: 0;
   right: 14px;
   background-image: url('../src/images/TagQuiz.png');
   background-size: cover;

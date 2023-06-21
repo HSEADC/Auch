@@ -540,7 +540,18 @@
 
     .W_PackCardBlock {
       width: 100vw;
-      margin-left: calc(calc(-1 * 100vw - 358px) * 1/12);
+      overflow: auto;
+      margin-left: calc(calc(100vw - 358px) / -2);
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+
+      .O_PackCard {
+        filter: none;
+      }
+    }
+
+    .W_PackCardBlock::-webkit-scrollbar {
+      display: none;
     }
   }
 

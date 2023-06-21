@@ -1,4 +1,8 @@
 import './index.css'
+import './resources/mustSOS.pdf'
+import './resources/forestSOS.pdf'
+import './resources/mountainSOS.pdf'
+import './resources/riverSOS.pdf'
 
 // FILTERING BY TAGS ON GALLERY PAGES
 const cloudTags = document.getElementsByClassName("A_CloudTag")

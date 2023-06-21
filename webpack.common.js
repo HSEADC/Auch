@@ -32,6 +32,18 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.pdf$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'resources'
+            }
+          }
+        ]
+      },
+      {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
         use: {

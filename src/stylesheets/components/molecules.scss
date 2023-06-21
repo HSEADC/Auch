@@ -168,6 +168,10 @@
 
   &.specialWide {
     background-color: var(--black);
+
+    .A_CardType {
+      background-image: url('../src/images/TagQuizMust.png');
+    }
   }
 
   &.standartNarrow {
@@ -177,6 +181,10 @@
   &.specialNarrow {
     width: 220px;
     background-color: var(--black);
+
+    .A_CardType {
+      background-image: url('../src/images/TagQuizMust.png');
+    }
   }
 
   &.mobile {
